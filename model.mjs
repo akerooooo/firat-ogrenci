@@ -8,6 +8,12 @@ export function turkeyDay(date = new Date()) {
 export function shiftDay(day, offset) {
   const date = new Date(`${day}T12:00:00Z`); date.setUTCDate(date.getUTCDate() + offset); return date.toISOString().slice(0, 10);
 }
+export function mealDayLabel(day, today = turkeyDay()) {
+  if (day === today) return 'Bugün ne yesek?';
+  if (day === shiftDay(today, -1)) return 'Dün ne vardı?';
+  if (day === shiftDay(today, 1)) return 'Yarın ne var?';
+  return `${new Date(`${day}T12:00:00Z`).toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day:'numeric', month:'long', year:'numeric' })} menüsü`;
+}
 export function category(item) {
   const text = fold(item.baslik);
   if (/sinav|vize|butunleme|mazeret/.test(text)) return 'sinav';
@@ -26,7 +32,7 @@ export function filterAnnouncements(items, sources, selection) {
     .sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
 }
 export const routeKey = route => `${route.url || ''}|${route.ad}`;
-export const campusScore = route => /üniversite|kampüs/i.test(route.ad) ? 2 : /üniversite|kampüs/i.test(`${route.gidis} ${route.donus}`) ? 1 : 0;
+export const campusScore = route => /universite|kampus/.test(fold(route.ad)) ? 2 : /universite|kampus|firat uni/.test(fold(`${route.gidis} ${route.donus}`)) ? 1 : 0;
 export function sortRoutes(routes, { favorites = [], visits = {}, order = 'kullanim' } = {}) {
   return [...routes].sort((a, b) => {
     const fav = Number(favorites.includes(routeKey(b))) - Number(favorites.includes(routeKey(a)));

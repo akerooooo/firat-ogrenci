@@ -1,53 +1,5022 @@
 {
- "kaynak": "https://www.elazig.bel.tr/belediye-rehberi/otobus-sefer-ve-guzergahlari/70/",
- "alindi": "2026-11-06",
+ "kaynak": "https://elazigulasim.com/hatlar/",
+ "kaynakAdi": "Elazığ Ulaşım",
+ "resmiKaynak": "https://elazigkart.elazig.bel.tr/wheremybus",
+ "guncelleme": "2026-11-05T23:11:31.228Z",
+ "tarifeHatalari": 0,
  "hatlar": [
-  {"ad":"Üniversite","url":"https://www.elazig.bel.tr/belediye-rehberi/universite/51/","guncelleme":"29 Mart 2021","saatler":["07:00","08:00","10:00","12:00","14:00","16:00","18:00","20:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Karayolları Kavşağı – Yahya Kemal Cad. – Üniversite Hastanesi Alt Kavşağı - Üniversite kampüs alanı içi.","donus":"Üniversite kampüs alanı içi - Yahya Kemal Cad. –Karayolları Kavşağı –Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü - Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı"},
-  {"ad":"Fırat Üniversitesi Tıp Merkezi","url":"https://www.elazig.bel.tr/belediye-rehberi/firat-universitesi-tip-merkezi/295/","guncelleme":"29 Mart 2021","saatler":["07:30","08:30","09:30","10:30","11:30","12:30","13:30","14:30","15:30","16:30","17:30"],"not":"","gidis":"","donus":""},
-  {"ad":"Aksaray Toki-Hicret Mahallesi","url":"https://www.elazig.bel.tr/belediye-rehberi/aksaray-toki-hicret-mahallesi/300/","guncelleme":"28 Ocak 2021","saatler":["06:00","08:00","10:00","12:00","14:00","16:00","18:00","20:00"],"not":"1 Şubat 2021 tarihinden itibaren hat hizmete girecektir.","gidis":"","donus":""},
-  {"ad":"Abdullahpaşa Mahallesi","url":"https://www.elazig.bel.tr/belediye-rehberi/abdullahpasa-mahallesi/39/","guncelleme":"29 Mart 2021","saatler":["06:00","18:00","06:30","18:30","07:00","19:00","07:30","20:00","08:00","20:30","08:30","21:00","09:00","09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket – Orduevi önü – İmam Hatip Lisesi ( Kavun Meydanı ) - Beyaz Çeşme Kavşağı – Yeni Cami önü – İzzetpaşa Cami önü – Gazi Cad. - Öğretmenevi önü - Zübeyde Hanım Cad. - Çaydaçıra Kavşağı - Malatya Cad. – Tofaş Kavşağı – Abdullapaşa Mah. içi","donus":"Abdullahpaşa Mah. içi - Malatya Cad. - Çaydaçıra Kavşağı - Zübeyde Hanım Cad. – Vali Fahri Bey Cad. – İzzetpaşa Camisi önü - Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı son durak."},
-  {"ad":"Abdullahpaşa Çevre Yolu","url":"https://www.elazig.bel.tr/belediye-rehberi/abdullahpasa-cevre-yolu/40/","guncelleme":"29 Mart 2021","saatler":["06:15","17:45","06:45","18:15","07:15","18:45","07:45","19:15","08:15","19:45","08:45","20:15","09:15","20:45","09:45","10:15","10:45","11:15","11:45","12:15","12:45","13:15","13:45","14:15","14:45","15:15","15:45","16:15","16:45","17:15"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi – İmam Hatip Lisesi ( Kavun Meydanı ) önü - Beyaz Çeşme Kavşağı - Yeni Cami önü – İzzetpaşa Camisi önü - Gazi Cad. - Öğretmenevi önü – Vali Fahri Bey Cad. - Bosna Hersek Bulvarı ( İstasyon Cad. ) – Şoförler Cemiyeti önü – Dörtyol Kavşağı - Çaydaçıra Kavşağı - Malatya Cad. – Abdullahpaşa Mah. içi","donus":"Abdullahpaşa Mah. içi - Tofaş Kavşağı - Malatya Cad. - Çaydaçıra Kavşağı – Dörtyol Kavşağı - İstasyon Kavşağı - Bosna Hersek Bulvarı ( İstasyon Cad. ) - İzzetpaşa Camisi önü - Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı"},
-  {"ad":"Abdullahpaşa Üstyol","url":"https://www.elazig.bel.tr/belediye-rehberi/abdullahpasa-ustyol/280/","guncelleme":"15 Mart 2021","saatler":["06:15","08:15","10:15","12:15","14:15","16:15","18:15"],"not":"","gidis":"","donus":""},
-  {"ad":"Aksaray","url":"https://www.elazig.bel.tr/belediye-rehberi/aksaray/43/","guncelleme":"29 Mart 2021","saatler":["06:00","07:00","09:00","11:00","13:00","15:00","17:00","19:00","21:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket – Orduevi önü – Beyaz Çeşme Kavşağı – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Vali Fahri Bey Cad. – Bosna Hersek Bulvarı ( İstasyon Cad. ) – Çevre Yolu – Çimento Kavşağı – Aksaray Mah. girişi ve Aksaray Mah. içi – Bahçeler","donus":"Aynı güzergâhtan çıkış Balakgazi İlköğretim Okulu – Bosna Hersek Bulvarı ( İstasyon Cad. ) - İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı. Sabah saat 07:00 ve öğlen 12:00 'deki servisler aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Aksaray Tokiler Yeşiltepe","url":"https://www.elazig.bel.tr/belediye-rehberi/aksaray-yesiltepe/57/","guncelleme":"29 Mart 2021","saatler":["06:00","08:00","10:00","12:00","14:00","16:00","18:00","20:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket – Orduevi önü – Beyaz Çeşme Kavşağı – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Vali Fahri Bey Cad. – Bosna Hersek Bulvarı ( İstasyon Cad. ) – Çevre Yolu – Çimento Kavşağı – Aksaray Mah. girişi ve Aksaray Mah. içi – Bahçeler","donus":"Aynı güzergâhtan çıkış Balakgazi İlköğretim Okulu – Bosna Hersek Bulvarı ( İstasyon Cad. ) - İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı. Sabah saat 07:00 ve öğlen 12:00 'deki servisler aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Alayaprak Karataş","url":"https://www.elazig.bel.tr/belediye-rehberi/alayaprak-karatas/272/","guncelleme":"29 Mart 2021","saatler":["06:00","17:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Bahçelievler","url":"https://www.elazig.bel.tr/belediye-rehberi/bahcelievler/46/","guncelleme":"05 Şubat 2021","saatler":["06:00","16:00","06:30","16:30","07:00","17:00","07:30","17:30","08:00","18:00","08:30","18:30","09:00","19:00","09:30","19:30","10:00","20:00","10:30","20:30","11:00","21:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi – İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Zübeyde Hanım Cad. – Keban Yolu – Diş Hastanesi – Polis Lojmanları – Yeşilkent - Bahçelievler Mah. içi","donus":"Aynı güzergâhtan Gazi Lisesi yanı son durak. Saat başı araçlar sabah 07:00 ve öğlen 12:00 seferlerinin dönüşünde hastanelere çıkar."},
-  {"ad":"Beyyurdu","url":"https://www.elazig.bel.tr/belediye-rehberi/beyyurdu/58/","guncelleme":"28 Ocak 2021","saatler":["07:00","11:00","15:00","18:00","21:00"],"not":"","gidis":"Kız Meslek Lisesi önü hareket - Vali Fahri Bey Cad. - İzzetpaşa Camisi önü - Hürriyet Cad. – Orduevi - Özel Çeşme - Çevre yolu - Elazığ Şehirler Arası Otobüs Terminali - Karşıyaka - Beyyurdu Mah. içi","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak."},
-  {"ad":"Cezaevi","url":"https://www.elazig.bel.tr/belediye-rehberi/cezaevi/273/","guncelleme":"29 Mart 2021","saatler":["07:00","09:00","11:00","13:00","15:30","18:30"],"not":"","gidis":"","donus":""},
-  {"ad":"Çayda Çıra Mahallesi","url":"https://www.elazig.bel.tr/belediye-rehberi/cayda-cira-mahallesi/48/","guncelleme":"29 Mart 2021","saatler":["06:00","14:00","06:15","14:15","06:30","14:30","06:45","14:45","07:00","15:00","07:15","15:15","07:30","15:30","07:45","15:45","08:00","16:00","08:15","16:15","08:30","16:30","08:45","16:45","09:00","17:00","09:15","17:15","09:30","17:30","09:45","17:45","10:00","18:00","10:15","10:30","18:30","10:45","11:00","19:00","11:15","11:30","19:30","11:45","12:00","20:00","12:15","12:30","20:30","12:45","13:00","21:00","13:15","13:30","13:45"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi – İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Zübeyde Hanım Cad. – Keban Yolu – Akgün Otel Kavşağı – Saim Çiftçi Cad. - Baran Evleri önü – Çaydaçıra Mah. içi","donus":"Çaydaçıra Mah. içi – Baran Evleri önü – Yeşilkent – Polis Okulu – Akgün Otel – Çaydaçıra Kavşağı – Zübeyde Hanım Cad. – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi önü - Gazi Lisesi yanı"},
-  {"ad":"Çayda Çıra - Çevre Yolu","url":"https://www.elazig.bel.tr/belediye-rehberi/cayda-cira-cevre-yolu/47/","guncelleme":"13 Ağustos 2020","saatler":["06:55","08:55","10:55","12:55","14:55","16:55","18:55"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü - Gazi Cad. – Öğretmenevi – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Şehit İdris Doğan Cad. - Medicalpark Hastanesi önü – Sarahatun Diş Sağlığı Hastanesi ( Sarahatun Doğum Hastanesi ) – Çaydaçıra Kavşağı – Elazığ Belediyesi önü – Hazardağlı Kavşağı – Akgün Otel Kavşağı – Saim Çiftçi Cad. - Baran Evleri – Çaydaçıra Mah. içi","donus":"Çaydaçıra Mah. içi – Baran Evleri – Yeşilkent – Akgün Otel Kavşağı – Hazardağlı Kavşağı – Elazığ Belediyesi önü – Çaydaçıra Kavşağı – Sarahatun Diş Sağlığı Hastanesi ( Sarahatun Doğum Hastanesi ) – Medicalpark Hastanesi önü – Bosna Hersek Bulvarı ( İstasyon Cad. ) - İzzetpaşa Camisi önü – Orduevi önü – Gazi Lisesi yanı"},
-  {"ad":"Çayda Çıra 2. Etap","url":"https://www.elazig.bel.tr/belediye-rehberi/cayda-cira-2-etap/288/","guncelleme":"13 Ağustos 2020","saatler":["06:55","08:55","10:55","12:55","14:55","16:55","18:55"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi – İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Zübeyde Hanım Cad. – Keban Yolu – Akgün Otel Kavşağı – Saim Çiftçi Cad. - Baran Evleri önü – Çaydaçıra Mah. içi","donus":"Çaydaçıra Mah. içi – Baran Evleri önü – Yeşilkent – Polis Okulu – Akgün Otel – Çaydaçıra Kavşağı – Zübeyde Hanım Cad. – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi önü - Gazi Lisesi yanı"},
-  {"ad":"Demirtaş","url":"https://www.elazig.bel.tr/belediye-rehberi/demirtas/66/","guncelleme":"13 Ağustos 2020","saatler":["06:00","18:00"],"not":"","gidis":"Kız Meslek Lisesi önü hareket – Bosna Hersek Bulvarı ( İstasyon Cad. ) – Cahit Dalokay Bulvarı – Çaydaçıra Kavşağı - Malatya cad. - Demirtaş köyü","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak."},
-  {"ad":"Doğukent","url":"https://www.elazig.bel.tr/belediye-rehberi/dogukent/45/","guncelleme":"05 Şubat 2021","saatler":["06:00","06:30","07:30","08:30","09:30","10:30","11:30","12:30","13:30","14:30","15:30","16:30","17:30","18:30","19:30","20:30","21:00"],"not":"","gidis":"Öğretmenevi önü hareket – Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Mustafapaşa Mah. İtfaiye önü – Subay Lojmanları – Doğukent Mimar Sinan Cad. - Doğukent Mah. içi","donus":"Aynı güzergâhtan Öğretmenevi önü son durak. Sabah 07:00 ve öğlen 12:00 seferlerinin dönüşünde aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Doğukent (ELBÜS)","url":"https://www.elazig.bel.tr/belediye-rehberi/dogukent--elbus/286/","guncelleme":"13 Ağustos 2020","saatler":["06:00","06:20","06:40","07:00","07:20","07:40","08:00","08:20","08:40","09:00","09:20","09:40","10:00","10:20","10:40","11:00","11:20","11:40","12:00","12:20","12:40","13:00","13:20","13:40","14:00","14:20","14:40","15:00","15:20","15:40","16:00","16:20","16:40","17:00","17:20","17:40","18:00","18:20","18:40","19:00","19:30","20:00","20:30","21:00","21:30","22:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Doğukent - Hilalkent Karşılıklı Ring","url":"https://www.elazig.bel.tr/belediye-rehberi/dogukent-hilalkent-karsilikli-ring/61/","guncelleme":"08 Ekim 2020","saatler":["07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"],"not":"Son Sefer Saatinde Sadece Hilalkent Yönünden Hareket Vardır.","gidis":"Doğukent Mah. içi – Bahaeddin Ögel Cad. ( Mimar Sinan Cad. ) – Mehmet Akif Ersoy Cad. – Ahmet Kabaklı Bul. ( Yakup Şevki Cad. ) – Yunus Emre Bulvarı – Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) önü – Yahya Kemal Cad. – Zübeyde Hanım Cad. – Çaydaçıra Kavşağı – Akgün Otel önü – Beyzade Efendi Bulvarı – Hazardağlı Kavşağı – Malatya Cad. – Hilalkent Mah. içi","donus":"Hilalkent Mah. içi – Baskil Kavşağı - Malatya Cad.- Çaydaçıra Kavşağı – İl Emniyet Müdürlüğü önü – Cahit Dalokay Bulvarı – Asri Mezarlık Kavşağı – Cahit Dalokay Bulvarı – Karşıyaka Doğan Çay Sok. – Mustafa Temizer Cad. – Doğukent Mah. içi"},
-  {"ad":"Doktor Evleri","url":"https://www.elazig.bel.tr/belediye-rehberi/doktor-evleri/63/","guncelleme":"13 Ağustos 2020","saatler":["06:00","10:00","15:00","18:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi önü – İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi - Öğretmenevi önü - Zübeyde Hanım Cad. - Abdullahpaşa yol boyu - Baskil yolu giriş - Doktor Evleri civarı - Nekerek Köyü","donus":"Aynı güzergâhtan Gazi Lisesi yanı son durak."},
-  {"ad":"Galericiler Sitesi Yadigar Bahçeleri","url":"https://www.elazig.bel.tr/belediye-rehberi/galericiler-sitesi-yadigar-bahceleri/285/","guncelleme":"08 Ekim 2020","saatler":["07:00","08:00","10:00","11:00","12:00","13:00","14:00","15:00","17:00","18:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Güney Çevre Yolu Toki Evleri","url":"https://www.elazig.bel.tr/belediye-rehberi/guney-cevre-yolu-toki-evleri/289/","guncelleme":"29 Mart 2021","saatler":["06:00","06:30","07:00","07:30","08:00","08:30","09:00","09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30","18:00","18:30","19:00","19:30","20:00","20:30","21:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Harput","url":"https://www.elazig.bel.tr/belediye-rehberi/harput/59/","guncelleme":"29 Mart 2021","saatler":["06:55","07:35","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00"],"not":"","gidis":"Kız Meslek Lisesi önü hareket – Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi – İmam Hatip Lisesi ( Kavun Meydanı ) – Atapark civarı – Askeri Hastane – Saraykent üstü – Harput Merkez","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak."},
-  {"ad":"Hastaneler","url":"https://www.elazig.bel.tr/belediye-rehberi/hastaneler/49/","guncelleme":"13 Ağustos 2020","saatler":["07:30","08:30","09:30","10:30","11:30","12:30","13:30","14:30","15:30","16:30","17:30"],"not":"","gidis":"Kız Meslek Lisesi önü hareket - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi önü – İmam Hatip Lisesi ( Kavun Meydanı ) – Ruh Sağlığı ve Hastalıkları Hastanesi ( Akliye Hastanesi ) önü – Eğitim ve Araştırma Hastanesi ( Eski Devlet Hastanesi ) önü – Harput Devlet Hastanesi ( Eski SSK Hastanesi ) önü – Üniversite Hastanesi ( Yeni Araştırma Hastanesi )","donus":"Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) – Harput Devlet Hastanesi ( Eski SSK Hastanesi ) – Eğitim ve Araştırma Hastanesi ( Eski Devlet Hastanesi ) – Hastane Cad. – Yeni Cami önü – İzzetpaşa Camisi önü – Gazi Cad. - Kız Meslek Lisesi önü"},
-  {"ad":"Hastaneler (Buçuk)","url":"https://www.elazig.bel.tr/belediye-rehberi/hastaneler/49/","guncelleme":"13 Ağustos 2020","saatler":[],"not":"Sayfada bu güzergâh için ayrı sefer saati yok.","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket – İmam Hatip Lisesi ( Kavun Meydanı ) önü - Yeni Cami – İzzetpaşa Camisi önü – Gazi Cad. – Öğretmenevi – Karayolları Kavşağı – Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) – Yunus Emre Bulvarı – Harput Devlet Hastanesi ( Eski SSK Hastanesi ) önü – Selçuk Ecza Deposu önü – Yunus Emre Bulvarı","donus":"Aynı güzergâhtan Gazi Lisesi yanı son durak."},
-  {"ad":"Hilalkent","url":"https://www.elazig.bel.tr/belediye-rehberi/hilalkent/41/","guncelleme":"13 Ağustos 2020","saatler":["06:10","06:40","07:10","07:40","08:10","08:40","09:10","09:40","10:10","10:40","11:10","11:40","12:10","12:40","13:10","13:40","14:10","14:40","15:10","15:40","16:10","16:40","17:10","17:40","18:10","18:40","19:10","19:40","20:10","20:40","21:10","21:40","22:10","22:40"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü - Gazi Cad. – Öğretmenevi – Zübeyde Hanım Cad. – Malatya Cad. – Hilalkent Mah. içi","donus":"Aynı güzergâhtan Gazi Lisesi yanı son durak."},
-  {"ad":"Hilalkent - Doğukent Ring","url":"https://www.elazig.bel.tr/belediye-rehberi/hilalkent-dogukent-ring/60/","guncelleme":"13 Ağustos 2020","saatler":["07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"],"not":"","gidis":"Hilalkent Mah. içi – Baskil Kavşağı - Malatya Cad. - Çaydaçıra Kavşağı – İl Emniyet Müdürlüğü önü – Cahit Dalokay Bulvarı – Asri Mezarlık Kavşağı – Cahit Dalokay Bulvarı – Karşıyaka Doğan Çay Sok. – Mustafa Temizer Cad. – Doğukent Mah. içi","donus":"Doğukent Mah. içi – Bahaeddin Ögel Cad. ( Mimar Sinan Cad. ) – Mehmet Akif Ersoy Cad. – Ahmet Kabaklı Bul. ( Yakup Şevki Cad. ) – Yunus Emre Bulvarı – Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) önü – Yahya Kemal Cad. – Zübeyde Hanım Cad. – Çaydaçıra Kavşağı – Akgün Otel önü – Beyzade Efendi Bulvarı – Hazardağlı Kavşağı – Malatya Cad. – Hilalkent Mah. içi"},
-  {"ad":"İmar Haksen","url":"https://www.elazig.bel.tr/belediye-rehberi/imar-haksen/275/","guncelleme":"28 Ocak 2021","saatler":["07:15","09:15","11:15","13:15","15:15","17:15","19:15","21:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Karşıyaka","url":"https://www.elazig.bel.tr/belediye-rehberi/karsiyaka/54/","guncelleme":"29 Mart 2021","saatler":["06:45","07:30","08:30","09:30","10:30","11:30","12:30","13:30","14:30","15:30","16:30","17:30","18:30","19:30","20:30"],"not":"","gidis":"Kız Meslek Lisesi önü hareket - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi - Şeyh Şamil Bulvarı – Çimento Kavşağı – Çevre Yolu – Asri Mezarlık Kavşağı – Karşıyaka Mah. içi","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak. Sabah saat 07:30 ve öğlen 12:30 seferlerinin dönüşünde aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Kızılay","url":"https://www.elazig.bel.tr/belediye-rehberi/kizilay/55/","guncelleme":"29 Mart 2021","saatler":["06:00","06:45","07:30","08:30","09:30","10:30","11:30","12:30","13:30","14:30","15:30","16:30","17:30","18:30","19:30","20:30"],"not":"","gidis":"Kız Meslek Lisesi önü hareket - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Hürriyet Cad. – Orduevi – Kazım Karabekir Cad. – Çimento Fabrikası önü – Kızılay Mah. içi – Gümüşkavak Mah. içi","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak. Sabah saat 07:30 ve öğlen 12:30 seferlerinin dönüşünde aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Sanayi Mahallesi ve Siteler","url":"https://www.elazig.bel.tr/belediye-rehberi/sanayi-mahallesi-ve-siteler/52/","guncelleme":"29 Mart 2021","saatler":["06:00","07:00","08:00","09:00","10:00","12:00","14:00","16:00","17:00","18:00","20:00","21:00"],"not":"","gidis":"Kız Meslek Lisesi önü hareket – Vali Fahri Bey Cad. – İzzetpaşa Camisi – Hürriyet Cad. – Orduevi – Eski Cezaevi önü – Numune Karakolu önü – Sanayi Cad. – Sanayi Mah. – Sanayi sitesi içi – Salı Baba Mah. – Çatal Çeşme Mah. içi","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak Sabah saat 07:00 ve öğlen 12:00 seferlerinin dönüşünde aynı güzergâhı takip ederek hastanelere çıkar"},
-  {"ad":"Sarılı","url":"https://www.elazig.bel.tr/belediye-rehberi/sarili/278/","guncelleme":"06 Ocak 2021","saatler":["08:00","15:00"],"not":"Haftada 4 kez: Pazartesi, Cuma, Cumartesi, Pazar.","gidis":"","donus":""},
-  {"ad":"Sugözü","url":"https://www.elazig.bel.tr/belediye-rehberi/sugozu-pekinik/65/","guncelleme":"09 Kasım 2020","saatler":["07:30","11:30","17:30"],"not":"Pekinik: Cumartesi, Pazar.","gidis":"Kız Meslek Lisesi önü hareket - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü - Hürriyet Cad. - Orduevi önü – Mustafapaşa Mah. Askerlik Şubesi önü – Tahir Şaşmaz Cad. – Ulukent Cad. Yol Boyu - Sugözü mevki giriş.","donus":"Sugözü - Ulukent Cad. – Fikret Memişoğlu Cad. – İmam Hatip Lisesi ( Kavun Meydanı ) önü - Yeni Cami – İzzetpaşa Camisi – Gazi Cad. - Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) - Kız Meslek Lisesi önü son durak."},
-  {"ad":"Sürsürü Ataşehir","url":"https://www.elazig.bel.tr/belediye-rehberi/sursuru-atasehir/50/","guncelleme":"29 Mart 2021","saatler":["06:00","13:00","20:00","06:30","13:30","20:30","07:00","14:00","21:00","07:30","14:30","08:00","15:00","08:30","15:30","09:00","16:00","09:30","16:30","10:00","17:00","10:30","17:30","11:00","18:00","11:30","18:30","12:00","19:00","12:30","19:30"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü - Gazi Cad. – Öğretmenevi – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) – Şehit İdris Doğan Cad. - Medicalpark Hastanesi önü - Eski Sebze Hali – Olgunlar – Sürsürü Mah. içi – Ataşehir Mah. içi – Tofaş Alt Kavşağı","donus":"Aynı güzergâhtan çıkışta Sarahatun Diş Sağlığı Hastanesi ( Eski Sarahatun Doğum Hastanesi ) – Ahmet Aytar Meydanı ( Eski Ahmet Aytar Kapalı Spor Salonu ) - Vali Fahri Bey Cad. – İzzetpaşa Camisi önü – Orduevi önü – Gazi Lisesi yanı son durak. Saat başı araçlar güzergâh takip edilerek dönüşte ( sabah 07:00 ve öğlen 12:00 'de ) hastanelere çıkar."},
-  {"ad":"Şahinkaya - Sarı Çubuk","url":"https://www.elazig.bel.tr/belediye-rehberi/sahinkaya-sari-cubuk/62/","guncelleme":"06 Ocak 2021","saatler":["06:00","08:00","11:00","13:00","15:00","18:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket – Orduevi önü – İmam Hatip Lisesi ( Kavun Meydanı ) önü - Yeni Cami – İzzetpaşa Camisi önü - Öğretmenevi önü - Zübeyde Hanım Cad. - Keban Yolu - Bahçelievler civarı - Şahinkaya Köyü içi","donus":"Sarıçubuk Köy içi - aynı güzergâhtan Gazi Lisesi yanı son durak."},
-  {"ad":"Ulukent-Fethi Sekin Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/ulukent-fethi-sekin-sehir-hastanesi/44/","guncelleme":"05 Şubat 2021","saatler":["06:00","18:00","06:30","18:30","07:00","19:00","07:30","19:30","08:00","20:00","08:30","20:30","09:00","21:00","09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30"],"not":"Ulukent seferlerini gerçekleştiren belediye otobüsleri Fethi Sekin Şehir Hastanesine de gidiyor.","gidis":"Kız Meslek Lisesi önü hareket – İzzetpaşa Camisi – Hürriyet Cad. – Mustafapaşa Mah. Askerlik Şubesi önü – İtfaiye önü – Kırklar Mah. – Ulukent Mah. içi","donus":"Aynı güzergâhtan Kız Meslek Lisesi önü son durak"},
-  {"ad":"Yalavuz Ürünveren","url":"https://www.elazig.bel.tr/belediye-rehberi/yalavuz-urunveren/281/","guncelleme":"09 Kasım 2020","saatler":["06:00","16:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Yeniköy","url":"https://www.elazig.bel.tr/belediye-rehberi/yenikoy/56/","guncelleme":"28 Ocak 2021","saatler":["06:00 Tepeköy","08:00","10:00 Eski Güzergah","12:00","14:00 Tepeköy","16:00","18:00 Tepeköy","20:00 Eski Güzergah","21:00"],"not":"","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü - Gazi Cad. – Öğretmenevi – Vali Fahri Bey Cad. – Bosna Hersek Bulvarı ( İstasyon Cad. ) – Tren Garı önü – Hicret Mah. – Yeniköy içi","donus":"Aynı güzergâhtan Bosna Hersek Bulvarı ( İstasyon Cad. ) – Hürriyet Cad. – Orduevi son durak. Sabah saat 07:00 ve öğlen 12:00 'deki servisler aynı güzergâhı takip ederek hastanelere çıkar."},
-  {"ad":"Zafran","url":"https://www.elazig.bel.tr/belediye-rehberi/zafran/42/","guncelleme":"29 Mart 2021","saatler":["06:00","07:00","08:00","09:00","10:00","11:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00"],"not":"Bazı seferler Nurali / Çeşme üzerinden; ayrıntı için kaynağa bakın.","gidis":"Gazi Lisesi yanı ( Eski Cezaevi ) hareket - Orduevi - İmam Hatip Lisesi ( Kavun Meydanı ) - Yeni Cami – İzzetpaşa Camisi önü - Gazi Cad. – Öğretmenevi – Karayolları Kavşağı – Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) önü – Zafran Mah. içi","donus":"Aynı güzergâhtan Vali Fahri Bey Cad. – İzzetpaşa Camisi önü - Hürriyet Cad. – Orduevi önü – Gazi Lisesi yanı son durak."},
-  {"ad":"İmar Haksen - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/imar-haksen-sehit-polis-fethi-sekin-sehir-hastanesi/290/","guncelleme":"13 Ağustos 2020","saatler":["07:00","12:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Yeniköy - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/yenikoy-sehit-polis-fethi-sekin-sehir-hastanesi/291/","guncelleme":"13 Ağustos 2020","saatler":["07:00","12:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Hilalkent - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/hilalkent-sehit-polis-fethi-sekin-sehir-hastanesi/292/","guncelleme":"13 Ağustos 2020","saatler":["07:00","12:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Ataşehir - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/atasehir-sehit-polis-fethi-sekin-sehir-hastanesi/293/","guncelleme":"13 Ağustos 2020","saatler":["07:00","12:00"],"not":"","gidis":"","donus":""},
-  {"ad":"Şehir Hastanesi Hilalkent","url":"https://www.elazig.bel.tr/belediye-rehberi/sehir-hastanesi-hilalkent/294/","guncelleme":"29 Mart 2021","saatler":["06:05","06:20","07:05","08:05","08:35","09:05","09:35","10:05","10:35","11:05","11:35","12:05","12:35","13:05","13:35","14:05","14:35","15:05","15:35","16:05","16:35","17:05","17:35","18:05","18:35","19:05","19:35","20:05","20:35","21:05","22:00 Konteyner","23:15 Hastane"],"not":"Son Sefer Saatinde Sadece Hilalkent Yönünden Hareket Vardır.","gidis":"Doğukent Mah. içi – Bahaeddin Ögel Cad. ( Mimar Sinan Cad. ) – Mehmet Akif Ersoy Cad. – Ahmet Kabaklı Bul. ( Yakup Şevki Cad. ) – Yunus Emre Bulvarı – Üniversite Hastanesi ( Yeni Araştırma Hastanesi ) önü – Yahya Kemal Cad. – Zübeyde Hanım Cad. – Çaydaçıra Kavşağı – Akgün Otel önü – Beyzade Efendi Bulvarı – Hazardağlı Kavşağı – Malatya Cad. – Hilalkent Mah. içi","donus":"Hilalkent Mah. içi – Baskil Kavşağı - Malatya Cad.- Çaydaçıra Kavşağı – İl Emniyet Müdürlüğü önü – Cahit Dalokay Bulvarı – Asri Mezarlık Kavşağı – Cahit Dalokay Bulvarı – Karşıyaka Doğan Çay Sok. – Mustafa Temizer Cad. – Doğukent Mah. içi"},
-  {"ad":"Hafta sonu: Hilalkent - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/otobus-sefer-ve-guzergahlari/70/","guncelleme":"27 Eylül 2021","saatler":[],"not":"Sefer saati yayınlanmamış. Dönüş aynı güzergâhın tersi.","gidis":"Hilalkent 'den Hareket eden Araç; Fatih lisesi-Abdullahpaşa -imar haksen-Yeşilkent-Çaydaçıra mah.-Zafran-Yunus Emre Bulv.-Şehir Hastanesi","donus":""},
-  {"ad":"Hafta sonu: Cezaevi - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/otobus-sefer-ve-guzergahlari/70/","guncelleme":"27 Eylül 2021","saatler":[],"not":"Sefer saati yayınlanmamış. Dönüş aynı güzergâhın tersi.","gidis":"Cezaevinden Hareket Eden Araç; Cezaevi-Final okulu-tren yolu-Belediyespor tes.-Ataşehir-Sürsürü-Olgunlar-Eski sebze halinden çıkıp-Karşıyaka kavşağından-Salı baba-Şehir Hastanesi","donus":""},
-  {"ad":"Hafta sonu: Konteyner Kent - Şehir Hastanesi","url":"https://www.elazig.bel.tr/belediye-rehberi/otobus-sefer-ve-guzergahlari/70/","guncelleme":"27 Eylül 2021","saatler":[],"not":"Sefer saati yayınlanmamış. Dönüş aynı güzergâhın tersi.","gidis":"Konteyner Kent'den Hareket eden Araç; Malatya caddesi-Zübeyde Hanım cad.-Çarşı-Şehir Hastanesi","donus":""}
+  {
+   "numara": "1",
+   "ad": "ABDULLAHPAŞA",
+   "url": "https://elazigulasim.com/hat/1/abdullahpasa-1-apasa-hastane/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → YAKUP KILINÇ SPOR SALONU → ABDULLAH PAŞA TOKİLER KARŞISI → ABDULLAH PAŞA TOKİLER KARŞISI 2 → ARI BÜFE → ÇITIR BÜFE KARŞISI → ABDULLAH PAŞA PAZAR → ABDULLAH PAŞA SAĞLIK OCAĞI → AKADEMİ EVLERİ → EYÜP SULTAN CAMİ → ASMA PARK → IŞIK MARKET → ELMA PARK → FATİH LİSESİ → FATİH LİSESİ İLERİSİ HİLALKENT YOLU 1. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 2. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU3.. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 4. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 5. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 6. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 7. DURAK",
+   "donus": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 9. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 10. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 11. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 12. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 13. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 14. DURAK → KARANFİL PARK → BATI SİTESİ CAMİ KARŞISI → TOBB OKULU → ŞADIRVAN PARK KARŞISI → ABDULLAH PAŞA SEMT PAZARI → ÇITIR BÜFE → TRAFO KAVŞAĞI → TRAFO KAVŞAĞI 3 → ABDULLAPAŞA YOL BOYU ÇARŞI YÖNÜ → ANADOLU HASTANESİ → TAPU KARŞISI → TEDAŞ 1 → TEDAŞ 2 → PARK 23 KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "3",
+   "ad": "A.PAŞA ÇEVREYOLU",
+   "url": "https://elazigulasim.com/hat/52/apasa-cevreyolu-3-apasacevreyol-belediye-tapu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → HALK KÜTÜPHANESİ KARŞISI → ŞOFÖRLER CEMİYETİ → MEDİCAL PARK KARŞISI → ESKİ SEBZE HALİ KARŞISI → BEYZADE EFENDİ CAMİ KARŞISI → KÜLTÜR PARK → ATATÜRK STADYUMU ARKASI → ÇEVRE ŞEHİRCİLİK KARŞISI → ABDULLAHPAŞA YOL BOYU → ABDULLAH ÇEVREYOLU GİRİŞ → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → ABDULLAHPAŞA TOFAŞ KAVŞAĞI → ANADOLU HASTANESİ KARŞISI → ÖMER BİLGİN OĞLU ÖĞRENCİ YURDU KARŞISI → ABDULLAPAŞA YOL BOYU 1 → ABDULLAH ÇEVREYOLU GİRİŞ → ÇITIR BÜFE KARŞISI → ABDULLAH PAŞA PAZAR → ŞADIRVAN PARK KARŞISI → TOBB OKULU → BATI SİTESİ CAMİ → KARANFİL PARK KARŞISI → FATİH LİSESİ KARŞISI → FATİH LİSESİ İLERİSİ HİLALKENT YOLU 1. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 2. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU3.. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 4. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 5. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 6. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 7. DURAK",
+   "donus": "ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 8. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 9. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 10. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 11. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 12. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 13. DURAK → ABDULLAHPAŞA FATİH LİSESİ İLERİ HİLALKENT YOLU 14. DURAK → ELMA PARK KARŞISI → IŞIK PARK KARŞISI → ASMA PARK → AKADEMİ EVLER KARŞISI → ABDULLAH PAŞA TAZİYE EVİ → ABDULLAHPAŞA İTFAİYE → ABDULLAHPAŞA MAHALLE İÇİ → ABDULLAHPAŞA MAHALLE İÇİ 2 → ARI BÜFE KARŞISI → ABDULLAHPAŞA TOKİLER → ABDULLAHPAŞA SPORYUM KAVŞAĞI → YAKUP KILINÇ SPOR SALONU KARŞISI → TEDAŞ 1 → TEDAŞ 2 → PARK 23 KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ÇEVRE ŞEHİRCİLİK → ATATÜRK STADYUMU ARKASI → BEYZADE EFENDİ CAMİ → ESKİ SEBZE HALİ → MEDİCAL PARK → ŞOFÖRLER CEMİYETİ → İSTASYON ÜSTGEÇİT → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "4",
+   "ad": "BAHÇELİEVLER",
+   "url": "https://elazigulasim.com/hat/21/bahcelievler-4-cumhuriyet/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ELAZIĞ EKMEK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ELAZIĞ EKMEK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ELAZIĞ EKMEK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → PETROL DURAĞI → BAHÇELİ CAMİİ KARŞISI → İL SAĞLIK MÜDÜRLÜĞÜ → ADLİYE-VERGİ DAİRESİ → POLİS OKULU → POLİS EVİ ÖNÜ → TİCARET SANAYİ ODASI KARŞISI → ÜST GEÇİT 2 → YEŞİLKENT KARŞISI → YEŞİLKENT 2 → SARINLIOĞLU İNŞAAT → POLATLAR AKRAPOOL → TOKİLER 1 → TOKİLER 2 → TOKİLER 3 → TOKİ CAMİİ → ZAFER KILIÇ ORTAOKULU → BARIŞPINARI ANAOKULU → SULTAN SARAYI DURAĞI → AİLE ÇALIŞMA VE SOSYAL MÜDÜRLÜĞÜ → KARAKAYA LİSESİ → MİLLİ EĞİİTİM → CUMHURİYET TOKİLER → CUMHURİYET TOKİLER 1 → SARI EVLER → MAHALLE İÇİ → KELOĞLAN PARKI → MAHALLE İÇİ 2 → GELİNCİK PARK",
+   "donus": "ELAZIĞ EKMEK → HANIM EMLAK KARŞISI → DÜNYA DİYALİZ → KADİFE PARK → BAHÇELİEVLE MUHTARLIĞI → ADLİYE KARŞISI → İL SAĞLIK MÜDÜRLÜĞÜ KARŞISI → BAHÇELİ CAMİİ ÖNÜ → PETROL OFİSİ ÖNÜ → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "5",
+   "ad": "ÜNİVERSİTE",
+   "url": "https://elazigulasim.com/hat/60/universite-5-universite-universite/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:15",
+       "06:30",
+       "06:45",
+       "07:00",
+       "07:15",
+       "07:30",
+       "07:45",
+       "08:00",
+       "08:15",
+       "08:30",
+       "08:45",
+       "09:00",
+       "09:15",
+       "09:30",
+       "09:45",
+       "10:00",
+       "10:15",
+       "10:30",
+       "10:45",
+       "11:00",
+       "11:15",
+       "11:30",
+       "11:45",
+       "12:00",
+       "12:15",
+       "12:30",
+       "12:45",
+       "13:00",
+       "13:15",
+       "13:30",
+       "13:45",
+       "14:00",
+       "14:15",
+       "14:30",
+       "14:45",
+       "15:00",
+       "15:15",
+       "15:30",
+       "15:45",
+       "16:00",
+       "16:15",
+       "16:30",
+       "16:45",
+       "17:00",
+       "17:15",
+       "17:30",
+       "17:45",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "SARE ÖĞRENCİ YURDU",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:15",
+       "06:30",
+       "06:45",
+       "07:00",
+       "07:15",
+       "07:30",
+       "07:45",
+       "08:00",
+       "08:15",
+       "08:30",
+       "08:45",
+       "09:00",
+       "09:15",
+       "09:30",
+       "09:45",
+       "10:00",
+       "10:15",
+       "10:30",
+       "10:45",
+       "11:00",
+       "11:15",
+       "11:30",
+       "11:45",
+       "12:00",
+       "12:15",
+       "12:30",
+       "12:45",
+       "13:00",
+       "13:15",
+       "13:30",
+       "13:45",
+       "14:00",
+       "14:15",
+       "14:30",
+       "14:45",
+       "15:00",
+       "15:15",
+       "15:30",
+       "15:45",
+       "16:00",
+       "16:15",
+       "16:30",
+       "16:45",
+       "17:00",
+       "17:15",
+       "17:30",
+       "17:45",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "SARE ÖĞRENCİ YURDU",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:15",
+       "06:30",
+       "06:45",
+       "07:00",
+       "07:15",
+       "07:30",
+       "07:45",
+       "08:00",
+       "08:15",
+       "08:30",
+       "08:45",
+       "09:00",
+       "09:15",
+       "09:30",
+       "09:45",
+       "10:00",
+       "10:15",
+       "10:30",
+       "10:45",
+       "11:00",
+       "11:15",
+       "11:30",
+       "11:45",
+       "12:00",
+       "12:15",
+       "12:30",
+       "12:45",
+       "13:00",
+       "13:15",
+       "13:30",
+       "13:45",
+       "14:00",
+       "14:15",
+       "14:30",
+       "14:45",
+       "15:00",
+       "15:15",
+       "15:30",
+       "15:45",
+       "16:00",
+       "16:15",
+       "16:30",
+       "16:45",
+       "17:00",
+       "17:15",
+       "17:30",
+       "17:45",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "SARE ÖĞRENCİ YURDU",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → FIRAT BÜFE → FIRAT ÜNİ. GİRİŞ → FIRAT TIP POLİKLİNİKLER 1 → REKTÖRLÜK KARŞISI → FEN FAKÜLTESİ → SPOR SALONU → SPOR BİLİMLERİ FAKÜLTESİ → HAYVAN HASTANESİ → EĞİTİM FAKÜLTESİ → TEKNOLOJİ FAKÜLTESİ KARŞISI → FETHİ SEKİN MESİRE ALANI → MÜHENDİSLİKLER → MİMARLIK FAKÜLTESİ → İLAHİYAT FAKÜLTESİ → ATATÜRK KÜLTÜR MERKEZİ → BİLGİSAYAR MÜHENDİLİĞİ KARŞISI",
+   "donus": "SARE ÖĞRENCİ YURDU → BİLGİSAYAR MÜHENDİSLİĞİ → MÜHENDİSLİK ÇIKIŞ → FÜBAP KAVŞAĞI → FETHİ SEKİN MESİRE ALANI KARŞISI → TEKNOLOJİ FAKÜLTESİ ÇARŞI → FEN FAKÜLTESİ KARŞISI → ATMLER → REKTÖRLÜK → DSİ → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "6",
+   "ad": "ÇAYDAÇIRA",
+   "url": "https://elazigulasim.com/hat/68/caydacira-6-caydacira-stad-polis-okulu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇAYDAÇIRA DÖNÜŞ YOLU 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇAYDAÇIRA DÖNÜŞ YOLU 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇAYDAÇIRA DÖNÜŞ YOLU 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → ÇAYDAÇIRA KAVŞAĞI → PETROL DURAĞI → BAHÇELİ CAMİİ ÖNÜ → İL SAĞLIK MÜDÜRLÜĞÜ → ADLİYE-VERGİ DAİRESİ → CAMİİ KAVŞAĞI → BARAN EVLERİ → MİSAŞ ÖNÜ → GURME KENT ÖNÜ → BİM ÖNÜ → NUR YAPI ÖNÜ → TATLIM BÜFE KARŞISI → TOKİ ÖNÜ → İKİ TELİ TOKİ KARŞISI → ZİRVE SUİT → ELİSA KONUTLARI KARŞISI → ELİSA KONUTLARI KARŞISI 1",
+   "donus": "ÇAYDAÇIRA DÖNÜŞ YOLU 1 → KENTKÖY SELÇUKLU KARŞISI → BEYAZ İNCİ EVLERİ → AHMET KABAKLI KARŞISI → SAİT KOÇ CAMİİ KARŞISI → MEMURSEN KONITLARI 1.ETAP → ÇAYDAÇIRA ÇARŞI YÖNÜ → ŞOK MARKET ÖNÜ → MERAKLI ÇOCUKLAR ANAOKULU → YEŞİLKENT DURAĞI → ÜST GEÇİT → TİCARET SANAYİ ODASI → POLİS EVİ KARŞISI → İL SAĞLIK MÜDÜRLÜĞÜ KARŞISI → BAHÇELİ CAMİİ ÖNÜ → PETROL OFİSİ ÖNÜ → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "7",
+   "ad": "ÇAYDAÇIRA 2.ETAP",
+   "url": "https://elazigulasim.com/hat/29/caydacira-2etap-7-stad-ccira-2-etap/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "BEYAZ İNCİ EVLERİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "BEYAZ İNCİ EVLERİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "BEYAZ İNCİ EVLERİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → ÇAYDAÇIRA KAVŞAĞI → PETROL DURAĞI → BAHÇELİ CAMİİ ÖNÜ → İL SAĞLIK MÜDÜRLÜĞÜ → ADLİYE-VERGİ DAİRESİ → EMNİYET MÜDÜRLÜĞÜ → ABDULLAH TANGÜLÜ OKULU → CAMİİ KAVŞAĞI → BARAN EVLERİ → ALPARSLAN TÜRKEŞ BULVARI → ÖMER BİLGİNOĞLU BULVARI → MEMURSEN KARŞISI → SAİT KOÇ CAMİİ → AHMET KABAKLI YURDU → KENT KÖY DURAĞI → MEHMET ÇETİNKAYA → TEPE PARK → ÇAYDAÇIRA 2.ETAP → BALIM BÜFE → OBA KENT",
+   "donus": "BEYAZ İNCİ EVLERİ → MİSAŞ KAVŞAĞI → FIRAT OKULLARI → ÇAYDAÇIRA TOKİ 1 → ÇAYDAÇIRA TOKİ 2 → MANAS EVLERİ → ARMADA LİFE → MANAS EVLERİ 2 → AHMET KABAKLI KARŞISI → SAİT KOÇ CAMİİ KARŞISI → MEMURSEN KONITLARI 1.ETAP → ÇAYDAÇIRA ÇARŞI YÖNÜ → KATMERCİ → APAYDIN İNŞAAT → EVİLA REZİDANS → ZERA PERDE → RÜYAM PARK → ÇAYDAÇIRA ÇARŞI YÖNÜ 2 → NECMETTİN ERBAKAN KAVŞAĞI → BARAN EVLERİ KARŞISI → GÜNEŞ BÜFE KARŞISI → POLİKLİNİK DURAĞI → ŞOK MARKET ÖNÜ → MERAKLI ÇOCUKLAR ANAOKULU → YEŞİLKENT DURAĞI → ÜST GEÇİT → TİCARET SANAYİ ODASI → POLİS EVİ ÖNÜ → ADLİYE KARŞISI → İL SAĞLIK MÜDÜRLÜĞÜ KARŞISI → BAHÇELİ CAMİİ KARŞISI → PETROL OFİSİ ÖNÜ → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "8",
+   "ad": "ÇAYDAÇIRA ÇEVREYOLU",
+   "url": "https://elazigulasim.com/hat/32/caydacira-cevreyolu-8-cevreyolu-ccira-2etap/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:55",
+       "08:55",
+       "10:55",
+       "12:55",
+       "14:55",
+       "16:55",
+       "18:55"
+      ]
+     },
+     "donus": {
+      "durak": "MİSAŞ KAVŞAĞI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:55",
+       "08:55",
+       "10:55",
+       "12:55",
+       "14:55",
+       "16:55",
+       "18:55"
+      ]
+     },
+     "donus": {
+      "durak": "MİSAŞ KAVŞAĞI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:55",
+       "08:55",
+       "10:55",
+       "12:55",
+       "14:55",
+       "16:55",
+       "18:55"
+      ]
+     },
+     "donus": {
+      "durak": "MİSAŞ KAVŞAĞI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → İSTASYON ÜSTGEÇİT → HALK KÜTÜPHANESİ KARŞISI → ŞOFÖRLER CEMİYETİ → MEDİCAL PARK KARŞISI → ESKİ SEBZE HALİ KARŞISI → BEYZADE EFENDİ CAMİ KARŞISI → KÜLTÜR PARK → ATATÜRK STADYUMU ARKASI → ÇEVRE ŞEHİRCİLİK KARŞISI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → KADİFE PARK → BAHÇELİEVLE MUHTARLIĞI → POLİS EVİ ÖNÜ → TİCARET SANAYİ ODASI KARŞISI → ÜST GEÇİT 2 → YEŞİLKENT KARŞISI → TEK MEDİA GRUP → TAHA PARK KARŞISI → KEBABÇI HİKMET → GÜNEŞ BÜFE → CAMİİ KAVŞAĞI → BARAN EVLERİ → ALPARSLAN TÜRKEŞ BULVARI → ÇAYDAÇIRA ÇARŞI YÖNÜ 2 → ÇAYDAÇIRA ÇARŞI YÖNÜ → MEMURSEN KARŞISI → MEMURSEN KONITLARI 1.ETAP → SAİT KOÇ CAMİİ KARŞISI → AHMET KABAKLI KARŞISI → KENT KÖY DURAĞI → BEYAZ İNCİ EVLERİ → OBA KENT → BALIM BÜFE → ÇAYDAÇIRA 2.ETAP → TEPE PARK",
+   "donus": "MİSAŞ KAVŞAĞI → FIRAT OKULLARI → ÇAYDAÇIRA TOKİ 1 → ÇAYDAÇIRA TOKİ 2 → MANAS EVLERİ → ARMADA LİFE → MANAS EVLERİ 2 → AHMET KABAKLI YURDU → SAİT KOÇ CAMİİ KARŞISI → MEMURSEN KONITLARI 1.ETAP → ÇAYDAÇIRA ÇARŞI YÖNÜ → KATMERCİ → APAYDIN İNŞAAT → SENA PARK → EVİLA REZİDANS → ZERA PERDE → RÜYAM PARK → ÇIRA ECVLERİ → ŞOK MARKET ÖNÜ → MERAKLI ÇOCUKLAR ANAOKULU → YEŞİLKENT DURAĞI → ÜST GEÇİT → TİCARET SANAYİ ODASI → POLİS EVİ KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ÇEVRE ŞEHİRCİLİK → YEŞİL CAMİ → HALK SAĞLIĞI → BEYZADE EFENDİ CAMİ → ESKİ SEBZE HALİ → MEDİCAL PARK → İSTASYON CADDESİ → İSTASYON ÜSTGEÇİT → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI → AĞIR BAKIM → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "9",
+   "ad": "SÜRSÜRÜ-ATAŞEHİR",
+   "url": "https://elazigulasim.com/hat/78/sursuru-atasehir-9-sursuruatashr-halk-egitim/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "MİGROS ÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "MİGROS ÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "MİGROS ÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI → CUMARTESİ PAZARI YOLU → CUMARTESİ PAZARI YOLU 2 → CUMARTESİ PAZARI YOLU 3 → MEDİCAL PARK KARŞISI 2 → OLGUNLAR → OLGUNLAR1 → TARIM İL KARŞISI → OLGUNLAR 3 → A 101 ÖNÜ → YEŞİLCAMİİ ALTI → LİMAN BAŞKANLIĞI → HALK EĞİTİM KARŞISI → HIDIRSEVER LİSESİ → LÜTFULLAH BİLGİN OKULU → TUZSUZOĞLU SİTE KARŞISI → AKİDE MARKET → ATAŞEHİR MAHALLESİ GİRİŞ → GÜLERYÜZ TİCARET ÖNÜ → ŞOK MARKET KARŞISI DUTRAĞI → TURANLAR DURAĞI → KERVANSARAY KARŞISI → KÜTÜPHANE KARŞISI → ATAŞEHİR 1 → ATAŞEHİR 2 → HALI SAHA → TOROMAN SİTESİ ÖNÜ → KUVAYİ MİLLİYE CADDESİ GİRİŞ → BİM MARKET ÖNÜ → HALİÇ PARK ÖNÜ → AİLE SAĞLIĞI MERKEZİ",
+   "donus": "MİGROS ÖNÜ → GÜRKAN SİTESİ ÖNÜ → MARATHON SİTESİ ÖNÜ → ATAŞEHİR 2 KARŞISI → İKİNCİLER DURAĞI → LEZZETİ ALA ÖNÜ → İĞDE PARK → NEFASET OCAKBAŞI → ÇİÇEK SİTESİ ÖNÜ → GÖKKUŞAĞI SİTESİ KARŞISI → KANAL BOYU 1 → ATAŞEHİR MUHTARLIĞI → ÜNAL SİTESİ ALTI → ŞERİFOĞUULARI SİTESİ KARŞISI → TUZSUZOĞLU SİTESİ ÖNÜ → LÜTFULLAH BİLGİN OKULU ÖNÜ → ŞOK MARKET ÖNÜ → HALK EĞİTİM ÖNÜ → LİMAN BAŞKANLIĞI KARŞISI → SARAY KIRAATHANESİ → FURKAN İNŞAAT → OLGUNLAR ÇEŞME → TARIM İL ÖNÜ → OLGUNLAR ÇARŞI YÖNÜ → OLGUNLAR ÇARŞI YÖNÜ 2 → OLGUNLAR ÇARŞI YÖNÜ 3 → MEDİCAL PARK → İSTASYON CADDESİ → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI → AĞIR BAKIM ÖNÜ → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "10",
+   "ad": "DOĞUKENT",
+   "url": "https://elazigulasim.com/hat/9/dogukent-10-dogukent-hayir-carsisi/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "TAŞRA DÜĞÜN SALONU KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "TAŞRA DÜĞÜN SALONU KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "TAŞRA DÜĞÜN SALONU KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI → AĞIR BAKIM → TEMİZER PARKI → SUBAY LOJMANLARI KARŞISI → ÇARŞAMBA PAZARI 2 → KANALBOYU → KONAK SİTESİ KARŞISI → DOĞUKENT CADDESİ → EMİN POLAT CAMİ → AKBULUT → DOĞUKENT CADDESİ ATM → KENT DÜĞÜN SALONU → DOĞUKENT MUHTARLIK KARŞISI → TRAFO → DOĞUKENT PTT → POLİKLİNİKLER KARŞISI → ACİL SERVİS → POLİKLİNİKLER ÖNÜ → TAŞRA DÜĞÜN SALONU → EYVAN DÜĞÜN SALONU → HAYIR ÇARŞISI KARŞISI → HAYIR ÇARŞISI → DOĞUKENT MAHALLESİ → DOĞUKENT MAHALLESİ 2 → HANEDAN DÜĞÜN SALONU → DOĞUKENT MAHALLESİ 3 → NACİ ONUR PARKI → DOĞUKENT MERKEZ CAMİ",
+   "donus": "TAŞRA DÜĞÜN SALONU KARŞISI → DOĞUKENT PTT KARŞISI → MUHTARLIK ÖNÜ → KENT DÜĞÜN SALONU KARŞISI → DOĞUKENT CADDESİ ATM 2 → EMİN POLAT CAMİ ÖNÜ → DOĞUKENT CADDESİ 2 → KONAK SİTESİ ÖNÜ → KANALBOYU 2 → ÇARŞAMBA PAZARI KARŞISI → SUBAY LOJMANLARI → İTFAİYE → AĞIR BAKIM ÖNÜ → ÇARŞAMBA PAZARI KARŞISI 2 → İMAM HATİP → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "11",
+   "ad": "ULUKENT",
+   "url": "https://elazigulasim.com/hat/12/ulukent-11-ulukent-temizer-parki/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ULUKENT MAHALLE İÇİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ULUKENT MAHALLE İÇİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ULUKENT MAHALLE İÇİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI → AĞIR BAKIM → TEMİZER PARKI → SUBAY LOJMANLARI KARŞISI → ELBÜS GARAJI KARŞISI → HARPUT ANADOLU LİSESİ → ÇEŞME DURAĞI KARŞISI → FETİH CAMİ KARŞISI → ULUKENT KANAL BOYU → KIBRIS ŞEHİTLERİ → SARAYALTI CAMİ → KAMİL AYHAN ORTAOKULU → ESKİ TRAFİK TESCİL ÖNÜ → ULUKENT YOL AYRIMI → ULUKENT MEZARLIK KARŞISI → HÜSEYNİK → HÜSEYNİK 1 → SUGÖZÜ KAVŞAĞI → ŞEHİR HASTANESİ ARKA GİRİŞİ → HASTANE YOLU → ŞEHİR HASTENESİ MORG GİRİŞİ → ACİL SERVİS → POLİKLİNİKLER ÖNÜ → DOĞUKENT KAPALI SEMT PAZARI → ULUKENT YOLU",
+   "donus": "ULUKENT MAHALLE İÇİ → SARICAN CAMİ → ULUKENT MAHALLE İÇİ 2 → CİRİT TEPE → ÇOCUK PARKI → ULUKENT DÖNÜŞ → KIBRIS ŞEHİTLERİ KARŞISI → ULUKENT KANALBOYU 2 → FETİH CAMİ → ÇEŞME DURAĞI → HARPUT ANADOLU LİSESİ KARŞISI → ULUKENT ÇIKIŞ → ELBÜS GARAJI → İTFAİYE → AĞIR BAKIM ÖNÜ → ÇARŞAMBA PAZARI KARŞISI 2 → İMAM HATİP → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "12",
+   "ad": "HASTANELER",
+   "url": "https://elazigulasim.com/hat/38/hastaneler-12-hastaneler-harput-devlet-ars-egt/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "YILDIZ BAĞLARI SOSYAL YARDIMLAŞMA",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "YILDIZ BAĞLARI SOSYAL YARDIMLAŞMA",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "YILDIZ BAĞLARI SOSYAL YARDIMLAŞMA",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "AĞIR BAKIM → ÇARŞAMBA PAZARI → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → FIRAT BÜFE → FIRAT TIP ACİL → FIRAT TIP POLİKLİNIİKLER → YUNUS EMRE BULVARI → ZAFRAN KAVŞAĞI → LEYLEKLİ PARK KARŞISI → FEVZİ ÇAKMAK → PERŞEMBE PAZARI KARŞISI → ESKİ SİGORTA HAST.KARŞISI",
+   "donus": "YILDIZ BAĞLARI SOSYAL YARDIMLAŞMA → ESKİ SİGORTA HAST. → PERŞEMBE PAZARI → FEVZİ ÇAKMAK 1 → FEVBZİ ÇAKMAK 2 → LEYLEKLİ PARK → YUNUS EMRE BULVARI 1 → FIRAT TIP HASTANE KAVŞAĞI → FIRAT TIP POLİKLİNİKLER 1 → FIRAT ÜNİ. GİRİŞ → DSİ → KARAYOLLARI → VALİLİK → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI KARŞISI 2 → AĞIR BAKIM ÖNÜ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "13",
+   "ad": "KARŞIYAKA",
+   "url": "https://elazigulasim.com/hat/39/karsiyaka-13-karsiyaka-sebze-hali/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:45",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "19:30",
+       "20:30",
+       "21:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "KARŞIYAKA KÖPRÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:45",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "19:30",
+       "20:30",
+       "21:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "KARŞIYAKA KÖPRÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:45",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "19:30",
+       "20:30",
+       "21:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "KARŞIYAKA KÖPRÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → GAZİ LİSESİ → RÜSTEMPAŞA SAĞLIK OCAĞI → DOĞU GARAJI → KIZILAY KÖPRÜSÜ KARŞISI → EŞTİ KARŞISI → DOĞU DÜĞÜN SALONU → KARŞIYAKA KÖPRÜ KARŞISI → KARŞIYAKA TOKİLER KARŞISI → HAUS PORT KARŞISI → ODUN AMBARI KARŞISI → ASRİ MEZARLIĞI 2 → ODUN AMBARI → HAUS PORT → KARŞIYAKA TOKİLER → KARŞIYAKA LİSESİ → YENİ SEBZE HALİ → ARITMA → VARTO RAMPASI → KARŞIYAKA KURAN KURSU → KARŞIYAKA MH. İÇİ → KARŞIYAKA MH. İÇİ 2 → KARŞIYAKA MH. İÇİ 3 → KARŞIYAKA ÇEŞME → KARŞIYAKA MH. İÇİ 4 → KARŞIYAKA MH. İÇİ 5 → KARŞIYAKA FIRIN → KARŞIYAKA ÇIKIŞ",
+   "donus": "KARŞIYAKA KÖPRÜ → KANTAR → EŞTİ → KIZILAY KÖPRÜSÜ → NUMUNE KARAKOLU → RÜSTEMPAŞA SAĞLIK OCAĞI KARŞISI → GAZİ LİSESİ KARŞISI → ESKİ CUMA PAZARI → ORDUEVİ DURAĞI → İMAM HATİP → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "14",
+   "ad": "SİTELER",
+   "url": "https://elazigulasim.com/hat/40/siteler-14-siteler-ciraklik-okulu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME SON DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME SON DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME SON DURAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → ESKİ CUMA PAZARI → GAZİ LİSESİ → RÜSTEMPAŞA SAĞLIK OCAĞI → DOĞU GARAJI → BALIKÇI → SANAYİ MAHALLESİ → SANAYİ MAHALLESİ 2 → TERMİNAL ARKASI → ÇIRAKLIK EĞİTİM MERKEZİ KARŞISI → SALIBABA → KAZIM KARABEKİR İLKOKULU KARŞISI → ÇATALÇEŞME → ÇATALÇEŞME 2",
+   "donus": "ÇATALÇEŞME SON DURAK → KAZIM KARABEKİR İLKOKULU → SALIBABA 2 → ÇIRAKLIK EĞİTİM MERKEZİ → DEMİRCİLER → SANAYİ 1 → SANAYİ CAMİSİ → SANAYİ 3 → BANKALAR → SANAYİ MAHALLESİ 3 → SANAYİ MAHALLESİ 4 → BALIKÇI KARŞISI → NUMUNE KARAKOLU → RÜSTEMPAŞA SAĞLIK OCAĞI KARŞISI → GAZİ LİSESİ KARŞISI → ORDUEVİ DURAĞI → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "15",
+   "ad": "ZAFRAN",
+   "url": "https://elazigulasim.com/hat/41/zafran-15-zafran-yeni-arastirma/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YUNUS EMRE BULVARI 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YUNUS EMRE BULVARI 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "AĞIR BAKIM",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YUNUS EMRE BULVARI 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "AĞIR BAKIM → ÇARŞAMBA PAZARI KARŞISI 2 → İMAM HATİP → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → FIRAT BÜFE → FIRAT TIP ACİL → FIRAT TIP POLİKLİNİKLER 1 → YUNUS EMRE BULVARI → YUNUS EMRE BULVARI 1 → ZAFRAN KAVŞAĞI → HACI REMZİ CAMİİ KARŞISI → ZAFRAN ÇEŞME → ZAFRAN GİŞİŞ → ZAFRAN",
+   "donus": "YUNUS EMRE BULVARI 1 → FIRAT TIP HASTANE KAVŞAĞI → FIRAT TIP POLİKLİNİKLER 1 → DSİ → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → ÇARŞAMBA PAZARI → AĞIR BAKIM ÖNÜ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "16",
+   "ad": "KIZILAY",
+   "url": "https://elazigulasim.com/hat/42/kizilay-16-kizilay-dogu-garaji/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK ÇIKIŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK ÇIKIŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:30",
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK ÇIKIŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → GAZİ LİSESİ → RÜSTEMPAŞA SAĞLIK OCAĞI → DOĞU GARAJI → ÇİMENTO ARKA KAPISI → KESRİK → ZİYA GÖKALP OKULU KARŞISI → KESRİK-2 → KIZILAY YOLU KÖPRÜ → KAROCULAR → KIZILAY → GÜMÜŞKAVAK YOLU → METEOROLOJİ → GÜMÜŞKAVAK TOKİLER → GÜMÜŞKAVAK TOKİLER-2 → GÜMÜŞKAVAK → GÜMÜŞKAVAK 1 → GÜMÜŞKAVAK ÇIKIŞ",
+   "donus": "GÜMÜŞKAVAK ÇIKIŞ 1 → KEKLİKTEPE → ASRİ MEZARLIĞI → ASRİ MEZARLIĞI 2 → ODUN AMBARI → HAUS PORT → KARŞIYAKA TOKİLER → KARŞIYAKA KÖPRÜ → KANTAR → EŞTİ → KIZILAY KÖPRÜSÜ → RÜSTEMPAŞA SAĞLIK OCAĞI KARŞISI → GAZİ LİSESİ KARŞISI → ESKİ CUMA PAZARI → ORDUEVİ DURAĞI → İMAM HATİP → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "17",
+   "ad": "AKSARAY",
+   "url": "https://elazigulasim.com/hat/43/aksaray-17-aksaray-cimento-fabr/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "17:00",
+       "19:00",
+       "21:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "HİLAL CAMİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "17:00",
+       "19:00",
+       "21:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "HİLAL CAMİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "17:00",
+       "19:00",
+       "21:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "HİLAL CAMİ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ÖĞRETMEN EVİ → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → YÜCEL İLKOKULU → ZAİMOĞLU → AKSARAY GİRİŞ → ÇİMENTO ÖN KAPISI → AKSARAY MAHALLESİ → KAHVELER → ESKİ KARAKOL → SAĞLIK OCAĞI → AKSARAY BAHÇELER → AKSARAY BAHÇELER 2 → YEŞİLTEPE YOL AYRIMI",
+   "donus": "HİLAL CAMİ → AKSARAY ÇEŞME → KILIÇ PARKI → VALİ MUHARREM GÖKTAYOĞLU AND.LİSESİ → GAR ALT GEÇİT → GAR → İSTASYON CADDESİ → İSTASYON CADDESİ ÜST GEÇİT → ÖĞRETMEN EVİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "18",
+   "ad": "YENİKÖY",
+   "url": "https://elazigulasim.com/hat/13/yenikoy-18-yenikoy-hicret-mah/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİKÖY DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİKÖY DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİKÖY DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İSTASYON CADDESİ ÜST GEÇİT → HALK KÜTÜPHANESİ KARŞISI → ŞOFÖRLER CEMİYETİ → HİCRET GİRİŞ → HİCRET HALISAHA → HİCRET MAHALLESİ 1 → HİCRET MAHALLESİ SAĞLIK KABİNİ → HİCRET MAHLLESİ 2 → HİCRET MAHLLESİ 3 → HİCRET MAHLLESİ TADIM YOLU → HİCRET MAHLLESİ ÇEŞME → PINARLAR CAMİİ → HİCRET MAHLLESİ ÇIKIŞ → YENİKÖY YOLU → YENİ KÖY YOLU 1 → HULUSİ YAHYAGİL → ZÜMRÜT VİLLARI 1 → ZÜMRÜT VİLLARI 2 → HAS ÇEREZ → YENİKÖY CAMİİ → CEVİZLİBAĞ → ŞEHİT ALİ CAMİİ",
+   "donus": "YENİKÖY DÖNÜŞ 1 → DURAK 23 → YENİ KÖY DÖNÜŞ 2 → YENİKÖY MEZARLIK → TEPE KÖY YOLU → TEPEKÖY YOLU 1 → YENİ GÜZERGAH YOLU → YENİ GÜZERGAH YOLU 2 → HACI HIDIR CAMİİ → AHIRLAR → YENİKÖY DÖNÜŞ AHIRLAR SONRASI 1 → YENİKÖY DÖNÜŞ AHIRLAR SONRASI 2 → YENİKÖY DÖNÜŞ AHIRLAR SONRASI 3 → YENİKÖY DÖNÜŞ AHIRLAR SONRASI 4 → YENİKÖY DÖNÜŞ 5 → YENİKÖY DÖNÜŞ 6 → YENİKÖY DÖNÜŞ 7 → YENİKÖY DÖNÜŞ 8 → YENİKÖY DÖNÜŞ 9 → YENİKÖY DÖNÜŞ 10 → YENİKÖY DÖNÜŞ 11 → YENİKÖY DÖNÜŞ 12 → YENİKÖY DÖNÜŞ 13 → YENİKÖY DÖNÜŞ 14 → YENİKÖY DÖNÜŞ 15 → YENİKÖY DÖNÜŞ 16 → YENİKÖY DÖNÜŞ 17 → YENİKÖY DÖNÜŞ 18 → YENİKÖY DÖNÜŞ 19 → YENİKÖY DÖNÜŞ 20 → YENİKÖY DÖNÜŞ 21 → YENİKÖY DÖNÜŞ 22 → YENİKÖY DÖNÜŞ 23 → YENİKÖY DÖNÜŞ 24 → YENİKÖY DÖNÜŞ 25 → YENİKÖY DÖNÜŞ 26 → YENİKÖY DÖNÜŞ 27 → İSTASYON ÜSTGEÇİT → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "19",
+   "ad": "BEYYURDU",
+   "url": "https://elazigulasim.com/hat/14/beyyurdu-19-beyyurdu-sebze-hali/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "15:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "BEYYURDU ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "15:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "BEYYURDU ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "15:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "BEYYURDU ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → HÜRRİYET CADDESİ → GAZİ LİSESİ → RÜSTEMPAŞA SAĞLIK OCAĞI → DOĞU GARAJI → KIZILAY KÖPRÜSÜ → EŞTİ KARŞISI → DOĞU DÜĞÜN SALONU → KARŞIYAKA KÖPRÜ → KARŞIYAKA LİSESİ → SEBZE HALİ → ARITMA → BEYYURDU MAHALLE YÖNÜ → BEYYURDU KÜME EVLERİ → BEYYURDU KÜME EVLERİ 1 → BEYYURDU KÜME EVLERİ 2 → BEYYURDU MAHALLE İÇİ",
+   "donus": "BEYYURDU ÇARŞI YÖNÜ → BEYYYURDU DÖNÜŞ → BEYYURDU DÖNÜŞ 2 → BEYYURDU DÖNÜŞ 3 → BEYYURDU DÖNÜŞ 4 → BEYYURDU DÖNÜŞ 5 → BEYYURDU DÖNÜŞ 6 → BEYYURDU DÖNÜŞ 7 → BEYYURDU DÖNÜŞ 8 → BEYYURDU DÖNÜŞ 9 → BEYYURDU DÖNÜŞ 10 → BEYYURDU DÖNÜŞ 11 → KIZILAY KÖPRÜSÜ KARŞISI → RÜSTEMPAŞA SAĞLIK OCAĞI KARŞISI → GAZİ LİSESİ KARŞISI → ESKİ CUMA PAZARI → ORDUEVİ DURAĞI → İMAM HATİP → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "20",
+   "ad": "GÜMÜŞKAVAK",
+   "url": "https://elazigulasim.com/hat/15/gumuskavak-20-gumuskavak-asri-mezarlik/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "GÜMÜŞKAVAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → ESKİ CUMA PAZARI → GAZİ LİSESİ → RÜSTEMPAŞA SAĞLIK OCAĞI → DOĞU GARAJI → KIZILAY KÖPRÜSÜ → EŞTİ KARŞISI → DOĞU DÜĞÜN SALONU → KARŞIYAKA KÖPRÜ → KARŞIYAKA TOKİLER KARŞISI → HAUS PORT KARŞISI → ODUN AMBARI KARŞISI → KEKLİKTEPE → GÜMÜŞKAVAK 1",
+   "donus": "GÜMÜŞKAVAK → GÜMÜŞKAVAK TOKİLER-2 → GÜMÜŞKAVAK TOKİLER → METEOROLOJİ → GÜMÜŞKAVAK YOLU → KIZILAY → KAROCULAR → KIZILAY YOLU KÖPRÜ → KESRİK-2 → ZİYA GÖKALP OKULU KARŞISI → KESRİK → ÇİMENTO ARKA KAPISI → RÜSTEMPAŞA SAĞLIK OCAĞI KARŞISI → GAZİ LİSESİ KARŞISI → ESKİ CUMA PAZARI → ORDUEVİ DURAĞI → İMAM HATİP → YENİ CAMİ → ÖĞRETMEN EVİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "22",
+   "ad": "A.KABAKLI YURDU",
+   "url": "https://elazigulasim.com/hat/16/akabakli-yurdu-22-akabakliyurt-universite/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:45",
+       "08:30",
+       "09:15",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:45",
+       "08:30",
+       "09:15",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:45",
+       "08:30",
+       "09:15",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "23",
+   "ad": "HARPUT",
+   "url": "https://elazigulasim.com/hat/17/harput-23-harput/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:55",
+       "07:35",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:00",
+       "17:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "HARPUT 2",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:55",
+       "07:35",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:00",
+       "17:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "HARPUT 2",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "KIZ MESLEK LİSESİ",
+      "saatler": [
+       "06:00",
+       "06:55",
+       "07:35",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:00",
+       "17:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "HARPUT 2",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → İMAM HATİP → KİLİSE → HARPUT GİRİŞ → 8.KOLORDU → GARNİZON ŞEHİTLİĞİ KARŞISI → KTM → HARPUT YOLU → SARAY VİLLALARI → HARPUT YOLU 2 → ÜRYAN BABA → MEZARLIKLAR → HARPUT",
+   "donus": "HARPUT 2 → ÜRYAN BABA KARŞISI → SARAY VİLLALARI KARŞISI → KTM KARŞISI → HARPUT ÇIKIŞ → KİLİSE ÖNÜ → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "27",
+   "ad": "YEMİŞLİK 4-10 ETAPLAR",
+   "url": "https://elazigulasim.com/hat/3/yemislik-4-10-etaplar-27-yemislik-4-10-etaplar/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "27 YEMİŞLİK DÖNÜŞ 1. DURAK 112 KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "27 YEMİŞLİK DÖNÜŞ 1. DURAK 112 KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:15",
+       "06:45",
+       "07:15",
+       "07:45",
+       "08:15",
+       "08:45",
+       "09:15",
+       "09:45",
+       "10:15",
+       "10:45",
+       "11:15",
+       "11:45",
+       "12:15",
+       "12:45",
+       "13:15",
+       "13:45",
+       "14:15",
+       "14:45",
+       "15:15",
+       "15:45",
+       "16:15",
+       "16:45",
+       "17:15",
+       "17:45",
+       "18:15",
+       "18:45",
+       "19:15",
+       "19:45",
+       "20:15",
+       "20:45",
+       "21:15",
+       "21:45",
+       "22:15",
+       "22:45"
+      ]
+     },
+     "donus": {
+      "durak": "27 YEMİŞLİK DÖNÜŞ 1. DURAK 112 KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → 27 YEMİŞLİK TOFAŞ KAVŞAĞI ALTI → 27 YEMİŞLİK TOFAŞ ALTI MİGROS KARŞISI → 27 YEMİŞLİK POLİS KANTİNİ → 27 YEMİŞLİK GÜNEYÇEVRE YOLU KAVŞAĞI → 27 YEMİŞLİK 112 GİRİŞİ → 27 YEMİŞLİK 112 ÜST KAVŞAĞI → 27 YEMİŞLİK GİRİŞ 1. DURAK → 27 YEMİŞLİK GİRİŞ 2. DURAK → 27 YEMİŞLİK GÜVEN BÜFE YANI → 27 YEMİŞLİK GÜVEN BÜFE İLERİSİ 3. DURAK → 27 YEMİŞLİK GİRİŞ 4. DURAK → 27 YEMİŞLİK GİRİŞ 5. DURAK → 27 YEMİŞLİK GİRİŞ 6 DURAK → 27 YEMİŞLİK ZİRVE BÜFE YANI 7. DURAK → 27 YEMİŞLİK GİRİŞ 8. DURAK → 27 YEMİŞLİK GİRİŞ 9. DURAK → 27 YEMİŞLİK GİRİŞ 10. DURAK → 27 YEMİŞLİK GİRİŞ 11. DURAK → 27 YEMİŞLİK GİRİŞ 12. DURAK → 27 YEMİŞLİK GİRİŞ 13. DURAK → 27 YEMİŞLİK GİRİŞ 14. DURAK → 27 YEMİŞLİK GİRİŞ 15. DURAK → 27 YEMİŞLİK GİRİŞ 16. DURAK → 27 YEMİŞLİK GİRİŞ 17. DURAK → 27 YEMİŞLİK GİRİŞ 18. DURAK → 27 YEMİŞLİK GİRİŞ 19. DURAK → 27 YEMİŞLİK GİRİŞ 20. DURAK → 27 YEMİŞLİK GİRİŞ 21. DURAK",
+   "donus": "27 YEMİŞLİK DÖNÜŞ 1. DURAK 112 KARŞISI → 27 YEMİŞLİK DÖNÜŞ 2. DURAK ÖZEL HAREKAT KARŞISI → 27 YEMİŞLİK DÖNÜŞ 3. DURAK TARIM KREDİ YANI → 27 YEMİŞLİK DÖNÜŞ 4. DURAK ATAŞEHİR AİLE HEKİMLİĞİ KARŞISI → ABDULLAHPAŞA ÜST GEÇİT → TEDAŞ → PARK 23 → HAZARDAĞLI KAVŞAĞI → BELEDİYE → ÇOCUK ISLAH EVİ → ABDULLAHPAŞA YOL BOYU → ÇAYDAÇIRA KAVŞAĞI → VALİ KONAĞI KARŞISI → ATATÜRK STADYUMU KARŞISI → RASİM KÜÇÜKELPARKI → KARAYOLLARI KARŞISI → VALİLİK KARŞISI → ÖĞRETMEN EVİ → YENİ CAMİ → BEYAZ ÇEŞME → İMAM HATİP → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "28",
+   "ad": "GALERİCİLER SİTESİ",
+   "url": "https://elazigulasim.com/hat/50/galericiler-sitesi-28-galericisite-yadigar/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "28 NUMARA YEMİŞLİK TOKİ ZİRVE BÜFE YANI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "28 NUMARA YEMİŞLİK TOKİ ZİRVE BÜFE YANI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "28 NUMARA YEMİŞLİK TOKİ ZİRVE BÜFE YANI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → KÜLTÜR PARK YOLU → KÜLTÜR PARK 1 → SARAHATUN HASTANESİ → HACI SABRİ CAMİİ ÖNÜ → HALIT HOCA İMAM HATİP ORTAOKULU → SÜRSÜRÜ MUHTARLIĞI → GARANTİ OTO LASTİK KARŞISI → CENNET PARK KARŞISI → HALIT HOCA BULVARI → YİĞİT BÜFE → İMAM EFENDİ BULVARI GİDİŞ 1 → İMAM EFENDİ BULVARI GİDİŞ 2 → İMAM EFENDİ BULVARI GİDİŞ 3 → İMAM EFENDİ BULVARI GİDİŞ 4 → 112 ACİL KARŞISI → TOKİ ÖNÜ GALERİCİLER → GALERİCİLER SİTESİ → 28 NUMARA GİDİŞ TOKİ 1. ETAP GİRİŞİ → 28 NUMARA GİDİŞ TOKİ 1. ETAP 2. DURAK → 28 NUMARA GİDİŞ TOKİ 1. ETAP 3. DURAK → 28 NUMARA GİDİŞ TOKİ 1. ETAP 4. DURAK → 28 NUMARA GİDİŞ TOKİ 1. ETAP 5. DURAK → 28 NUMARA YEMİŞLİK OKUL YOLU 1. DURAK → 28 NUMARA YEMİŞLİK OKUL YOLU 2. DURAK → 28 NUMARA YEMİŞLİK OKUL YOLU 3. DURAK → 28 NUMARA YEMİŞLİK TOKİ 1. DURAK → 28 NUMARA YEMİŞLİK TOKİ 2. DURAK → 28 NUMARA YEMİŞLİK TOKİ 3. DURAK → 28 NUMARA YEMİŞLİK TOKİ 4. DURAK → 28 NUMARA YEMİŞLİK TOKİ 5. DURAK → 28 NUMARA YEMİŞLİK TOKİ 6. DURAK → 28 NUMARA YEMİŞLİK TOKİ 7. DURAK KİOSK YANI",
+   "donus": "28 NUMARA YEMİŞLİK TOKİ ZİRVE BÜFE YANI → APAYSAN PETROL KARŞISI → APAYSAN PETROL İLERİSİ → CADDE 424 → TOTAL PETROL KARŞSI → HOKAH KAFE KARŞISI → ÇIRA OYUN SALONU → CENNET PARK ÖNÜ → SÜRSÜRÜ MUHTARLIK KARŞISI → HALIT HOCA KARŞISI → SARAHATUN HASTANESİ KARŞISI → KÜLTÜR PARK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "29",
+   "ad": "DOKTOREVLERİ",
+   "url": "https://elazigulasim.com/hat/51/doktorevleri-29-doktorevleri-bilgemkoleji/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "HAZARDAĞLI",
+      "saatler": [
+       "06:00",
+       "10:00",
+       "15:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "HAZARDAĞLI",
+      "saatler": [
+       "06:00",
+       "10:00",
+       "15:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "HAZARDAĞLI",
+      "saatler": [
+       "06:00",
+       "10:00",
+       "15:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "HAZARDAĞLI → PARK 23 → YENİ CAMİ → ÖĞRETMENEVİ → HÜKÜMET KONAĞI → KARAYOLLARI → TRAFO DURAĞI → YOL SPOR TESİS KARŞISI → TELEPATİ DURAĞI → KIZILAY KAZIM KARABEKİR CADDESİ -1 → KIZILAY KAZIM KARABEKİR CADDESİ -2",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "30",
+   "ad": "DEMİRTAŞ",
+   "url": "https://elazigulasim.com/hat/18/demirtas-30-demirtas-hilalkentyolu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "06:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "06:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "06:00",
+       "18:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "YOL SPOR TESİS KARŞISI → TELEPATİ DURAĞI → KIZILAY KAZIM KARABEKİR CADDESİ -1 → KIZILAY KAZIM KARABEKİR CADDESİ -2 → PİRİKETÇİLER",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "31",
+   "ad": "SUGÖZÜ",
+   "url": "https://elazigulasim.com/hat/19/sugozu-31-sugozu-ulukentyolu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "07:30",
+       "11:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "07:30",
+       "11:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "YOL SPOR TESİS KARŞISI",
+      "saatler": [
+       "07:30",
+       "11:30",
+       "17:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "YOL SPOR TESİS KARŞISI → TELEPATİ DURAĞI → PALMİYE EVLERİ → ÖĞRETMENEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "34",
+   "ad": "ALAYAPRAK",
+   "url": "https://elazigulasim.com/hat/20/alayaprak-34-alayaprak-alayaprak/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "09:00",
+       "15:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "09:00",
+       "15:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "09:00",
+       "15:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "46",
+   "ad": "YENİCEZAEVİ",
+   "url": "https://elazigulasim.com/hat/22/yenicezaevi-46-yeni-cezaevi-yolboyu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:30",
+       "18:30",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİ CEZA EVİ ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:30",
+       "18:30",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİ CEZA EVİ ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:30",
+       "18:30",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "YENİ CEZA EVİ ÇARŞI YÖNÜ",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → ABDULLAHPAŞA TOFAŞ KAVŞAĞI → ANADOLU HASTANESİ KARŞISI → ÖMER BİLGİN OĞLU ÖĞRENCİ YURDU KARŞISI → ABDULLAPAŞA YOL BOYU 1 → TRAFO KAVŞAĞI → HİLALKENT YOL BOYU ÜST GEÇİT → HİLALKENT YOL BOYU → ÇEVİK KUVVET → HİLALKENT KIZ YURDU → DOĞA KOLEJİ → BASKİL KAVŞAĞI → ARAÇ MUAYAENE İSTASYONU → YENİ CEZA EVİ → YENİ CEZA EVİ LOJMANLARI",
+   "donus": "YENİ CEZA EVİ ÇARŞI YÖNÜ → YENİ CEZA EVİ ÇARŞI YÖNÜ 2 → YENİ CEZA EVİ ÇARŞI YÖNÜ 3 → FİNAL OKULLARI → TELEPATİ EĞİTİM → NENE HATIUN SOKAK → BELEDİYE SPOR TESİSLERİ → OFİS EVLERİ → ATAŞEHİR ESKİ EMNİYET → SİNCAP BÜFE → ÇİĞDEM PARK → AİLE SAĞLIĞI MERKEZİ → MİGROS ÖNÜ → TAPU KARŞISI → TEDAŞ 1 → TEDAŞ 2 → PARK 23 KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "47",
+   "ad": "A.PAŞA ÜSTYOL",
+   "url": "https://elazigulasim.com/hat/58/apasa-ustyol-47-apasa-ustyol-tapu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "08:15",
+       "10:15",
+       "12:15",
+       "14:15",
+       "16:15",
+       "18:15",
+       "20:15",
+       "22:15"
+      ]
+     },
+     "donus": {
+      "durak": "A.PAŞA 302, SOKAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "08:15",
+       "10:15",
+       "12:15",
+       "14:15",
+       "16:15",
+       "18:15",
+       "20:15",
+       "22:15"
+      ]
+     },
+     "donus": {
+      "durak": "A.PAŞA 302, SOKAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "07:00",
+       "08:15",
+       "10:15",
+       "12:15",
+       "14:15",
+       "16:15",
+       "18:15",
+       "20:15",
+       "22:15"
+      ]
+     },
+     "donus": {
+      "durak": "A.PAŞA 302, SOKAK",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → YAKUP KILINÇ SPOR SALONU → SULTAN SARAYI DURAĞI → A.PAŞA ÜST YOL GİDİŞ → KALE SİTESİ → BEYLERBEYİ KONAKLARI → ÖZDOSTLAR → LOKMAN TASALI PARKI → NENE HATUN ANAOKULU → YAHYA KEMAL OKULU → A.PAŞA ÜST YOL KARŞISI → A.PAŞA 302.SOKAK KARŞISI → GÖKALP SİTESİ → ZİRVE SİTESİ",
+   "donus": "A.PAŞA 302, SOKAK → A.PAŞA ÜST YOL → AK SİTESİ → TUĞRA KENT EVLERİ 2 → TUĞRA KENT EVLERİ → PARK KULE EVLERİ → ŞEHRİ AZİZ EVLERİ → İMAR HAKSEN 1 → HAKSEN TOKİLER 2.ETAP → ARAS BÜFE → ZÜMRÜT EVLERİ → TOKİ CAMİİ ÜSTÜ → TOKİLER ÜSTÜ → YEŞİLKENT DURAĞI → ÜST GEÇİT → TİCARET SANAYİ ODASI → POLİS EVİ KARŞISI → ADLİYE KARŞISI → İL SAĞLIK MÜDÜRLÜĞÜ KARŞISI → BAHÇELİ CAMİİ ÖNÜ → PETROL OFİSİ ÖNÜ → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "48",
+   "ad": "İMAR HAKSEN",
+   "url": "https://elazigulasim.com/hat/59/imar-haksen-48-imar-haksen-apasaustyol/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "09:15",
+       "11:15",
+       "13:15",
+       "15:15",
+       "17:15",
+       "19:15",
+       "21:15"
+      ]
+     },
+     "donus": {
+      "durak": "FATİH LİSESİ KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "09:15",
+       "11:15",
+       "13:15",
+       "15:15",
+       "17:15",
+       "19:15",
+       "21:15"
+      ]
+     },
+     "donus": {
+      "durak": "FATİH LİSESİ KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "09:15",
+       "11:15",
+       "13:15",
+       "15:15",
+       "17:15",
+       "19:15",
+       "21:15"
+      ]
+     },
+     "donus": {
+      "durak": "FATİH LİSESİ KARŞISI",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → PETROL DURAĞI → ELİSYUM KARŞISI → BAHÇELİ CAMİİ KARŞISI → POLİS EVİ ÖNÜ → TİCARET SANAYİ ODASI KARŞISI → ÜST GEÇİT 2 → YEŞİLKENT KARŞISI → YEŞİLKENT 2 → SARINLIOĞLU İNŞAAT → YÜKSEKOBA KONUTLARI → TOKİLER ÜSTÜ → TOKİ CAMİİ ÜSTÜ → ZÜMRÜT EVLERİ → ARAS BÜFE → İMAR HAKSEN 1 → İMAR HAKSEN SİTE İÇİ → ŞEHRİ AZİZ EVLERİ → PARK KULE EVLERİ → TUĞRA KENT EVLERİ → TUĞRA KENT EVLERİ 2 → AK SİTESİ → A.PAŞA ÜST YOL → A.PAŞA 302, SOKAK → ZİRVE SİTESİ → GÖKALP SİTESİ → FATİH LİSESİ",
+   "donus": "FATİH LİSESİ KARŞISI → ELMA PARK KARŞISI → A.PAŞA ÜST YOL KARŞISI → YAHYA KEMAL OKULU → NENE HATUN ANAOKULU → LOKMAN TASALI PARKI → ÖZDOSTLAR → MEHMETÇİK İLOKULU → ARI BÜFE KARŞISI → ABDULLAHPAŞA TOKİLER → ABDULLAHPAŞA SPORYUM KAVŞAĞI → YAKUP KILINÇ SPOR SALONU KARŞISI → TAPU KARŞISI → TEDAŞ 1 → TEDAŞ 2 → PARK 23 KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "50",
+   "ad": "FETHİ SEKİN ŞEHİR HASTANESİ",
+   "url": "https://elazigulasim.com/hat/61/fethi-sekin-sehir-hastanesi-50-fethi-sekin-sehir-hastanesi/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "52",
+   "ad": "SARILI",
+   "url": "https://elazigulasim.com/hat/62/sarili-52-sarili-tepekoy/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "08:00",
+       "16:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "08:00",
+       "16:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "08:00",
+       "16:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "54",
+   "ad": "TADIM",
+   "url": "https://elazigulasim.com/hat/23/tadim-54-tadim-yalavuz/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "14:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "14:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "14:00",
+       "17:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "56",
+   "ad": "ŞEHİR HASTANESİ-1",
+   "url": "https://elazigulasim.com/hat/24/sehir-hastanesi-1-56-hilalkent-dogukent/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "HİLALKENT SON DURAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "HİLALKENT SON DURAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "HİLALKENT SON DURAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "HİLALKENT SON DURAK → HİLLAKENT CAMİİ → YASEMİN PARK → HİLALKENT KIZ YURDU → ZÜMRÜT PARK → ELMA PARK KARŞISI → IŞIK PARK KARŞISI → AKADEMİ EVLER KARŞISI → ABDULLAH PAŞA TAZİYE EVİ → ABDULLAHPAŞA İTFAİYE → ABDULLAHPAŞA MAHALLE İÇİ → ABDULLAHPAŞA MAHALLE İÇİ 2 → ARI BÜFE KARŞISI → ABDULLAHPAŞA TOKİLER → ABDULLAHPAŞA SPORYUM KAVŞAĞI → AİLE ÇALIŞMA VE SOSYAL MÜDÜRLÜĞÜ → KARAKAYA LİSESİ → ELAZIĞ EKMEK → HANIM EMLAK KARŞISI → DÜNYA DİYALİZ → KADİFE PARK → BAHÇELİEVLE MUHTARLIĞI → İL SAĞLIK MÜDÜRLÜĞÜ KARŞISI → BAHÇELİ CAMİİ ÖNÜ → PETROL OFİSİ ÖNÜ → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → DSİ → FIRAT BÜFE → FIRAT TIP POLİKLİNİKLER 1 → LEYLEKLİ PARK KARŞISI → PERŞEMBE PAZARI KARŞISI → ESKİ SİGORTA HAST.KARŞISI → SUBAY LOJMANLARI KARŞISI → ÇARŞAMBA PAZARI 2 → KANALBOYU → KONAK SİTESİ KARŞISI → DOĞUKENT CADDESİ → EMİN POLAT CAMİ → AKBULUT → DOĞUKENT CADDESİ ATM → KENT DÜĞÜN SALONU → DOĞUKENT MUHTARLIK KARŞISI → TRAFO → DOĞUKENT PTT → POLİKLİNİKLER KARŞISI → ACİL SERVİS",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "57",
+   "ad": "ŞEHİR HASTANESİ-2",
+   "url": "https://elazigulasim.com/hat/25/sehir-hastanesi-2-57-imar-haksen-dogukent/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "İMAR HAKSEN SİTE İÇİ",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "İMAR HAKSEN SİTE İÇİ",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "İMAR HAKSEN SİTE İÇİ",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "İMAR HAKSEN SİTE İÇİ → İMAR HAKSEN 1 → ARAS BÜFE → ZÜMRÜT EVLERİ → TOKİ CAMİİ ÜSTÜ → BAHÇELİ EVLER TOKİ ÜSTÜ → SARINLIOĞLU İNŞAAT → YEŞİLKENT 2 → TEK MEDİA GRUP → TAHA PARK KARŞISI → KEBABÇI HİKMET → GÜNEŞ BÜFE → BARAN EVLERİ KARŞISI → ÇAYDAÇIRA ÇARŞI YÖNÜ 2 → ÇAYDAÇIRA ÇARŞI YÖNÜ → MEMURSEN KONITLARI 1.ETAP → SAİT KOÇ CAMİİ KARŞISI → AHMET KABAKLI KARŞISI → KENT KÖY DURAĞI → BEYAZ İNCİ EVLERİ → OBA KENT → BALIM BÜFE → ÇAYDAÇIRA 2.ETAP → TEPE PARK → MİSAŞ KAVŞAĞI → FIRAT OKULLARI → ÇAYDAÇIRA TOKİ 1 → ÇAYDAÇIRA TOKİ 2 → EVİLA REZİDANS → ZERA PERDE → RÜYAM PARK → LEYLEKLİ PARK KARŞISI → PERŞEMBE PAZARI KARŞISI → ESKİ SİGORTA HAST.KARŞISI → SUBAY LOJMANLARI KARŞISI → ÇARŞAMBA PAZARI 2 → KANALBOYU → KONAK SİTESİ KARŞISI → DOĞUKENT CADDESİ → EMİN POLAT CAMİ → AKBULUT → DOĞUKENT CADDESİ ATM → KENT DÜĞÜN SALONU → DOĞUKENT MUHTARLIK KARŞISI → TRAFO → DOĞUKENT PTT → POLİKLİNİKLER KARŞISI",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "58",
+   "ad": "ŞEHİR HASTANESİ-3",
+   "url": "https://elazigulasim.com/hat/26/sehir-hastanesi-3-58-atasehir-dogukent/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "NENE HATIUN SOKAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "NENE HATIUN SOKAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "NENE HATIUN SOKAK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "NENE HATIUN SOKAK → BELEDİYE SPOR TESİSLERİ → OFİS EVLERİ → ATAŞEHİR ESKİ EMNİYET → SİNCAP BÜFE → ÇİĞDEM PARK → HALİÇ PARK ÖNÜ → SEMA HANIM MARKET KARŞISI → YAĞMUR BÜFE KARŞISI → DAMLA PARK KARŞISI → DELUX KARŞISI → ÖZDEMİR SİTESİ KARŞISI → HACI MUSTAFA KARŞISI → OSMANLI 1453 KARŞISI → ÜNAL SİTESİ ALTI → ŞERİFOĞUULARI SİTESİ KARŞISI → AKİDE MARKET → TUZSUZOĞLU SİTESİ ÖNÜ → LÜTFULLAH BİLGİN OKULU → ŞOK MARKET ÖNÜ → HALK EĞİTİM ÖNÜ → LİMAN BAŞKANLIĞI KARŞISI → SARAY KIRAATHANESİ → OLGUNLAR ÇEŞME → TARIM İL ÖNÜ → OLGUNLAR ÇARŞI YÖNÜ → OLGUNLAR ÇARŞI YÖNÜ 2 → OLGUNLAR ÇARŞI YÖNÜ 3 → MEDİCAL PARK → DOĞU GARAJI ARKASI 1 → TERMİNAL ARKASI → ÇIRAKLIK EĞİTİM MERKEZİ KARŞISI → SALIBABA → KAZIM KARABEKİR İLKOKULU KARŞISI → ÇATALÇEŞME → ÇATALÇEŞME 2 → DOĞUKENT HASTANE YOLU 7 → DOĞUKENT HASTANE YOLU 8 → DOĞUKENT HASTANE YOLU 9 → DOĞUKENT HASTANE YOLU 10 → HAYIR ÇARŞISI → DOĞUKENT HASTANE YOLU 11 → TAŞRA DÜĞÜN SALONU KARŞISI → POLİKLİNİKLER KARŞISI",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "59",
+   "ad": "ŞEHİR HASTANESİ-4",
+   "url": "https://elazigulasim.com/hat/27/sehir-hastanesi-4-59-yenikoy-karsiyaka-dogukent/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "YENİKÖY MEZARLIK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "YENİKÖY MEZARLIK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "YENİKÖY MEZARLIK",
+      "saatler": [
+       "07:00",
+       "12:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "YENİKÖY MEZARLIK → TEPE KÖY YOLU → TEPEKÖY YOLU 1 → YENİ KÖY İÇİ 2 → YENİ KÖY İÇİ 1 → YENİKÖY CAMİİ → HAS ÇEREZ → ZÜMRÜT VİLLARI 2 → HULUSİ YAHYAGİL → ZÜMRÜT VİLLARI 1 → YENİ KÖY YOLU 1 → YENİKÖY YOLU → PINARLAR CAMİİ → HİCRET MAHLLESİ ÇEŞME → HİCRET MAHLLESİ TADIM YOLU → HİCRET MAHLLESİ 3 → HİCRET MAHLLESİ 2 → HİCRET MAHALLESİ SAĞLIK KABİNİ → HİCRET MAHALLESİ 1 → HİCRET HALISAHA → ESKİ KARAKOL → KAHVELER → KESRİK → ZİYA GÖKALP OKULU KARŞISI → KESRİK-2 → KIZILAY YOLU KÖPRÜ → KAROCULAR → KIZILAY → GÜMÜŞKAVAK YOLU → METEOROLOJİ → GÜMÜŞKAVAK TOKİLER → GÜMÜŞKAVAK TOKİLER-2 → GÜMÜŞKAVAK → GÜMÜŞKAVAK 1 → GÜMÜŞKAVAK ÇIKIŞ → GÜMÜŞKAVAK ÇIKIŞ 1 → KEKLİKTEPE → ASRİ MEZARLIĞI → ASRİ MEZARLIĞI 2 → ODUN AMBARI → HAUS PORT → KARŞIYAKA TOKİLER → KARŞIYAKA KÖPRÜ → DOĞUKENT HASTANE YOLU → DOĞUKENT HASTANE YOLU 1 → DOĞUKENT HASTANE YOLU 2 → DOĞUKENT HASTANE YOLU 3 → DOĞUKENT HASTANE YOLU 4 → DOĞUKENT HASTANE YOLU 5 → DOĞUKENT HASTANE YOLU 6 → DOĞUKENT HASTANE YOLU 8 → DOĞUKENT HASTANE YOLU 9 → HAYIR ÇARŞISI → TAŞRA DÜĞÜN SALONU KARŞISI → POLİKLİNİKLER KARŞISI → ACİL SERVİS",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "60",
+   "ad": "FETHİ SEKİN KIZ YURDU",
+   "url": "https://elazigulasim.com/hat/69/fethi-sekin-kiz-yurdu-60-fethi-sekin-kiz-yurdu/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "08:30",
+       "09:30",
+       "10:30",
+       "11:30",
+       "12:30",
+       "13:30",
+       "14:30",
+       "15:30",
+       "16:30",
+       "17:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "62",
+   "ad": "AKSARAY-TOKİLER",
+   "url": "https://elazigulasim.com/hat/4/aksaray-tokiler-62-aksaray-tokiler/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00",
+       "12:00",
+       "14:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "AKSARAY TOKİLER DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00",
+       "12:00",
+       "14:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "AKSARAY TOKİLER DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "08:00",
+       "10:00",
+       "12:00",
+       "14:00",
+       "16:00",
+       "18:00",
+       "20:00",
+       "22:00"
+      ]
+     },
+     "donus": {
+      "durak": "AKSARAY TOKİLER DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İSTASYON CADDESİ ÜST GEÇİT → ŞOFÖRLER CEMİYETİ → HİCRET GİRİŞ → ESKİ KARAKOL → SAĞLIK OCAĞI → AKSARAY BAHÇELER → AKSARAY BAHÇELER 2 → YEŞİLTEPE YOL AYRIMI → AKSARAY TOKİLER YEŞİLTEPE GİRİŞ → AKSARAY TOKİLER YEŞİLTEPE 2 → AKSARAY TOKİLER YEŞİLTEPE 3 → AKSARAY TOKİLER YEŞİLTEPE 4 → AKSARAY TOKİLER YEŞİLTEPE 5 → AKSARAY TOKİLER YEŞİLTEPE 6 → AKSARAY TOKİLER YEŞİLTEPE 7 → AKSARAY TOKİLER YEŞİLTEPE 8 → AKSARAY TOKİLER YEŞİLTEPE 9 → AKSARAY TOKİLER YEŞİLTEPE 10 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4",
+   "donus": "AKSARAY TOKİLER DÖNÜŞ 1 → AKSARAY TOKİLER DÖNÜŞ 2 → AKSARAY TOKİLER DÖNÜŞ 3 → AKSARAY TOKİLER DÖNÜŞ 4 → AKSARAY TOKİLER DÖNÜŞ 5 → AKSARAY TOKİLER DÖNÜŞ 6 → AKSARAY TOKİLER DÖNÜŞ 7 → AKSARAY TOKİLER DÖNÜŞ 8 → AKSARAY TOKİLER DÖNÜŞ 9 → AKSARAY TOKİLER DÖNÜŞ 10 → AKSARAY TOKİLER DÖNÜŞ 14 → AKSARAY TOKİLER DÖNÜŞ 15 → İSTASYON CADDESİ → İSTASYON CADDESİ ÜST GEÇİT → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "63",
+   "ad": "GÜNEYKENT",
+   "url": "https://elazigulasim.com/hat/5/guneykent-63-guneykent/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "17:40",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:20",
+       "19:40",
+       "20:00",
+       "20:20",
+       "20:40",
+       "21:00",
+       "21:20",
+       "21:40",
+       "22:00",
+       "22:20",
+       "22:40",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "63 DÖNÜŞ YOLU 4",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "17:40",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:20",
+       "19:40",
+       "20:00",
+       "20:20",
+       "20:40",
+       "21:00",
+       "21:20",
+       "21:40",
+       "22:00",
+       "22:20",
+       "22:40",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "63 DÖNÜŞ YOLU 4",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "06:00",
+       "06:20",
+       "06:40",
+       "07:00",
+       "07:20",
+       "07:40",
+       "08:00",
+       "08:20",
+       "08:40",
+       "09:00",
+       "09:20",
+       "09:40",
+       "10:00",
+       "10:20",
+       "10:40",
+       "11:00",
+       "11:20",
+       "11:40",
+       "12:00",
+       "12:20",
+       "12:40",
+       "13:00",
+       "13:20",
+       "13:40",
+       "14:00",
+       "14:20",
+       "14:40",
+       "15:00",
+       "15:20",
+       "15:40",
+       "16:00",
+       "16:20",
+       "16:40",
+       "17:00",
+       "17:20",
+       "17:40",
+       "18:00",
+       "18:20",
+       "18:40",
+       "19:00",
+       "19:20",
+       "19:40",
+       "20:00",
+       "20:20",
+       "20:40",
+       "21:00",
+       "21:20",
+       "21:40",
+       "22:00",
+       "22:20",
+       "22:40",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "63 DÖNÜŞ YOLU 4",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → TAPU → GÜNEY ÇEVRE YOLU GİRİŞ → ÖZEL HAREKAT → 112 ACİL KARŞISI → 63 GİDİŞ YOLU TEİAŞ 1 → 63 GİDİŞ YOLU 2 → 63 GİDİŞ YOLU 3 → 63 GİDİŞ YOLU 4 → 63 GİDİŞ YOLU 5 → 63 GİDİŞ YOLU 6 → 63 GİDİŞ YOLU 7 → 63 GİDİŞ YOLU 8 → 63 GİDİŞ YOLU 9 → 63 GİDİŞ YOLU 10 → 63 GİDİŞ YOLU 11 → 63 GİDİŞ YOLU 12 → 63 GİDİŞ YOLU 13 → 63 GİDİŞ YOLU 14 → 63 GİDİŞ YOLU 15 → 63 GİDİŞ YOLU 16 → 63 GİDİŞ YOLU 17 → 63 GİDİŞ YOLU 18 → 63 GİDİŞ YOLU 19 → 63 GİDİŞ YOLU 20 → 63 GİDİŞ YOLU 21 → 63 GİDİŞ YOLU 22",
+   "donus": "63 DÖNÜŞ YOLU 4 → 63 DÖNÜŞ YOLU 5 → 63 DÖNÜŞ YOLU 6 → 63 DÖNÜŞ YOLU 7 → 63 DÖNÜŞ YOLU 8 → 63 DÖNÜŞ YOLU 9 → 63 DÖNÜŞ YOLU 10 → 63 DÖNÜŞ YOLU 11 → 63 DÖNÜŞ YOLU 12 → 63 DÖNÜŞ YOLU 14 → 63 DÖNÜŞ YOLU 13 → 63 DÖNÜŞ YOLU 15 → 63 DÖNÜŞ YOLU 16 → 63 DÖNÜŞ YOLU 17 → 63 DÖNÜŞ YOLU 18 → 63 DÖNÜŞ YOLU 19 → 63 DÖNÜŞ YOLU 20 → 63 DÖNÜŞ YOLU 21 → 63 DÖNÜŞ YOLU 22 → 63 DÖNÜŞ YOLU 23 → 63 DÖNÜŞ YOLU 24 → 63 DÖNÜŞ YOLU 25 → 63 DÖNÜŞ YOLU 26 → TOKİ DURAĞI 8 → TOKİ DURAĞI 9 → TOKİ DURAĞI 10 → TOKİ DURAĞI 11 → TOKİ DURAĞI 12 → TOKİ DURAĞI 13 → TOKİ DURAĞI 14 → TOKİ DURAĞI 15 → GÖKALP SİTESİ → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "64",
+   "ad": "HANKENDİ",
+   "url": "https://elazigulasim.com/hat/72/hankendi-64-hankendi/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "10:15",
+       "13:30",
+       "15:30",
+       "18:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "HANKENDİ DÖNÜŞ DURAK 6",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "10:15",
+       "13:30",
+       "15:30",
+       "18:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "HANKENDİ DÖNÜŞ DURAK 6",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "07:15",
+       "10:15",
+       "13:30",
+       "15:30",
+       "18:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "HANKENDİ DÖNÜŞ DURAK 6",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ÖĞRETMEN EVİ → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → PARK 23 → TEDAŞ → ABDULLAHPAŞA ÜST GEÇİT → TAPU → ABDULLAHPAŞA TOFAŞ KAVŞAĞI → İŞİTME ENGELLİLER → ANADOLU HASTANESİ KARŞISI → ÖMER BİLGİN OĞLU ÖĞRENCİ YURDU KARŞISI → ABDULLAPAŞA YOL BOYU 1 → ABDULLAPAŞA KAVŞAĞI → A.PAŞA TRAFO → A.PAŞA ÜST GEÇİT → A.PAŞA TPDK → DOĞA KOLEJİ → HİLALKENT KIZ YURDU → HİLALKENT PLAZALAR → BASKİL KAVŞAĞI → HANKENDİ GİDİŞ ESKİ ARAÇ MUAYENE İSTASYONU 1 → HANKENDİ GİDİŞ AKTAŞ YAPI KARŞISI → HANKENDİ GİDİŞ ELPA PLAZA GERİSİ → HANKENDİ GİDİŞ SHELL ÖNÜ → HANKENDİ GİDİŞ YENİ ARAÇ MUAYENE İSTASYONU KARŞISI → HANKENDİ GİDİŞ BATI PRESTİJ GERİSİ → HANKENDİ GİDİŞ BATI PRESTİJ KARŞISI → HANKENDİ GİDİŞ İŞGEM DURAĞI → HANKENDİ GİDİŞ VİLLALAR 1.DURAK → HANKENDİ GİDİŞ VİLLALAR 2.DURAK → HANKENDİ GİDİŞ VİLLALAR 3.DURAK → HANKENDİ GİDİŞ VİLLALAR 4.DURAK → HANKENDİ GİDİŞ BANVİT KARŞISI → HANKENDİ GİDİŞ 1 → HANKENDİ GİDİŞ DOĞA CADDESİ 21.DURAK → HANKENDİ GİDİŞ 22.DURAK → HANKENDİ GİDİŞ 23.DURAK JANDARMA → HANKENDİ ÇARŞI 24. DURAK → HANDENDİ ÇARŞI 25. DURAK → HANDENDİ ÇARŞI 26. DURAK",
+   "donus": "HANKENDİ DÖNÜŞ DURAK 6 → HANKENDİ DÖNÜŞ DURAK 7 → HANKENDİ DÖNÜŞ DURAK 8 → HANKENDİ DÖNÜŞ DURAK 9 → HANKENDİ DÖNÜŞ DURAK 10 → HANKENDİ DÖNÜŞ DURAK 11 → MARMARA EĞİTİM KURUMLARI → ELAZIĞSPOR TESİSLERİ → TOYOTA PLAZA KARŞISI → PEVGEPT ILICAK KARŞISI → NUR CAMİİ → HİLALKENT ÇARŞI YÖNÜ 1 → YURT KARŞISI → HİLALKENT ÇARŞI YÖNÜ 3 → HİLALKENT ÇARŞI YÖNÜ 4 → YOLSPOR TESİSLERİ → TRAFO KAVŞAĞI 2 → ABDULLAPAŞA YOL BOYU ÇARŞI YÖNÜ → ANADOLU HASTANESİ → TAPU KARŞISI → TEDAŞ 1 → TEDAŞ 2 → PARK 23 KARŞISI → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ÇOCUK ISLAH EVİ KARŞISI → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → AHMET AYTAR MEYDANI → KIZ MESLEK LİSESİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "66",
+   "ad": "ÇATALÇEŞME-TOKİ",
+   "url": "https://elazigulasim.com/hat/28/catalcesme-toki-66-catalcesme-toki/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ÖĞRETMEN EVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "07:00",
+       "07:30",
+       "08:00",
+       "08:30",
+       "09:00",
+       "09:30",
+       "10:00",
+       "10:30",
+       "11:00",
+       "11:30",
+       "12:00",
+       "12:30",
+       "13:00",
+       "13:30",
+       "14:00",
+       "14:30",
+       "15:00",
+       "15:30",
+       "16:00",
+       "16:30",
+       "17:00",
+       "17:30",
+       "18:00",
+       "18:30",
+       "19:00",
+       "19:30",
+       "20:00",
+       "20:30",
+       "21:00",
+       "21:30",
+       "22:00",
+       "22:30",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "ÇATALÇEŞME DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ÖĞRETMEN EVİ → AHMET AYTAR-D → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → HÜRRİYET CADDESİ → MEVLANA CAD.-D → ALİ RIZA SEPTİOĞLU BLV-D → TECO BENZİNLİK-D → MERMERCİLER-D → KERESTECİLER-D → A101 İLERİSİ YAŞAR DOĞU CAD 1 → İMAJ MOBİLYA ÖNÜ YAŞAR DOĞU CADDESİ 2 → FATİH HOME DİZAYN KARŞISI YAŞAR DOĞU CADDESİ 3 → YAŞAR DOĞU CADDESİ 4 → ELMADA DÜĞÜN SALONU ÖNÜ → KÜÇÜKSULAR SİTESİ 5 KARŞISI → BEYAZ GÜL CİTY KARŞISI → HAYIR ÇARŞISI ALT KAVŞAĞI → ŞOK KARŞISI → ÇINAR ÖZEL EĞİTİM ÖNÜ → ÇATALÇEŞME YOLU → TEMİZLER MOBİLYA KARŞISI → ÇATALÇEŞME YOLU 1 → ÇATALÇEŞME YOLU 2 → ÇATALÇEŞME YOLU 3 → ÇATALÇEŞME YOLU 4 → ÇATALÇEŞME YOLU 5 → ÇATALÇEŞME YOLU 6 → ÇATALÇEŞME YOLU 7 → ÇATALÇEŞME YOLU 8 → ÇATALÇEŞME YOLU 9",
+   "donus": "ÇATALÇEŞME DÖNÜŞ 1 → ÇATALÇEŞME DÖNÜŞ 2 → ÇATALÇEŞME DÖNÜŞ 3 → ÇATALÇEŞME DÖNÜŞ 4 → ÇATALÇEŞME DÖNÜŞ 5 → ÇATALÇEŞME DÖNÜŞ 6 → ÇATALÇEŞME DÖNÜŞ 7 → ÇATALÇEŞME DÖNÜŞ 8 → ÇATALÇEŞME DÖNÜŞ 9 → ÇATALÇEŞME DÖNÜŞ 10 → ÇATALÇEŞME DÖNÜŞ 11 → ÇATALÇEŞME DÖNÜŞ 12 → ÇATALÇEŞME DÖNÜŞ 13 → ÇATALÇEŞME DÖNÜŞ 14 → İSTANBUL LAHMACUN PİDE ÖNÜ 15 → ÇINAR YAPI YANI 16 → HAZAR CAM YANI 17 → TURAN CAM ÖNÜ 18 → KÜÇÜKAY DÖŞEME ÖNÜ 19 → ORDU EVİ KATLI KAVŞAK 20 → ORDU EVİ LOJMAN ÖNÜ → İMAM HATİP → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "74",
+   "ad": "GÜMÜŞBAĞLAR",
+   "url": "https://elazigulasim.com/hat/79/gumusbaglar/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "07:30",
+       "18:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "75",
+   "ad": "YENİ TERMİNAL",
+   "url": "https://elazigulasim.com/hat/6/yeni-terminal-75-yeni-terminal/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "06:00",
+       "07:00",
+       "08:00",
+       "09:00",
+       "10:00",
+       "11:00",
+       "12:00",
+       "13:00",
+       "14:00",
+       "15:00",
+       "16:00",
+       "17:00",
+       "18:00",
+       "19:00",
+       "20:00",
+       "21:00",
+       "22:00",
+       "23:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → GÖKKUŞAĞI SİTESİ KARŞISI → KANAL BOYU 1 → ATAŞEHİR MUHTARLIĞI → 75 NUMARA YENİ TERMİNAL GİDİŞ 1 → 75 NUMARA YENİ TERMİNAL GİDİŞ 2",
+   "donus": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1 → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "76",
+   "ad": "SAHINKAYA",
+   "url": "https://elazigulasim.com/hat/7/sahinkaya/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:15",
+       "17:00",
+       "19:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:15",
+       "17:00",
+       "19:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "07:00",
+       "09:00",
+       "11:00",
+       "13:00",
+       "15:15",
+       "17:00",
+       "19:00",
+       "21:00"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "77",
+   "ad": "SARIÇUBUK",
+   "url": "https://elazigulasim.com/hat/81/saricubuk-saricubuk/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "08:00",
+       "08:30",
+       "10:30",
+       "11:00",
+       "12:30",
+       "13:00",
+       "14:30",
+       "16:00",
+       "16:30",
+       "18:00",
+       "18:30",
+       "20:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "08:00",
+       "08:30",
+       "10:30",
+       "11:00",
+       "12:30",
+       "13:00",
+       "14:30",
+       "16:00",
+       "16:30",
+       "18:00",
+       "18:30",
+       "20:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "ESKİ CEZAEVİ",
+      "saatler": [
+       "06:00",
+       "06:30",
+       "08:00",
+       "08:30",
+       "10:30",
+       "11:00",
+       "12:30",
+       "13:00",
+       "14:30",
+       "16:00",
+       "16:30",
+       "18:00",
+       "18:30",
+       "20:30",
+       "22:30"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "ESKİ CEZAEVİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "78",
+   "ad": "Şehir Hastanesi Yeni Term",
+   "url": "https://elazigulasim.com/hat/31/sehir-hastanesi-yeni-term-75f-sehir-hastanesi-yeni-terminal/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "02:00",
+       "03:00",
+       "04:00",
+       "05:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "02:00",
+       "03:00",
+       "04:00",
+       "05:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "BATI YENİ GÜZERGAH GİDİŞ 1",
+      "saatler": [
+       "00:00",
+       "01:00",
+       "02:00",
+       "03:00",
+       "04:00",
+       "05:00"
+      ]
+     },
+     "donus": {
+      "durak": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "BATI YENİ GÜZERGAH GİDİŞ 1 → BATI YENİ GÜZERGAH GİDİŞ 2 → BATI YENİ GÜZERGAH GİDİŞ 3 → BATI YENİ GÜZERGAH GİDİŞ 4 → BATI YENİ GÜZERGAH GİDİŞ 5 → BATI YENİ GÜZERGAH GİDİŞ 6 → BATI YENİ GÜZERGAH GİDİŞ 7 → BEYAZ ÇEŞME → YENİ CAMİ → ÖĞRETMEN EVİ → VALİLİK KARŞISI → KARAYOLLARI KARŞISI → RASİM KÜÇÜKELPARKI → ATATÜRK STADYUMU KARŞISI → VALİ KONAĞI KARŞISI → ÇAYDAÇIRA KAVŞAĞI → ABDULLAHPAŞA YOL BOYU → ÇOCUK ISLAH EVİ → BELEDİYE → HAZARDAĞLI KAVŞAĞI → GÖKKUŞAĞI SİTESİ KARŞISI → KANAL BOYU 1 → ATAŞEHİR MUHTARLIĞI → 75 NUMARA YENİ TERMİNAL GİDİŞ 1 → 75 NUMARA YENİ TERMİNAL GİDİŞ 2",
+   "donus": "75 NUMARA YENİ TERMİNAL DÖNÜŞ 1 → BELEDİYE KARŞISI 1 → BELEDİYE KARŞISI 2 → ABDULLAHPAŞA ÇARŞI YÖNÜ ÜST GEÇİT → ŞÜKRÜ KAÇAR PARKI → DSİ 91 ŞUBE MÜD. → ATATÜRK STADYUMU → ELAZIĞ ORMAN MÜD. → KARAYOLLARI → VALİLİK → KIZ MESLEK LİSESİ → VALİ FAHRİ BEY → İZZETPAŞA DURAĞI → İSMET PAŞA DURAĞI → ORDUEVİ DURAĞI → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 1 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 2 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 3 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 4 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 5 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 6 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 7 → BATI YENİ GÜZERGAH BEYAZ ÇEŞME İLERİSİ DURAK 8",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "103",
+   "ad": "DOĞUKENT HİLALKENT",
+   "url": "https://elazigulasim.com/hat/10/dogukent-hilalkent-103-sehir-hastanesi-sehir-hastanesi/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "HAYIR ÇARŞISI",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "HAYIR ÇARŞISI",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "HAYIR ÇARŞISI",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "HAYIR ÇARŞISI → EYVAN ÇAYBAHÇESİ → TAŞRA DÜĞÜN SALONU → DOĞUKENT KAVŞAK → DOĞUKENT TRAFO → DOĞUKENT PARK → STAR DÜĞÜN SALONU → DOĞUKENT PARK → AKBULUT BENZİNLİK KARŞISI → HACI EMİN POLAT CAMİİ → DOĞUKENT BİM → DOĞUKENT KANAL SİTESİ → DOĞUKENT KANAL → YAŞAR DOĞU PARK → YAŞAR DOĞU KANAL → YAŞAR DOĞU PARK → SANAYİ AMBAR → TECO BENZİNLİK KARŞISI → ALİ RIZA SEPTİOĞLU BLV → MEVLANA CAD. → ORDU EVİ → İMAM HATİP → YENİ CAMİ → ÖĞRETMENEVİ → VALİLİK → KARAYOLLARI → RASİM KÜÇÜKEL PARKI → STADYUM → DSİ 91.ŞUBE → ÖZEL İDARE → ELAZIĞ BELEDİYESİ → HAZARDAĞLI İŞ MERKEZİ → PARK 23 → TEDAŞ → KAYA KARAKAYA FEN LİSESİ → TAPU → TOFAŞ KAVŞAĞI → İŞİTME ENGELLİLER → NURULLAH CAMİİ → VODAFONE → ABDULLAPAŞA KAVŞAĞI → A.PAŞA TRAFO → A.PAŞA ÜST GEÇİT → A.PAŞA TPDK → DOĞA KOLEJİ → HİLALKENT KIZ YURDU → HİLALKENT PLAZALAR → BASKİL KAVŞAĞI → CEZAEVİ → İLETİŞİM FAKÜLTESİ",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  },
+  {
+   "numara": "104",
+   "ad": "HİLALKENT DOĞUKENT",
+   "url": "https://elazigulasim.com/hat/11/hilalkent-dogukent-104-iletisim-fakultesi-iletisim-fakultesi/",
+   "kaynakAdi": "Elazığ Ulaşım",
+   "numaraDogrulandi": true,
+   "tarifeler": {
+    "0": {
+     "gidis": {
+      "durak": "İLETİŞİM FAKÜLTESİ-D",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "1": {
+     "gidis": {
+      "durak": "İLETİŞİM FAKÜLTESİ-D",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    },
+    "2": {
+     "gidis": {
+      "durak": "İLETİŞİM FAKÜLTESİ-D",
+      "saatler": [
+       "06:05",
+       "06:35",
+       "07:05",
+       "07:35",
+       "08:05",
+       "08:35",
+       "09:05",
+       "09:35",
+       "10:05",
+       "10:35",
+       "11:05",
+       "11:35",
+       "12:05",
+       "12:35",
+       "13:05",
+       "13:35",
+       "14:05",
+       "14:35",
+       "15:05",
+       "15:35",
+       "16:05",
+       "16:35",
+       "17:05",
+       "17:35",
+       "18:05",
+       "19:05",
+       "20:05",
+       "21:05",
+       "22:05",
+       "23:15"
+      ]
+     },
+     "donus": {
+      "durak": "",
+      "saatler": []
+     },
+     "guncelleme": "2026-11-05T23:11:31.228Z"
+    }
+   },
+   "gidis": "İLETİŞİM FAKÜLTESİ-D → CEZAEVİ-D → BASKİL KAVŞAĞI-D → HİLALKENT PLAZALAR-D → HİLALKENT KIZ YURDU-D → DOĞA KOLEJİ-D → A.PAŞA TPDK-D → A.PAŞA ÜST GEÇİT-D → A.PAŞA KARAYOLLARI LOJMANDURAĞU-D → ABDULLAPAŞA KAVŞAĞI-D → VODAFONE-D → ÖMER BİLGİNOĞLU YURDU-D → TOFAŞ KAVŞAĞI-D → TAPU-D → KAYA KARAKAYA FEN LİSESİ-D → TEDAŞ-D → PARK 23-D → HAZARDAĞLI İŞ MERKEZİ-D → ELAZIĞ BELEDİYESİ-D → İŞ BANKASI-D → RAMADA OTEL-D → DSİ 91.ŞUBE-D → STADYUM-D → ORMAN BÖLGE MÜD.-D → KARAYOLLARI BÖLGE MÜD.-D → VALİLİK-D → AHMET AYTAR-D → OTOBÜS AMİRLİĞİ-D → VALİ FAHRİ BEY-D → İZZETPAŞA-D → HÜRRİYET CAD.-D → ORDU EVİ-D → MEVLANA CAD.-D → ALİ RIZA SEPTİOĞLU BLV-D → TECO BENZİNLİK-D → MERMERCİLER-D → KERESTECİLER-D → YAŞAR DOĞU KANAL-D → YAŞAR DOĞU PARK-D → DOĞUKENT İLKÖĞRETİM-D → DOĞUKENT PARK-D → HACI EMİN POLAT CAMİİ-D → AKBULUT BENZİNLİK-D → DOĞUKENT PARK-D → STAR DÜĞÜN SALONU-D → ZAFER KILIÇ PARK-D → DOĞUKENT TRAFO-D → DOĞUKENT KAVŞAK-D → TAŞRA DÜĞÜN SALONU-D → EYVAN ÇAYBAHÇESİ-D → HAYIR ÇARŞISI-D",
+   "donus": "",
+   "numaraKontrol": "2026-11-05T23:11:31.228Z"
+  }
  ]
 }

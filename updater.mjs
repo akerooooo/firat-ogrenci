@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import { writeFileSync, renameSync, mkdirSync, unlinkSync } from 'node:fs';
 import { getHtml, oku, parseAnaDuyuru, parseYeniDuyuru, parseOkulMenu, tarihVer } from './scrape.mjs';
+import { updateExtras } from './extra-sources.mjs';
 
 const clean = s => (s || '').replace(/\s+/g, ' ').trim();
 const save = (path, value) => {
@@ -170,10 +171,7 @@ export async function update() {
   items.sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
   const anySourceSuccess = sources.some(s => reports[s.id]?.sonBasari === now);
   if (anySourceSuccess) save('data/duyurular.json', { guncelleme: now, kaynaklar: sources, items });
-  // The current transit service requires interactive verification. Do not bypass it
-  // or label 2021 archived timetables as a freshly verified service.
-  reports.otobus = { durum: 'erisim_gerekli', kaynak: BUS_KAYNAK, hata: 'Güncel saatler resmî Elazığ Kart ekranından doğrulanmalıdır.' };
-  reports.kyk = { durum: 'menu_bekleniyor', hata: 'Yurtlara ait doğrulanmış menü kaynağı henüz bağlanmadı.' };
+  await updateExtras({ getHtml, read: oku, save, report, pool, now });
   save('data/durum.json', { sonDeneme: now, kaynaklar: reports, icerikHatalari: detailFailures });
   console.log(`${sources.length} kaynak, ${items.length} duyuru; başarılı: ${successes}, kaynak hatası: ${failures}, içerik hatası: ${detailFailures}`);
   if (!successes) process.exitCode = 1;

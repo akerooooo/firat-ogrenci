@@ -1,4 +1,4 @@
-import { HALF_HOUR, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
+import { HALF_HOUR, mealDayLabel, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
 const $ = id => document.getElementById(id);
 const el = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; if (className) node.className = className; return node; };
 const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(`firat:${key}`)) ?? fallback; } catch { return fallback; } };
@@ -16,6 +16,8 @@ const sourceStatus = id => data.durum?.kaynaklar?.[id];
 function freshText(timestamp) { return timestamp ? `Son başarılı kontrol: ${dateText(timestamp, true)}${Date.now() - Date.parse(timestamp) > 2 * HALF_HOUR ? ' · Güncelleme gecikmiş olabilir' : ''}` : 'Kaynak henüz doğrulanmadı'; }
 
 function renderMeals() {
+  $('yemek-title').textContent = mealDayLabel(selectedDay);
+  $('buguneDon').hidden = selectedDay === turkeyDay();
   $('bugun').textContent = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).toLocaleUpperCase('tr');
   $('gunAd').textContent = new Date(`${selectedDay}T12:00:00+03:00`).toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', weekday: 'short' });
   const dishes = data.okul?.gunler?.[selectedDay] || [];
@@ -30,14 +32,15 @@ function renderMeals() {
   const dorm = $('yurt').value;
   // A menu belongs only to its named dorm, never silently to every dorm in Elazığ.
   const dormData = data.kyk?.yurtlar?.[dorm];
-  const menu = dormData?.gunler?.[selectedDay] || (dorm === '023129806' ? data.kyk?.gunler?.[selectedDay] : null) || {};
+  const menu = dormData?.gunler?.[selectedDay] || (dorm ? data.kyk?.sehir?.gunler?.[selectedDay] : null) || {};
   for (const meal of ['kahvalti', 'aksam']) {
     const rows = (menu[meal] || []).map(x => el('li', typeof x === 'string' ? x : x.ad));
     $('' + meal).replaceChildren(...rows);
-    if (!rows.length) empty($(meal), dorm ? 'Bu yurt için doğrulanmış günlük menü henüz eklenmedi.' : 'Menüyü görmek için yukarıdan yurdunu seç.');
+    if (!rows.length) empty($(meal), dorm ? 'Seçilen tarih ve öğün için kaynakta menü yayımlanmamış.' : 'Menüyü görmek için yukarıdan yurdunu seç.');
   }
   $('yurtDurum').replaceChildren(el('span', dormData?.guncelleme ? freshText(dormData.guncelleme) : 'Elazığ’daki KYK yurtları resmî GSB listesinden alınır. Yurt seçimi kaydedilir; menüler her yurt için ayrı doğrulanır. '));
   const a = el('a', 'Yurt listesi ↗'); a.href = data.yurtlar?.kaynak || 'https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23'; a.target = '_blank'; a.rel = 'noopener'; $('yurtDurum').append(a);
+  if (dorm && !dormData?.gunler?.[selectedDay] && data.kyk?.sehir) { const source = el('a', 'KYK Yurt Menü ↗'); source.href=data.kyk.sehir.kaynak; source.target='_blank'; source.rel='noopener'; $('yurtDurum').replaceChildren(el('span', 'Elazığ geneli menü gösteriliyor; yurda özel doğrulama değildir ve yurdunuzda değişebilir. '),source,el('span', ' · '+freshText(data.kyk.sehir.guncelleme))); }
 }
 function fillDepartments(value = '') {
   const departments = sources().filter(s => s.fakulte === $('kaynak').value);
@@ -99,20 +102,22 @@ function openAnnouncement(item) {
 function renderBuses() {
   const q = fold($('ara').value);
   const filtered = sortRoutes(data.otobus?.hatlar || [], { favorites, visits, order: $('hatSiralama').value }).filter(h => (!q || fold(`${h.numara || ''} ${h.ad} ${h.gidis} ${h.donus}`).includes(q)) && (!$('favoriler').checked || favorites.includes(routeKey(h))));
-  $('hatSayisi').textContent = `${filtered.length} arşiv hattı · Kullanım sıralaması bu cihaza özeldir; şehir genelindeki yolcu yoğunluğunu göstermez.`;
+  $('hatSayisi').textContent = `${filtered.length} hat · Kullanım sıralaması bu cihaza özeldir; şehir genelindeki yolcu yoğunluğunu göstermez.`;
   $('hatlar').replaceChildren(...filtered.slice(0, busLimit).map(h => {
     const key = routeKey(h), card = el('article', undefined, 'bus-card'), top = el('div', undefined, 'bus-card-top');
     const number = el('span', h.numaraDogrulandi ? h.numara : '—', 'bus-number'); number.title = h.numaraDogrulandi ? 'Doğrulanmış hat numarası' : 'Hat numarası doğrulanmadı';
-    const title = el('div'); title.append(el('h3', h.ad), el('small', campusScore(h) ? 'Kampüs bağlantısı · Arşiv' : 'Elazığ · Arşiv'));
+    const title = el('div'); title.append(el('h3', h.ad), el('small', campusScore(h) ? 'Kampüs bağlantısı' : 'Elazığ Ulaşım'));
     const favorite = el('button', favorites.includes(key) ? '★' : '☆', 'favorite'); favorite.setAttribute('aria-label', `${h.ad} favori`); favorite.setAttribute('aria-pressed', favorites.includes(key));
     favorite.onclick = () => { favorites = favorites.includes(key) ? favorites.filter(x => x !== key) : [...favorites, key]; store('favoriler', favorites); renderBuses(); const replacement = [...$('hatlar').querySelectorAll('button.favorite')].find(b => b.getAttribute('aria-label') === `${h.ad} favori`); replacement?.focus(); };
     top.append(number, title, favorite);
-    const detail = el('details'); detail.append(el('summary', 'Kayıtlı güzergâhı görüntüle'));
-    detail.append(el('p', 'Hat numarası ve güncel kalkış saatleri resmî Elazığ Kart ekranından kontrol edilmelidir.'));
-    if (h.gidis) detail.append(el('p', `Gidiş (arşiv): ${h.gidis}`));
-    if (h.donus) detail.append(el('p', `Dönüş (arşiv): ${h.donus}`));
+    const detail = el('details'); detail.append(el('summary', 'Saatleri ve güzergâhı görüntüle'));
+    const schedule = h.tarifeler?.[$('seferGunu').value];
+    for (const [key,label] of [['gidis','Gidiş'],['donus','Dönüş']]) { const trip=schedule?.[key]; detail.append(el('p',label+' · '+(trip?.durak||'Başlangıç durağı'))); const times=el('div',undefined,'time-grid'); for(const time of trip?.saatler||[]) times.append(el('span',time,'time-chip')); if(!trip?.saatler?.length) times.append(el('p','Kaynakta kayıtlı tarife yok.')); detail.append(times); }
+    if(schedule?.guncelleme) detail.append(el('p',freshText(schedule.guncelleme)));
+    if (h.gidis) detail.append(el('p', `Gidiş: ${h.gidis}`));
+    if (h.donus) detail.append(el('p', `Dönüş: ${h.donus}`));
     if (!h.gidis && !h.donus) detail.append(el('p', 'Bu hat için kayıtlı güzergâh ayrıntısı bulunmuyor.'));
-    detail.append(el('p', `Arşiv kaynağındaki tarih: ${h.guncelleme || 'Belirtilmemiş'}`));
+    
     const link = el('a', 'Güncel saatleri Elazığ Kart’ta kontrol et ↗'); link.href = 'https://elazigkart.elazig.bel.tr/wheremybus'; link.target = '_blank'; link.rel = 'noopener'; detail.append(link);
     let counted = false; detail.addEventListener('toggle', () => { if (detail.open && !counted) { counted = true; visits[key] = (visits[key] || 0) + 1; store('ziyaretler', visits); } });
     card.append(top, detail); return card;
@@ -121,7 +126,7 @@ function renderBuses() {
   $('dahaFazlaHat').hidden = filtered.length <= busLimit;
 }
 async function refresh() {
-  if (busy) return; busy = true; $('yenile').disabled = true; $('guncelleme').textContent = 'Kayıtlı veriler kontrol ediliyor…';
+  if (busy) return; busy = true; $('guncelleme').textContent = 'Kayıtlı veriler kontrol ediliyor…';
   const names = ['okul', 'kyk', 'duyurular', 'otobus', 'yurtlar', 'durum'];
   const results = await Promise.allSettled(names.map(async name => {
     const response = await fetch(`data/${name}.json`, { cache: 'no-cache', signal: AbortSignal.timeout(20000) });
@@ -133,7 +138,7 @@ async function refresh() {
   results.forEach((result, i) => { if (result.status === 'fulfilled') data[names[i]] = result.value; else errors.push(names[i]); });
   fillSelections(); renderMeals(); renderAnnouncements(); renderBuses(); lastCheck = Date.now();
   $('guncelleme').textContent = errors.length ? 'Bazı veriler alınamadı. Varsa son kayıtlar gösteriliyor; tekrar kontrol edebilirsin.' : `Son kaynak kontrolü: ${dateText(data.durum?.sonDeneme || data.duyurular?.guncelleme, true)} · Otomatik kontrol: 30 dk`;
-  busy = false; $('yenile').disabled = false;
+  busy = false;
 }
 $('geri').onclick = () => { selectedDay = shiftDay(selectedDay, -1); renderMeals(); };
 $('ileri').onclick = () => { selectedDay = shiftDay(selectedDay, 1); renderMeals(); };
@@ -144,13 +149,14 @@ $('duyuruForm').onsubmit = e => { e.preventDefault(); selection = { kaynak: $('k
 $('konu').onchange = () => { page = 1; renderAnnouncements(); };
 $('oncekiSayfa').onclick = () => { page--; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
 $('sonrakiSayfa').onclick = () => { page++; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
-for (const id of ['ara', 'hatSiralama', 'favoriler']) $(id).addEventListener(id === 'ara' ? 'input' : 'change', () => { busLimit = 6; renderBuses(); });
+for (const id of ['ara', 'hatSiralama', 'favoriler', 'seferGunu']) $(id).addEventListener(id === 'ara' ? 'input' : 'change', () => { busLimit = 6; renderBuses(); });
 $('dahaFazlaHat').onclick = () => { busLimit += 6; renderBuses(); };
 $('modalKapat').onclick = () => $('duyuruModal').close();
 $('duyuruModal').addEventListener('click', e => { if (e.target === $('duyuruModal')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } });
-$('yenile').onclick = refresh;
+
 if (selection) { $('ders').value = selection.ders || ''; $('genelDahil').checked = selection.genelDahil ?? true; }
 document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => { document.querySelectorAll('nav a').forEach(x => x.classList.toggle('active', x === a)); }));
+const weekday = new Date(turkeyDay()+'T12:00:00Z').getUTCDay(); $('seferGunu').value = weekday===0?'2':weekday===6?'1':'0';
 await refresh();
 setInterval(refresh, HALF_HOUR);
 document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - lastCheck >= HALF_HOUR) refresh(); });
