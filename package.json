@@ -1,0 +1,12 @@
+{
+  "name": "firat-ogrenci",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scrape.mjs",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}

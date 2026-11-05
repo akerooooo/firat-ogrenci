@@ -1,0 +1,19 @@
+[
+  { "id": "disf", "ad": "Diş Hekimliği" },
+  { "id": "eczacilikf", "ad": "Eczacılık" },
+  { "id": "egitimf", "ad": "Eğitim" },
+  { "id": "fenf", "ad": "Fen" },
+  { "id": "iibf", "ad": "İktisadi ve İdari Bilimler" },
+  { "id": "ilahiyatf", "ad": "İlahiyat" },
+  { "id": "iletisimf", "ad": "İletişim" },
+  { "id": "isbf", "ad": "İnsan ve Sosyal Bilimler" },
+  { "id": "mimarlikf", "ad": "Mimarlık" },
+  { "id": "muhendislikf", "ad": "Mühendislik" },
+  { "id": "saglikf", "ad": "Sağlık Bilimleri" },
+  { "id": "sporbilimlerif", "ad": "Spor Bilimleri" },
+  { "id": "suuf", "ad": "Su Ürünleri" },
+  { "id": "tef", "ad": "Teknik Eğitim" },
+  { "id": "teknolojif", "ad": "Teknoloji" },
+  { "id": "tip", "ad": "Tıp" },
+  { "id": "veterinerf", "ad": "Veteriner" }
+]

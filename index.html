@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fırat Öğrenci</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Fırat Öğrenci</h1>
+  <nav role="tablist">
+    <button role="tab" data-tab="yemek" aria-selected="true">Yemek</button>
+    <button role="tab" data-tab="duyuru" aria-selected="false">Duyurular</button>
+    <button role="tab" data-tab="otobus" aria-selected="false">Otobüs</button>
+  </nav>
+</header>
+
+<main>
+  <section id="yemek">
+    <div class="gun">
+      <button id="geri" aria-label="Önceki gün">‹</button>
+      <strong id="gunAd"></strong>
+      <button id="ileri" aria-label="Sonraki gün">›</button>
+    </div>
+    <div class="kart"><h2>Yurt kahvaltı <small>KYK Ahmet Kabaklı</small></h2><ul id="kahvalti"></ul></div>
+    <div class="kart"><h2>Okul öğle <small>Üniversite Evi</small></h2><ul id="okul"></ul></div>
+    <div class="kart"><h2>Yurt akşam <small>KYK Ahmet Kabaklı</small></h2><ul id="aksam"></ul></div>
+  </section>
+
+  <section id="duyuru" hidden>
+    <select id="kaynak" aria-label="Kaynak"><option value="">Tümü</option></select>
+    <ul id="duyurular" class="liste"></ul>
+  </section>
+
+  <section id="otobus" hidden>
+    <input id="ara" type="search" placeholder="Durak, mahalle veya hat ara (örn. Üniversite)" aria-label="Otobüs ara">
+    <p class="uyari">Saatler belediyenin 2020–2021 tarihli sayfasından alındı, güncel olmayabilir. <a id="otobusKaynak" target="_blank" rel="noopener">Kaynak</a></p>
+    <ul id="hatlar"></ul>
+  </section>
+</main>
+
+<footer id="guncelleme"></footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

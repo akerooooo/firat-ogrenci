@@ -1,0 +1,115 @@
+{
+ "guncelleme": "2026-11-05T22:05:36.497Z",
+ "gunler": {
+  "2026-11-02": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Etli Patates",
+    "kcal": 250
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Sebzeli Şehriye Pilavı",
+    "kcal": 336
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Tarhana Çorba",
+    "kcal": 183
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Kadayıf",
+    "kcal": 246
+   }
+  ],
+  "2026-11-03": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Antep Tava",
+    "kcal": 400
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Bulgur Pilavı",
+    "kcal": 15
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Domates Çorba",
+    "kcal": 20
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Tahin Helva",
+    "kcal": 5
+   }
+  ],
+  "2026-11-04": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Hamburger Köfte",
+    "kcal": 309
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Peynirli Makarna",
+    "kcal": 354
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Ezogelin Çorba",
+    "kcal": 115
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Mevsim Salata",
+    "kcal": 123
+   }
+  ],
+  "2026-11-05": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Etli Nohut",
+    "kcal": 350
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Pirinç Pilavı",
+    "kcal": 326
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Turşu",
+    "kcal": 22
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Tahin Helva",
+    "kcal": 212
+   }
+  ],
+  "2026-11-06": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Tas Kebabı",
+    "kcal": 348
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Bulgur Pilavı",
+    "kcal": 291
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Mercimek Çorba",
+    "kcal": 183
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Muz",
+    "kcal": 60
+   }
+  ]
+ }
+}
