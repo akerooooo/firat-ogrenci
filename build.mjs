@@ -1,4 +1,4 @@
-import { mkdirSync, copyFileSync, cpSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { mkdirSync, copyFileSync, cpSync, readFileSync, writeFileSync, readdirSync, unlinkSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 mkdirSync('dist', { recursive: true });
 for (const file of ['index.html', 'style.css', 'app.js', 'model.mjs', 'theme.js', 'manifest.webmanifest', 'favicon.svg']) copyFileSync(file, `dist/${file}`);
@@ -10,7 +10,10 @@ writeFileSync('dist/app.js', app);
 let html = readFileSync('dist/index.html', 'utf8');
 for (const file of ['style.css', 'app.js', 'theme.js']) html = html.replace(`"${file}"`, `"${file}?v=${hash(`dist/${file}`)}"`);
 writeFileSync('dist/index.html', html);
-cpSync('data', 'dist/data', { recursive: true, filter: path => !path.endsWith('.tmp') });
+mkdirSync('dist/data', {recursive:true});
+const publishedData = ['okul.json', 'kyk.json', 'otobus.json', 'durum.json'];
+for (const file of readdirSync('dist/data')) if (file.endsWith('.json') && !publishedData.includes(file)) unlinkSync(`dist/data/${file}`);
+for (const file of publishedData) copyFileSync(`data/${file}`, `dist/data/${file}`);
 for (const file of readdirSync('dist/data').filter(name => name.endsWith('.json'))) {
   const path = `dist/data/${file}`;
   writeFileSync(path, JSON.stringify(JSON.parse(readFileSync(path, 'utf8'))));

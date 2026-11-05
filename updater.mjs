@@ -100,8 +100,6 @@ export function parseDorms(html) {
 export async function update() {
   mkdirSync('data', { recursive: true });
   const now = new Date().toISOString();
-  const deadline = Date.now() + 18 * 60 * 1000;
-  const old = oku('data/duyurular.json', { items: [], kaynaklar: [] });
   const status = oku('data/durum.json', { kaynaklar: {} });
   const reports = { ...status.kaynaklar };
   let successes = 0, failures = 0;
@@ -125,54 +123,8 @@ export async function update() {
       } catch (e) { report('yurtlar', false, e.message); }
     })(),
   ]);
-  const faculties = oku('fakulteler.json', []).map(f => ({ ...f, tur: 'fakulte', url: `https://${f.id}.firat.edu.tr/announcements-all` }));
-  // Discover department sites from the faculty's own menu; never guess hostnames.
-  const previous = oku('data/bolumler.json', { bolumler: [] });
-  let departments = previous.bolumler;
-  if (!previous.guncelleme || Date.now() - Date.parse(previous.guncelleme) > 864e5) {
-    let discoveryFailures = 0;
-    const discovered = (await pool(faculties, 4, async f => {
-      try { return discoverDepartments(await getHtml(f.url), f); }
-      catch { discoveryFailures++; return departments.filter(b => b.fakulte === f.id); }
-    })).flat();
-    departments = [...new Map(discovered.map(d => [d.id, d])).values()];
-    save('data/bolumler.json', { guncelleme: discoveryFailures ? previous.guncelleme || null : now, bolumler: departments });
-  }
-  const sources = [
-    { id: 'genel', ad: 'Üniversite geneli', tur: 'genel', url: 'https://www.firat.edu.tr/tr/page/announcement' },
-    { id: 'sks', ad: 'Sağlık, Kültür ve Spor', tur: 'genel', url: 'https://sksdab.firat.edu.tr/announcements-all' },
-    ...faculties, ...departments,
-  ];
-  const oldByUrl = new Map(old.items.map(x => [x.url, x]));
-  const groups = await pool(sources, 5, async source => {
-    try {
-      const html = await getHtml(source.url);
-      const parsed = (source.id === 'genel' ? parseAnaDuyuru : parseYeniDuyuru)(html);
-      if (!parsed.length) throw new Error('Duyuru listesi alınamadı');
-      report(source.id, true);
-      return tarihVer(parsed).slice(0, 12).map(x => {
-        let url = safeUrl(x.url, source.url);
-        if (source.id === 'genel' && url) url = url.replace('www.firat.edu.tr/page/', 'www.firat.edu.tr/tr/page/');
-        return { ...oldByUrl.get(url), ...x, url, kaynak: source.id };
-      }).filter(x => x.url && new URL(x.url).hostname.endsWith('.firat.edu.tr'));
-    } catch (e) { report(source.id, false, e.message); return old.items.filter(x => x.kaynak === source.id); }
-  });
-  console.log(`Listeler kontrol edildi: ${successes} başarılı, ${failures} başarısız. İçerikler yenileniyor.`);
-  let detailFailures = 0;
-  const items = groups.flat();
-  await pool(items, 6, async x => {
-    if (reports[x.kaynak]?.durum !== 'ok' || Date.now() >= deadline) {
-      detailFailures++; x.icerikHata = 'Kaynağa erişilemedi veya kontrol süresi aşıldı; kayıtlı içerik korundu.'; return;
-    }
-    // Each listed announcement is refreshed, including edits to existing announcements.
-    try { Object.assign(x, parseDetail(await getHtml(x.url), x.url)); delete x.icerikHata; }
-    catch { detailFailures++; x.icerikHata = 'İçerik kaynağına ulaşılamadı'; }
-  });
-  items.sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
-  const anySourceSuccess = sources.some(s => reports[s.id]?.sonBasari === now);
-  if (anySourceSuccess) save('data/duyurular.json', { guncelleme: now, kaynaklar: sources, items });
   await updateExtras({ getHtml, read: oku, save, report, pool, now, lastTransitAttempt: reports.otobus?.sonDeneme });
-  save('data/durum.json', { sonDeneme: now, kaynaklar: reports, icerikHatalari: detailFailures });
-  console.log(`${sources.length} kaynak, ${items.length} duyuru; başarılı: ${successes}, kaynak hatası: ${failures}, içerik hatası: ${detailFailures}`);
+  save('data/durum.json', { sonDeneme: now, kaynaklar: Object.fromEntries(Object.entries(reports).filter(([id]) => ['okul','kyk','otobus','yurtlar'].includes(id))) });
+  console.log(`Başarılı: ${successes}, başarısız: ${failures}`);
   if (!successes) process.exitCode = 1;
 }

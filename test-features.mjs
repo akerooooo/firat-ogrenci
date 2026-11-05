@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { shouldUpdateTransit } from './extra-sources.mjs';
+import { shouldUpdateTransit, dormArchiveUrl } from './extra-sources.mjs';
+assert.match(dormArchiveUrl(new Date('2026-11-30T21:01:00Z')), /aralik-2026$/);
 assert.equal(shouldUpdateTransit('2026-11-05T22:00:00Z', '2026-11-06T20:59:59Z'), false);
 assert.equal(shouldUpdateTransit('2026-11-06T20:59:59Z', '2026-11-06T21:00:00Z'), true);
 assert.equal(shouldUpdateTransit(undefined, '2026-11-06T10:00:00Z'), true);

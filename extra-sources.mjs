@@ -3,7 +3,9 @@ const clean = s => (s || '').replace(/\s+/g, ' ').trim();
 export const TRANSIT_SOURCE = 'https://elazigulasim.com/hatlar/';
 const MONTHS = ['ocak','subat','mart','nisan','mayis','haziran','temmuz','agustos','eylul','ekim','kasim','aralik'];
 export function dormArchiveUrl(date = new Date()) {
-  return `https://www.kykyurtmenu.com/elazig/arsiv/${MONTHS[date.getUTCMonth()]}-${date.getUTCFullYear()}`;
+  const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Istanbul',year:'numeric',month:'numeric'}).formatToParts(date);
+  const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+  return `https://www.kykyurtmenu.com/elazig/arsiv/${MONTHS[Number(values.month)-1]}-${values.year}`;
 }
 export function parseDormMenu(html) {
   const $ = cheerio.load(html), days = {};
