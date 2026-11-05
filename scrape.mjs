@@ -118,6 +118,8 @@ async function main() {
       return eski.filter((x) => x.kaynak === k.id);
     }
   }));
+  // Hiçbir kaynağa ulaşılamadıysa dosyaya dokunma; "son güncelleme" yalan söylemesin.
+  if (hata >= kaynaklar.length + 1) { console.error('Hiçbir kaynağa ulaşılamadı'); process.exitCode = 1; return; }
   const items = sonuclar.flat().sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
   yaz('data/duyurular.json', { guncelleme: simdi, kaynaklar: kaynaklar.map(({ id, ad }) => ({ id, ad })), items });
   console.log('duyuru:', items.length, 'hata:', hata);
