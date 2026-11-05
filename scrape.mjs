@@ -37,8 +37,11 @@ export function tarihVer(items, now = new Date()) {
   return items;
 }
 
+// PROXY verilirse (Cloudflare Worker, worker/ klasörü) istek onun üzerinden gider:
+// Fırat sunucuları GitHub'ın yurt dışı IP'lerinden gelen bağlantıları kesiyor.
 async function getHtml(url) {
-  const r = await fetch(url, { headers: { 'user-agent': 'firat-ogrenci-sayfasi' }, signal: AbortSignal.timeout(30000) });
+  const hedef = process.env.PROXY ? `${process.env.PROXY}?u=${encodeURIComponent(url)}` : url;
+  const r = await fetch(hedef, { headers: { 'user-agent': 'firat-ogrenci-sayfasi' }, signal: AbortSignal.timeout(30000) });
   if (!r.ok) throw new Error(`${url} -> HTTP ${r.status}`);
   return r.text();
 }
