@@ -1,6 +1,6 @@
 import { HALF_HOUR, mealDayLabel, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
 const $ = id => document.getElementById(id);
-const el = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; if (className) node.className = className; return node; };
+const el = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) { node.textContent = String(text).replace(/ ↗$/, ''); if (String(text).endsWith(' ↗')) node.insertAdjacentHTML('beforeend', window.siteIcon('external')); } if (className) node.className = className; return node; };
 const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(`firat:${key}`)) ?? fallback; } catch { return fallback; } };
 const store = (key, value) => { try { localStorage.setItem(`firat:${key}`, JSON.stringify(value)); } catch { /* Private browsing can disable storage. */ } };
 const dateText = (value, full = false) => value ? new Date(value.length === 10 ? `${value}T12:00:00+03:00` : value).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: full ? 'long' : 'short', ...(full ? { hour: '2-digit', minute: '2-digit' } : { year: 'numeric' }) }) : 'Tarih belirtilmemiş';
@@ -10,6 +10,7 @@ let favorites = read('favoriler', []), visits = read('ziyaretler', {});
 if (!Array.isArray(favorites)) favorites = [];
 if (!visits || typeof visits !== 'object') visits = {};
 if (!selection || typeof selection !== 'object') selection = null;
+if (selection) delete selection.ders;
 const sources = () => data.duyurular?.kaynaklar || [];
 const sourceName = id => sources().find(s => s.id === id)?.ad || id;
 const sourceStatus = id => data.durum?.kaynaklar?.[id];
@@ -18,7 +19,6 @@ function freshText(timestamp) { return timestamp ? `Son başarılı kontrol: ${d
 function renderMeals() {
   $('yemek-title').textContent = mealDayLabel(selectedDay);
   $('buguneDon').hidden = selectedDay === turkeyDay();
-  $('bugun').textContent = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).toLocaleUpperCase('tr');
   $('gunAd').textContent = new Date(`${selectedDay}T12:00:00+03:00`).toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', weekday: 'short' });
   const dishes = data.okul?.gunler?.[selectedDay] || [];
   $('okul').replaceChildren(...dishes.map((dish, i) => {
@@ -74,7 +74,7 @@ function renderAnnouncements() {
     button.append(top, el('h3', item.baslik), el('p', item.ozet || 'Duyurunun ayrıntılarını ve varsa eklerini görüntüle.'), bottom);
     button.onclick = () => openAnnouncement(item); card.append(button); return card;
   }));
-  if (!rows.length) empty($('duyurular'), 'Seçimine uygun duyuru bulunamadı. Ders adını kısaltabilir veya konu filtresini değiştirebilirsin.', 'p');
+  if (!rows.length) empty($('duyurular'), 'Seçimine uygun duyuru bulunamadı. Bölüm veya konu filtresini değiştirebilirsin.', 'p');
   $('oncekiSayfa').disabled = page <= 1; $('sonrakiSayfa').disabled = page >= pages; $('sayfaBilgi').textContent = `${page} / ${pages}`;
 }
 function openAnnouncement(item) {
@@ -105,7 +105,7 @@ function renderBuses() {
     const key = routeKey(h), card = el('article', undefined, 'bus-card'), top = el('div', undefined, 'bus-card-top');
     const number = el('span', h.numaraDogrulandi ? h.numara : '—', 'bus-number'); number.title = h.numaraDogrulandi ? 'Doğrulanmış hat numarası' : 'Hat numarası doğrulanmadı';
     const title = el('div'); title.append(el('h3', h.ad), el('small', campusScore(h) ? 'Kampüs bağlantısı' : 'Elazığ Ulaşım'));
-    const favorite = el('button', favorites.includes(key) ? '★' : '☆', 'favorite'); favorite.setAttribute('aria-label', `${h.ad} favori`); favorite.setAttribute('aria-pressed', favorites.includes(key));
+    const favorite = el('button', undefined, 'favorite'); favorite.innerHTML = window.siteIcon('star'); favorite.setAttribute('aria-label', `${h.ad} favori`); favorite.setAttribute('aria-pressed', favorites.includes(key));
     favorite.onclick = () => { favorites = favorites.includes(key) ? favorites.filter(x => x !== key) : [...favorites, key]; store('favoriler', favorites); renderBuses(); const replacement = [...$('hatlar').querySelectorAll('button.favorite')].find(b => b.getAttribute('aria-label') === `${h.ad} favori`); replacement?.focus(); };
     top.append(number, title, favorite);
     const detail = el('details'); detail.dataset.route=key; detail.open=openRoutes.has(key); detail.append(el('summary', 'Saatleri ve güzergâhı görüntüle'));
@@ -144,7 +144,7 @@ $('geri').onclick = () => { selectedDay = shiftDay(selectedDay, -1); renderMeals
 $('ileri').onclick = () => { selectedDay = shiftDay(selectedDay, 1); renderMeals(); };
 $('buguneDon').onclick = () => { selectedDay = turkeyDay(); renderMeals(); };
 $('kaynak').onchange = () => { fillDepartments(); selection = null; store('duyuru', null); renderAnnouncements(); };
-$('duyuruForm').onsubmit = e => { e.preventDefault(); selection = { kaynak: $('kaynak').value, bolum: $('bolum').value, ders: $('ders').value.trim(), genelDahil: $('genelDahil').checked }; store('duyuru', selection); page = 1; renderAnnouncements(); };
+$('duyuruForm').onsubmit = e => { e.preventDefault(); selection = { kaynak: $('kaynak').value, bolum: $('bolum').value, genelDahil: $('genelDahil').checked }; store('duyuru', selection); page = 1; renderAnnouncements(); };
 $('konu').onchange = () => { page = 1; renderAnnouncements(); };
 $('oncekiSayfa').onclick = () => { page--; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
 $('sonrakiSayfa').onclick = () => { page++; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
@@ -153,9 +153,31 @@ $('dahaFazlaHat').onclick = () => { busLimit += 6; renderBuses(); };
 $('modalKapat').onclick = () => $('duyuruModal').close();
 $('duyuruModal').addEventListener('click', e => { if (e.target === $('duyuruModal')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } });
 
-if (selection) { $('ders').value = selection.ders || ''; $('genelDahil').checked = selection.genelDahil ?? true; }
+if (selection) { $('genelDahil').checked = selection.genelDahil ?? true; }
 document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => { document.querySelectorAll('nav a').forEach(x => x.classList.toggle('active', x === a)); }));
 const weekday = new Date(turkeyDay()+'T12:00:00Z').getUTCDay(); $('seferGunu').value = weekday===0?'2':weekday===6?'1':'0';
 await refresh();
 setInterval(refresh, HALF_HOUR);
 document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - lastCheck >= HALF_HOUR) refresh(); });
+
+let weatherBusy = false;
+async function refreshWeather() {
+  if (weatherBusy) return; weatherBusy = true;
+  try {
+    const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.6748&longitude=39.2225&current=temperature_2m,weather_code,is_day&timezone=Europe%2FIstanbul', { signal: AbortSignal.timeout(12000) });
+    if (!response.ok) throw new Error('Weather unavailable');
+    const { current } = await response.json();
+    if (!Number.isFinite(current?.temperature_2m) || !Number.isFinite(current?.weather_code)) throw new Error('Invalid weather');
+    const code = current.weather_code;
+    const label = code === 0 ? 'Açık' : code <= 2 ? 'Az bulutlu' : code === 3 ? 'Bulutlu' : [45,48].includes(code) ? 'Sisli' : [71,73,75,77,85,86].includes(code) ? 'Kar yağışlı' : code >= 95 ? 'Gök gürültülü' : 'Yağışlı';
+    $('sicaklik').textContent = Math.round(current.temperature_2m) + '°C';
+    $('havaDurum').textContent = label;
+    $('havaIkon').innerHTML = window.siteIcon(code === 0 ? (current.is_day ? 'sun' : 'moon') : 'cloud');
+    $('hava').title = 'Open-Meteo · Son kontrol ' + new Date().toLocaleTimeString('tr-TR', {hour:'2-digit',minute:'2-digit'});
+  } catch {
+    $('sicaklik').textContent = '—'; $('havaDurum').textContent = 'Hava bilgisi alınamadı';
+  } finally { weatherBusy = false; }
+}
+refreshWeather();
+setInterval(refreshWeather, HALF_HOUR);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshWeather(); });
