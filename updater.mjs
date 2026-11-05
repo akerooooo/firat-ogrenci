@@ -99,6 +99,7 @@ export function parseDorms(html) {
 export async function update() {
   mkdirSync('data', { recursive: true });
   const now = new Date().toISOString();
+  const deadline = Date.now() + 18 * 60 * 1000;
   const old = oku('data/duyurular.json', { items: [], kaynaklar: [] });
   const status = oku('data/durum.json', { kaynaklar: {} });
   const reports = { ...status.kaynaklar };
@@ -155,9 +156,13 @@ export async function update() {
       }).filter(x => x.url && new URL(x.url).hostname.endsWith('.firat.edu.tr'));
     } catch (e) { report(source.id, false, e.message); return old.items.filter(x => x.kaynak === source.id); }
   });
+  console.log(`Listeler kontrol edildi: ${successes} başarılı, ${failures} başarısız. İçerikler yenileniyor.`);
   let detailFailures = 0;
   const items = groups.flat();
   await pool(items, 6, async x => {
+    if (reports[x.kaynak]?.durum !== 'ok' || Date.now() >= deadline) {
+      detailFailures++; x.icerikHata = 'Kaynağa erişilemedi veya kontrol süresi aşıldı; kayıtlı içerik korundu.'; return;
+    }
     // Each listed announcement is refreshed, including edits to existing announcements.
     try { Object.assign(x, parseDetail(await getHtml(x.url), x.url)); delete x.icerikHata; }
     catch { detailFailures++; x.icerikHata = 'İçerik kaynağına ulaşılamadı'; }
