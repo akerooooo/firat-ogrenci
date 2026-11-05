@@ -2,6 +2,17 @@
 <html lang="tr" data-theme="dark">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https:; connect-src 'self' https://api.open-meteo.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Fırat Öğrenci">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://api.open-meteo.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
   <meta name="theme-color" content="#191918"><meta name="description" content="Fırat öğrencisinin günlük rehberi. Yemekhane, yurt menüleri, bölüm duyuruları ve Elazığ ulaşımı bir arada.">
   <title>Fırat Öğrenci · Kampüsün günlük rehberi</title><script src="theme.js"></script><link rel="stylesheet" href="style.css">
 </head>
@@ -9,7 +20,7 @@
 <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol><symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></symbol><symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M6 6a8 8 0 0 1 13 2M5 16a8 8 0 0 0 13 2"/></symbol><symbol id="icon-food" viewBox="0 0 24 24"><path d="M4 3v6a3 3 0 0 0 6 0V3M7 3v19M20 22V3c-4 2-5 7-5 11h5"/></symbol><symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol><symbol id="icon-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol><symbol id="icon-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol><symbol id="icon-up" viewBox="0 0 24 24"><path d="m5 15 7-7 7 7"/></symbol><symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol><symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.01"/></symbol><symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></symbol><symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 20 10a4 4 0 0 1-1 8Z"/></symbol></defs></svg>
 <a class="skip" href="#main">İçeriğe geç</a>
 <header class="topbar">
-  <a class="brand" href="#yemek" aria-label="Fırat Öğrenci ana sayfa"><span class="brand-mark" aria-hidden="true">f<span>ı</span></span><span>fırat<span class="brand-light">öğrenci</span><small>KAMPÜSÜN GÜNLÜK REHBERİ</small></span></a>
+  <a class="brand" href="./" aria-label="Fırat Öğrenci ana sayfa"><img class="brand-logo" src="favicon.svg" width="44" height="44" alt=""><span>fırat<span class="brand-light">öğrenci</span><small>KAMPÜSÜN GÜNLÜK REHBERİ</small></span></a>
   <nav aria-label="Ana menü"><a href="#yemek" class="active">Yemekhane</a><a href="#duyuru">Duyurular</a><a href="#otobus">Ulaşım</a></nav><div class="header-tools"><a class="city weather" id="hava" href="https://open-meteo.com/" target="_blank" rel="noopener" title="Elazığ hava durumu · Open-Meteo"><span id="havaIkon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-cloud"></use></svg></span><span class="weather-copy"><strong>Elazığ <span id="sicaklik">—</span></strong><small id="havaDurum" role="status">Hava durumu yükleniyor</small></span></a><button id="temaDegistir" class="theme-toggle" aria-label="Açık temaya geç"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-sun"></use></svg> Açık tema</button></div>
 </header>
 <main id="main">

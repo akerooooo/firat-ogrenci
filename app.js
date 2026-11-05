@@ -1,4 +1,4 @@
-import { HALF_HOUR, mealDayLabel, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
+import { safeExternalUrl, HALF_HOUR, mealDayLabel, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
 const $ = id => document.getElementById(id);
 const el = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) { node.textContent = String(text).replace(/ ↗$/, ''); if (String(text).endsWith(' ↗')) node.insertAdjacentHTML('beforeend', window.siteIcon('external')); } if (className) node.className = className; return node; };
 const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(`firat:${key}`)) ?? fallback; } catch { return fallback; } };
@@ -37,7 +37,7 @@ function renderMeals() {
   }
   $('yurtDurum').replaceChildren(el('span', 'Elazığ geneli menüdür; yurtlarda değişiklik olabilir. '));
   if (data.kyk?.sehir?.kaynak) {
-    const source = el('a', 'Menü kaynağı ↗'); source.href=data.kyk.sehir.kaynak; source.target='_blank'; source.rel='noopener';
+    const source = el('a', 'Menü kaynağı ↗'); source.href=safeExternalUrl(data.kyk.sehir.kaynak); source.target='_blank'; source.rel='noopener';
     $('yurtDurum').append(source,el('span',' · '+freshText(data.kyk.sehir.guncelleme)));
   }
 
@@ -113,7 +113,7 @@ function renderBuses() {
     for (const [key,label] of [['gidis','Gidiş'],['donus','Dönüş']]) { const trip=schedule?.[key]; detail.append(el('p',label+' · '+(trip?.durak||'Başlangıç durağı'))); const times=el('div',undefined,'time-grid'); for(const time of trip?.saatler||[]) times.append(el('span',time,'time-chip')); if(!trip?.saatler?.length) times.append(el('p','Kaynakta kayıtlı tarife yok.')); detail.append(times); }
     if(schedule?.guncelleme) detail.append(el('p',freshText(schedule.guncelleme)));
     if(schedule?.hata || h.tarifeHata) detail.append(el('p','Son tarife kontrolü başarısız; varsa önceki kayıt gösteriliyor.'));
-    const sourceLink=el('a','Tarife kaynağı: Elazığ Ulaşım ↗'); sourceLink.href=h.url; sourceLink.target='_blank'; sourceLink.rel='noopener'; detail.append(sourceLink);
+    const sourceLink=el('a','Tarife kaynağı: Elazığ Ulaşım ↗'); sourceLink.href=safeExternalUrl(h.url); sourceLink.target='_blank'; sourceLink.rel='noopener'; detail.append(sourceLink);
     if (h.gidis) detail.append(el('p', `Gidiş: ${h.gidis}`));
     if (h.donus) detail.append(el('p', `Dönüş: ${h.donus}`));
     if (!h.gidis && !h.donus) detail.append(el('p', 'Bu hat için kayıtlı güzergâh ayrıntısı bulunmuyor.'));
@@ -132,6 +132,11 @@ async function refresh() {
     const response = await fetch(`data/${name}.json`, { cache: 'no-cache', signal: AbortSignal.timeout(20000) });
     if (!response.ok) throw new Error(name); const value = await response.json();
     if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(name);
+    data[name] = value;
+    // Paint each section as soon as its own data arrives.
+    if (['okul', 'kyk', 'durum'].includes(name)) renderMeals();
+    if (['duyurular', 'durum'].includes(name)) { fillSelections(); renderAnnouncements(); }
+    if (name === 'otobus') renderBuses();
     return value;
   }));
   const errors = [];
@@ -156,7 +161,7 @@ $('duyuruModal').addEventListener('click', e => { if (e.target === $('duyuruModa
 if (selection) { $('genelDahil').checked = selection.genelDahil ?? true; }
 document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => { document.querySelectorAll('nav a').forEach(x => x.classList.toggle('active', x === a)); }));
 const weekday = new Date(turkeyDay()+'T12:00:00Z').getUTCDay(); $('seferGunu').value = weekday===0?'2':weekday===6?'1':'0';
-await refresh();
+refresh();
 setInterval(refresh, HALF_HOUR);
 document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - lastCheck >= HALF_HOUR) refresh(); });
 
@@ -164,7 +169,7 @@ let weatherBusy = false;
 async function refreshWeather() {
   if (weatherBusy) return; weatherBusy = true;
   try {
-    const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.6748&longitude=39.2225&current=temperature_2m,weather_code,is_day&timezone=Europe%2FIstanbul', { signal: AbortSignal.timeout(12000) });
+    const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.6748&longitude=39.2225&current=temperature_2m,weather_code,is_day&timezone=Europe%2FIstanbul', { cache: 'no-store', signal: AbortSignal.timeout(8000) });
     if (!response.ok) throw new Error('Weather unavailable');
     const { current } = await response.json();
     if (!Number.isFinite(current?.temperature_2m) || !Number.isFinite(current?.weather_code)) throw new Error('Invalid weather');
@@ -181,3 +186,4 @@ async function refreshWeather() {
 refreshWeather();
 setInterval(refreshWeather, HALF_HOUR);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshWeather(); });
+window.addEventListener('pageshow', event => { if (event.persisted) refreshWeather(); });

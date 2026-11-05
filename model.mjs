@@ -42,3 +42,7 @@ export function sortRoutes(routes, { favorites = [], visits = {}, order = 'kulla
     return a.ad.localeCompare(b.ad, 'tr');
   });
 }
+export function safeExternalUrl(value) {
+  try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : '#'; }
+  catch { return '#'; }
+}

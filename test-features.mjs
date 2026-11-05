@@ -1,7 +1,12 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { sanitize, parseDetail, parseDorms, discoverDepartments, pool } from './updater.mjs';
-import { turkeyDay, shiftDay, filterAnnouncements, sortRoutes, routeKey, fold } from './model.mjs';
+import { safeExternalUrl, turkeyDay, shiftDay, filterAnnouncements, sortRoutes, routeKey, fold } from './model.mjs';
+
+for (const url of ['javascript:alert(1)', 'data:text/html,bad', 'https://user:password@example.com', '//example.com', null]) assert.equal(safeExternalUrl(url), '#');
+assert.equal(safeExternalUrl('https://example.com/menu'), 'https://example.com/menu');
+const malicious = sanitize('<svg onload="bad()"><script>bad()</script></svg><math><mtext><img src="x" onerror="bad()"></mtext></math><a href="data:text/html,bad">x</a><p style="color:red" id="guncelleme">Safe</p>', 'https://example.com');
+assert.ok(!/onload|onerror|<svg|<math|<script|data:text|style=|id=/.test(malicious));
 
 assert.equal(turkeyDay(new Date('2026-11-05T22:15:00Z')), '2026-11-06');
 assert.equal(shiftDay('2026-12-31', 1), '2027-01-01');
