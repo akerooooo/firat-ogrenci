@@ -171,7 +171,7 @@ export async function update() {
   items.sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
   const anySourceSuccess = sources.some(s => reports[s.id]?.sonBasari === now);
   if (anySourceSuccess) save('data/duyurular.json', { guncelleme: now, kaynaklar: sources, items });
-  await updateExtras({ getHtml, read: oku, save, report, pool, now });
+  await updateExtras({ getHtml, read: oku, save, report, pool, now, lastTransitAttempt: reports.otobus?.sonDeneme });
   save('data/durum.json', { sonDeneme: now, kaynaklar: reports, icerikHatalari: detailFailures });
   console.log(`${sources.length} kaynak, ${items.length} duyuru; başarılı: ${successes}, kaynak hatası: ${failures}, içerik hatası: ${detailFailures}`);
   if (!successes) process.exitCode = 1;

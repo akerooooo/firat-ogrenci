@@ -1,5 +1,9 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { shouldUpdateTransit } from './extra-sources.mjs';
+assert.equal(shouldUpdateTransit('2026-11-05T22:00:00Z', '2026-11-06T20:59:59Z'), false);
+assert.equal(shouldUpdateTransit('2026-11-06T20:59:59Z', '2026-11-06T21:00:00Z'), true);
+assert.equal(shouldUpdateTransit(undefined, '2026-11-06T10:00:00Z'), true);
 import { sanitize, parseDetail, parseDorms, discoverDepartments, pool } from './updater.mjs';
 import { safeExternalUrl, turkeyDay, shiftDay, filterAnnouncements, sortRoutes, routeKey, fold } from './model.mjs';
 

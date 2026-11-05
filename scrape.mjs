@@ -38,7 +38,9 @@ export function tarihVer(items, now = new Date()) {
 }
 
 export async function getHtml(url) {
-  const r = await fetch(url, { headers: { 'user-agent': 'firat-ogrenci-sayfasi' }, signal: AbortSignal.timeout(15000) });
+  let r;
+  try { r = await fetch(url, { headers: { 'user-agent': 'firat-ogrenci-sayfasi' }, signal: AbortSignal.timeout(15000) }); }
+  catch (error) { throw new Error(`${new URL(url).hostname}: ${error.cause?.code || error.name} · ${error.cause?.message || error.message}`, { cause: error }); }
   if (!r.ok) throw new Error(`${url} -> HTTP ${r.status}`);
   return r.text();
 }

@@ -46,7 +46,11 @@ export function parseSchedule(html) {
   result.gunLinkleri = $('a[href]').filter((_, a) => ['Hafta içi','Cumartesi','Pazar'].includes(clean($(a).text()))).map((_, a) => $(a).attr('href')).get();
   return result;
 }
-export async function updateExtras({ getHtml, read, save, report, pool, now }) {
+export function shouldUpdateTransit(lastAttempt, now) {
+  const day = value => new Date(value).toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' });
+  return !lastAttempt || !Number.isFinite(Date.parse(lastAttempt)) || day(lastAttempt) !== day(now);
+}
+export async function updateExtras({ getHtml, read, save, report, pool, now, lastTransitAttempt }) {
   const dorm = read('data/kyk.json', { yurtlar: {} });
   try {
     const url = dormArchiveUrl(new Date(now));
@@ -56,6 +60,7 @@ export async function updateExtras({ getHtml, read, save, report, pool, now }) {
     save('data/kyk.json', dorm); report('kyk', true);
   } catch (e) { report('kyk', false, e.message); }
   const old = read('data/otobus.json', { hatlar: [] });
+  if (!shouldUpdateTransit(lastTransitAttempt || old.guncelleme, now)) return;
   try {
     const routes = parseRoutes(await getHtml(TRANSIT_SOURCE));
     if (!routes.length) throw new Error('Hat listesi boş geldi');
