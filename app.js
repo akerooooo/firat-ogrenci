@@ -29,18 +29,18 @@ function renderMeals() {
   if (!dishes.length) empty($('okul'), 'Bu tarih için üniversite menüsü yayımlanmamış. Başka bir güne bakabilirsin.');
   $('kalori').textContent = dishes.length && dishes.every(x => x.kcal > 0) ? `Toplam ${dishes.reduce((sum, x) => sum + x.kcal, 0)} kcal` : '';
   $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}`;
-  const dorm = $('yurt').value;
-  // A menu belongs only to its named dorm, never silently to every dorm in Elazığ.
-  const dormData = data.kyk?.yurtlar?.[dorm];
-  const menu = dormData?.gunler?.[selectedDay] || (dorm ? data.kyk?.sehir?.gunler?.[selectedDay] : null) || {};
+  const menu = data.kyk?.sehir?.gunler?.[selectedDay] || {};
   for (const meal of ['kahvalti', 'aksam']) {
     const rows = (menu[meal] || []).map(x => el('li', typeof x === 'string' ? x : x.ad));
-    $('' + meal).replaceChildren(...rows);
-    if (!rows.length) empty($(meal), dorm ? 'Seçilen tarih ve öğün için kaynakta menü yayımlanmamış.' : 'Menüyü görmek için yukarıdan yurdunu seç.');
+    $(meal).replaceChildren(...rows);
+    if (!rows.length) empty($(meal), 'Seçilen tarih ve öğün için kaynakta menü yayımlanmamış.');
   }
-  $('yurtDurum').replaceChildren(el('span', dormData?.guncelleme ? freshText(dormData.guncelleme) : 'Elazığ’daki KYK yurtları resmî GSB listesinden alınır. Yurt seçimi kaydedilir; menüler her yurt için ayrı doğrulanır. '));
-  const a = el('a', 'Yurt listesi ↗'); a.href = data.yurtlar?.kaynak || 'https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23'; a.target = '_blank'; a.rel = 'noopener'; $('yurtDurum').append(a);
-  if (dorm && !dormData?.gunler?.[selectedDay] && data.kyk?.sehir) { const source = el('a', 'KYK Yurt Menü ↗'); source.href=data.kyk.sehir.kaynak; source.target='_blank'; source.rel='noopener'; $('yurtDurum').replaceChildren(el('span', 'Elazığ geneli menü gösteriliyor; yurda özel doğrulama değildir ve yurdunuzda değişebilir. '),source,el('span', ' · '+freshText(data.kyk.sehir.guncelleme))); }
+  $('yurtDurum').replaceChildren(el('span', 'Elazığ geneli menüdür; yurtlarda değişiklik olabilir. '));
+  if (data.kyk?.sehir?.kaynak) {
+    const source = el('a', 'Menü kaynağı ↗'); source.href=data.kyk.sehir.kaynak; source.target='_blank'; source.rel='noopener';
+    $('yurtDurum').append(source,el('span',' · '+freshText(data.kyk.sehir.guncelleme)));
+  }
+
 }
 function fillDepartments(value = '') {
   const departments = sources().filter(s => s.fakulte === $('kaynak').value);
@@ -49,9 +49,6 @@ function fillDepartments(value = '') {
   if (departments.some(x => x.id === value)) $('bolum').value = value;
 }
 function fillSelections() {
-  const dorm = $('yurt').value || read('yurt', '');
-  $('yurt').replaceChildren(new Option('Yurdunu seç', ''), ...(data.yurtlar?.yurtlar || []).map(d => new Option(d.ad, d.id)));
-  if ([...$('yurt').options].some(x => x.value === dorm)) $('yurt').value = dorm;
   const source = $('kaynak').value || selection?.kaynak || '';
   const department = $('bolum').value || selection?.bolum || '';
   $('kaynak').replaceChildren(new Option('Önce fakülteni seç', ''), ...sources().filter(s => s.tur !== 'bolum').map(s => new Option(s.ad, s.id)));
@@ -100,6 +97,7 @@ function openAnnouncement(item) {
   $('duyuruModal').showModal(); $('duyuruModal').scrollTop = 0;
 }
 function renderBuses() {
+  const openRoutes = new Set([...$('hatlar').querySelectorAll('details[open]')].map(d=>d.dataset.route));
   const q = fold($('ara').value);
   const filtered = sortRoutes(data.otobus?.hatlar || [], { favorites, visits, order: $('hatSiralama').value }).filter(h => (!q || fold(`${h.numara || ''} ${h.ad} ${h.gidis} ${h.donus}`).includes(q)) && (!$('favoriler').checked || favorites.includes(routeKey(h))));
   $('hatSayisi').textContent = `${filtered.length} hat · Kullanım sıralaması bu cihaza özeldir; şehir genelindeki yolcu yoğunluğunu göstermez.`;
@@ -110,16 +108,18 @@ function renderBuses() {
     const favorite = el('button', favorites.includes(key) ? '★' : '☆', 'favorite'); favorite.setAttribute('aria-label', `${h.ad} favori`); favorite.setAttribute('aria-pressed', favorites.includes(key));
     favorite.onclick = () => { favorites = favorites.includes(key) ? favorites.filter(x => x !== key) : [...favorites, key]; store('favoriler', favorites); renderBuses(); const replacement = [...$('hatlar').querySelectorAll('button.favorite')].find(b => b.getAttribute('aria-label') === `${h.ad} favori`); replacement?.focus(); };
     top.append(number, title, favorite);
-    const detail = el('details'); detail.append(el('summary', 'Saatleri ve güzergâhı görüntüle'));
+    const detail = el('details'); detail.dataset.route=key; detail.open=openRoutes.has(key); detail.append(el('summary', 'Saatleri ve güzergâhı görüntüle'));
     const schedule = h.tarifeler?.[$('seferGunu').value];
     for (const [key,label] of [['gidis','Gidiş'],['donus','Dönüş']]) { const trip=schedule?.[key]; detail.append(el('p',label+' · '+(trip?.durak||'Başlangıç durağı'))); const times=el('div',undefined,'time-grid'); for(const time of trip?.saatler||[]) times.append(el('span',time,'time-chip')); if(!trip?.saatler?.length) times.append(el('p','Kaynakta kayıtlı tarife yok.')); detail.append(times); }
     if(schedule?.guncelleme) detail.append(el('p',freshText(schedule.guncelleme)));
+    if(schedule?.hata || h.tarifeHata) detail.append(el('p','Son tarife kontrolü başarısız; varsa önceki kayıt gösteriliyor.'));
+    const sourceLink=el('a','Tarife kaynağı: Elazığ Ulaşım ↗'); sourceLink.href=h.url; sourceLink.target='_blank'; sourceLink.rel='noopener'; detail.append(sourceLink);
     if (h.gidis) detail.append(el('p', `Gidiş: ${h.gidis}`));
     if (h.donus) detail.append(el('p', `Dönüş: ${h.donus}`));
     if (!h.gidis && !h.donus) detail.append(el('p', 'Bu hat için kayıtlı güzergâh ayrıntısı bulunmuyor.'));
     
     const link = el('a', 'Güncel saatleri Elazığ Kart’ta kontrol et ↗'); link.href = 'https://elazigkart.elazig.bel.tr/wheremybus'; link.target = '_blank'; link.rel = 'noopener'; detail.append(link);
-    let counted = false; detail.addEventListener('toggle', () => { if (detail.open && !counted) { counted = true; visits[key] = (visits[key] || 0) + 1; store('ziyaretler', visits); } });
+    let counted = detail.open; detail.addEventListener('toggle', () => { if (detail.open && !counted) { counted = true; visits[key] = (visits[key] || 0) + 1; store('ziyaretler', visits); } });
     card.append(top, detail); return card;
   }));
   if (!filtered.length) empty($('hatlar'), $('favoriler').checked ? 'Henüz eşleşen bir favorin yok. Yıldız simgesiyle hat ekleyebilirsin.' : 'Eşleşen hat bulunamadı.', 'p');
@@ -127,7 +127,7 @@ function renderBuses() {
 }
 async function refresh() {
   if (busy) return; busy = true; $('guncelleme').textContent = 'Kayıtlı veriler kontrol ediliyor…';
-  const names = ['okul', 'kyk', 'duyurular', 'otobus', 'yurtlar', 'durum'];
+  const names = ['okul', 'kyk', 'duyurular', 'otobus', 'durum'];
   const results = await Promise.allSettled(names.map(async name => {
     const response = await fetch(`data/${name}.json`, { cache: 'no-cache', signal: AbortSignal.timeout(20000) });
     if (!response.ok) throw new Error(name); const value = await response.json();
@@ -143,7 +143,6 @@ async function refresh() {
 $('geri').onclick = () => { selectedDay = shiftDay(selectedDay, -1); renderMeals(); };
 $('ileri').onclick = () => { selectedDay = shiftDay(selectedDay, 1); renderMeals(); };
 $('buguneDon').onclick = () => { selectedDay = turkeyDay(); renderMeals(); };
-$('yurt').onchange = () => { store('yurt', $('yurt').value); renderMeals(); };
 $('kaynak').onchange = () => { fillDepartments(); selection = null; store('duyuru', null); renderAnnouncements(); };
 $('duyuruForm').onsubmit = e => { e.preventDefault(); selection = { kaynak: $('kaynak').value, bolum: $('bolum').value, ders: $('ders').value.trim(), genelDahil: $('genelDahil').checked }; store('duyuru', selection); page = 1; renderAnnouncements(); };
 $('konu').onchange = () => { page = 1; renderAnnouncements(); };

@@ -1,13 +1,13 @@
 # Fırat Öğrenci
 
-Varsayılan koyu turuncu tema; kalıcı açık/koyu tema seçimi, mobil düzen, yurt seçimi, bölüm/ders filtreleri ve site içinde duyuru okuma.
+Varsayılan koyu turuncu tema; kalıcı açık/koyu tema seçimi, mobil düzen, Elazığ geneli KYK menüsü, bölüm/ders filtreleri ve site içinde duyuru okuma.
 
 ## Kaynaklar
 
 - Üniversite menüsü: https://unievi.firat.edu.tr/tr
 - Duyurular: Fırat Üniversitesi, SKS, fakülte ve bölüm sayfaları.
 - Yurt listesi: GSB Elazığ tesis listesi; 7 KYK yurdu.
-- Yurt menüleri: https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026 — ay bağlantısı otomatik hesaplanır. Yurt özel menüsü yoksa Elazığ geneli menü açık etiketle gösterilir. Bu kaynak resmî GSB kaynağı değildir; öğün yayımlanmamışsa boş durum gösterilir.
+- Yurt menüleri: https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026 — ay bağlantısı otomatik hesaplanır. Elazığ geneli menü, yurt seçimi gerektirmeden açık etiketle gösterilir. Bu kaynak resmî GSB kaynağı değildir; öğün yayımlanmamışsa boş durum gösterilir.
 - Otobüs numaraları, güzergâhlar ve hafta içi/Cumartesi/Pazar tarifeleri: https://elazigulasim.com/hatlar/ . Tahmini seferler alınmaz; yalnızca kayıtlı başlangıç durağı kalkışları gösterilir. Canlı araç takibi değildir. Resmî kontrol: https://elazigkart.elazig.bel.tr/wheremybus
 
 ## Güncelleme
@@ -16,7 +16,6 @@ GitHub Actions her saatin 07 ve 37. dakikasında kaynakları kontrol edip siteyi
 
 Üniversite kaynaklarına yerelden erişiliyor; GitHub sunucusundaki ilk denemede erişim başarısız oldu. Bu nedenle üniversite duyuruları/menüsü için kesintisiz otomatik tazelik henüz doğrulanmış değildir. Hatalarda kayıtlar korunur, kaynak başına son başarı ve hata durumu `data/durum.json` içinde ve arayüzde gösterilir. Yurt/ulaşım kaynakları da aynı zamanlayıcıya dahildir.
 
-Yurt özel menüleri `data/kyk.json` içindeki `yurtlar[GSB kimliği].gunler[YYYY-MM-DD]` alanına `kahvalti` ve `aksam` dizileriyle eklenebilir; bu veri şehir menüsüne göre önceliklidir.
 
 ## Geliştirme
 
