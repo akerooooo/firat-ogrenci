@@ -1,13 +1,19 @@
 name: Verileri güncelle
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '7,37 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: firat-pages
+  cancel-in-progress: false
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     env:
       TZ: Europe/Istanbul
     steps:
@@ -18,9 +24,29 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: node scrape.mjs
+        id: collect
+        continue-on-error: true
       - name: Değişiklik varsa commit'le
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add data
           git diff --cached --quiet || (git commit -m "Verileri güncelle" && git push)
+      - uses: actions/configure-pages@v5
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Veri toplama sonucunu bildir
+        if: steps.collect.outcome == 'failure'
+        run: echo '::warning::Kaynaklara ulaşılamadı. Son başarılı veriler korundu; durum.json dosyasını kontrol edin.'
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Siteyi yayımla
+        id: deployment
+        uses: actions/deploy-pages@v4

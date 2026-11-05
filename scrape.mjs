@@ -1,7 +1,7 @@
 // Okul menüsünü ve duyuruları çekip data/*.json dosyalarına yazar.
 // Bir kaynak hata verirse o kaynağın eski verisi korunur.
 import * as cheerio from 'cheerio';
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
 const AYLAR = ['oca', 'şub', 'mar', 'nis', 'may', 'haz', 'tem', 'ağu', 'eyl', 'eki', 'kas', 'ara'];
@@ -37,7 +37,7 @@ export function tarihVer(items, now = new Date()) {
   return items;
 }
 
-async function getHtml(url) {
+export async function getHtml(url) {
   const r = await fetch(url, { headers: { 'user-agent': 'firat-ogrenci-sayfasi' }, signal: AbortSignal.timeout(30000) });
   if (!r.ok) throw new Error(`${url} -> HTTP ${r.status}`);
   return r.text();
@@ -82,47 +82,11 @@ export function parseYeniDuyuru(html) {
   }).get().filter((x) => x.baslik && x.url && !gorulen.has(x.url) && gorulen.add(x.url));
 }
 
-function oku(path, varsayilan) {
+export function oku(path, varsayilan) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return varsayilan; }
 }
-const yaz = (path, veri) => writeFileSync(path, JSON.stringify(veri, null, 1) + '\n');
-
-async function main() {
-  mkdirSync('data', { recursive: true });
-  const simdi = new Date().toISOString();
-  let hata = 0;
-
-  try {
-    const gunler = parseOkulMenu(await getHtml('https://unievi.firat.edu.tr/tr'));
-    if (!Object.keys(gunler).length) throw new Error('okul menüsü boş geldi');
-    yaz('data/okul.json', { guncelleme: simdi, gunler });
-    console.log('okul menüsü:', Object.keys(gunler).join(', '));
-  } catch (e) { hata++; console.error('HATA okul menüsü:', e.message, e.cause?.code || e.cause?.message || ''); }
-
-  const kaynaklar = [
-    { id: 'genel', ad: 'Genel', url: 'https://www.firat.edu.tr/tr/page/announcement', parse: parseAnaDuyuru },
-    { id: 'sks', ad: 'SKS', url: 'https://sksdab.firat.edu.tr/announcements-all', parse: parseYeniDuyuru },
-    ...JSON.parse(readFileSync('fakulteler.json', 'utf8')).map((f) => ({
-      id: f.id, ad: f.ad, url: `https://${f.id}.firat.edu.tr/announcements-all`, parse: parseYeniDuyuru,
-    })),
-  ];
-  const eski = oku('data/duyurular.json', { items: [] }).items;
-  const sonuclar = await Promise.all(kaynaklar.map(async (k) => {
-    try {
-      const items = tarihVer(k.parse(await getHtml(k.url))).slice(0, 20);
-      if (!items.length) throw new Error('liste boş');
-      return items.map((x) => ({ ...x, kaynak: k.id }));
-    } catch (e) {
-      hata++;
-      console.error(`HATA ${k.id}:`, e.message, e.cause?.code || e.cause?.message || '');
-      return eski.filter((x) => x.kaynak === k.id);
-    }
-  }));
-  // Hiçbir kaynağa ulaşılamadıysa dosyaya dokunma; "son güncelleme" yalan söylemesin.
-  if (hata >= kaynaklar.length + 1) { console.error('Hiçbir kaynağa ulaşılamadı'); process.exitCode = 1; return; }
-  const items = sonuclar.flat().sort((a, b) => (b.tarih || '').localeCompare(a.tarih || ''));
-  yaz('data/duyurular.json', { guncelleme: simdi, kaynaklar: kaynaklar.map(({ id, ad }) => ({ id, ad })), items });
-  console.log('duyuru:', items.length, 'hata:', hata);
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  import('./updater.mjs').then(({ update }) => update()).catch(error => {
+    console.error(error); process.exitCode = 1;
+  });
 }
-
-if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();

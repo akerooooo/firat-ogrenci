@@ -1,0 +1,320 @@
+{
+ "guncelleme": "2026-11-05T22:44:27.691Z",
+ "bolumler": [
+  {
+   "id": "oteabd",
+   "ad": "Öğretim Teknolojileri",
+   "fakulte": "egitimf",
+   "tur": "bolum",
+   "url": "https://oteabd.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "fizik",
+   "ad": "Fizik",
+   "fakulte": "fenf",
+   "tur": "bolum",
+   "url": "http://fizik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "kimya",
+   "ad": "Kimya",
+   "fakulte": "fenf",
+   "tur": "bolum",
+   "url": "http://kimya.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "matematik",
+   "ad": "Matematik",
+   "fakulte": "fenf",
+   "tur": "bolum",
+   "url": "http://matematik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "istatistik",
+   "ad": "İstatistik",
+   "fakulte": "fenf",
+   "tur": "bolum",
+   "url": "http://istatistik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "iktisat",
+   "ad": "İktisat Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://iktisat.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "isletme",
+   "ad": "İşletme Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://isletme.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "sbkyb",
+   "ad": "Siyaset Bilimi ve Kamu Yönetimi Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://sbkyb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "ceeib",
+   "ad": "Çalışma Ekonomisi ve Endüstri İlişkileri Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://ceeib.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "maliye",
+   "ad": "Maliye Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://maliye.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "sagyon",
+   "ad": "Sağlık Yönetimi Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "https://sagyon.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "yonbil",
+   "ad": "Yönetim Bilişim Sistemleri Bölümü",
+   "fakulte": "iibf",
+   "tur": "bolum",
+   "url": "http://yonbil.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "tib",
+   "ad": "Temel İslam Bilimleri Bölümü",
+   "fakulte": "ilahiyatf",
+   "tur": "bolum",
+   "url": "https://tib.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "fdb",
+   "ad": "Felsefe ve Din Bilimleri Bölümü",
+   "fakulte": "ilahiyatf",
+   "tur": "bolum",
+   "url": "https://fdb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "itsb",
+   "ad": "İslam Tarihi ve Sanatları Bölümü",
+   "fakulte": "ilahiyatf",
+   "tur": "bolum",
+   "url": "https://itsb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "bdeb",
+   "ad": "Batı Dilleri ve Edebiyatları",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://bdeb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "cb",
+   "ad": "Coğrafya",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://cb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "ctleb",
+   "ad": "Çağdaş Türk Lehçeleri ve Edebiyatları",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://ctleb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "imt",
+   "ad": "Mütercim Tercümanlık",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://imt.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "sosyoloji",
+   "ad": "Sosyoloji",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://sosyoloji.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "tarih",
+   "ad": "Tarih",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://tarih.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "turkdiliedb",
+   "ad": "Türk Dili ve Edebiyatı",
+   "fakulte": "isbf",
+   "tur": "bolum",
+   "url": "http://turkdiliedb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "mimarlik",
+   "ad": "Mimarlik",
+   "fakulte": "mimarlikf",
+   "tur": "bolum",
+   "url": "https://mimarlik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "icmimarlik",
+   "ad": "İç Mimarlik",
+   "fakulte": "mimarlikf",
+   "tur": "bolum",
+   "url": "https://icmimarlik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "planlamamimarlik",
+   "ad": "Şehir ve Bölge Planlama",
+   "fakulte": "mimarlikf",
+   "tur": "bolum",
+   "url": "https://planlamamimarlik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "endustrimimarlik",
+   "ad": "Endüstri Ürünleri Tasarımı",
+   "fakulte": "mimarlikf",
+   "tur": "bolum",
+   "url": "https://endustrimimarlik.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "bilgisayarmf",
+   "ad": "Bilgisayar Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://bilgisayarmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "bmmf",
+   "ad": "Biyomühendislik Bölümü",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://bmmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "cevremf",
+   "ad": "Çevre Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://cevremf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "eemmf",
+   "ad": "Elektrik-Elektronik Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://eemmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "insaatmf",
+   "ad": "İnşaat Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://insaatmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "jeolojimf",
+   "ad": "Jeoloji Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://jeolojimf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "kimyamf",
+   "ad": "Kimya Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://kimyamf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "makinamf",
+   "ad": "Makine Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://makinamf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "mekatronikmf",
+   "ad": "Mekatronik Mühendiliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://mekatronikmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "mmmf",
+   "ad": "Metalurji ve Malzeme Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://mmmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "yzvm",
+   "ad": "Yapay Zeka ve Veri Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://yzvm.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "yazmf",
+   "ad": "Yazılım Mühendisliği",
+   "fakulte": "muhendislikf",
+   "tur": "bolum",
+   "url": "https://yazmf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "aeb",
+   "ad": "Antrenörlük Eğitim Bölümü",
+   "fakulte": "sporbilimlerif",
+   "tur": "bolum",
+   "url": "http://aeb.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "sy",
+   "ad": "Spor Yöneticiliği Bölümü",
+   "fakulte": "sporbilimlerif",
+   "tur": "bolum",
+   "url": "http://sy.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "eemtf",
+   "ad": "Elektrik-Elektronik Mühendisliği",
+   "fakulte": "teknolojif",
+   "tur": "bolum",
+   "url": "http://eemtf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "entf",
+   "ad": "Enerji Sistemleri Mühendisliği",
+   "fakulte": "teknolojif",
+   "tur": "bolum",
+   "url": "http://entf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "makinatf",
+   "ad": "Makine Mühendisliği",
+   "fakulte": "teknolojif",
+   "tur": "bolum",
+   "url": "http://makinatf.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "yazilimmuholp",
+   "ad": "UOLP Yazılım Mühendisliği",
+   "fakulte": "teknolojif",
+   "tur": "bolum",
+   "url": "http://yazilimmuholp.firat.edu.tr/announcements-all"
+  },
+  {
+   "id": "noroloji",
+   "ad": "Nöroloji Anabilim Dalı",
+   "fakulte": "tip",
+   "tur": "bolum",
+   "url": "https://noroloji.firat.edu.tr/announcements-all"
+  }
+ ]
+}

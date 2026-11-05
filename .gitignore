@@ -1,2 +1,7 @@
 node_modules/
 .claude/
+dist/
+*.tmp
+source-*.html
+inspect-*.txt
+dorm-*.html

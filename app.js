@@ -1,99 +1,156 @@
-const $ = (id) => document.getElementById(id);
-const pad = (n) => String(n).padStart(2, '0');
-const isoGun = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-const getJson = (p) => fetch(p, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+import { HALF_HOUR, fold, turkeyDay, shiftDay, category, filterAnnouncements, routeKey, sortRoutes, campusScore } from './model.mjs';
+const $ = id => document.getElementById(id);
+const el = (tag, text, className) => { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; if (className) node.className = className; return node; };
+const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(`firat:${key}`)) ?? fallback; } catch { return fallback; } };
+const store = (key, value) => { try { localStorage.setItem(`firat:${key}`, JSON.stringify(value)); } catch { /* Private browsing can disable storage. */ } };
+const dateText = (value, full = false) => value ? new Date(value.length === 10 ? `${value}T12:00:00+03:00` : value).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: full ? 'long' : 'short', ...(full ? { hour: '2-digit', minute: '2-digit' } : { year: 'numeric' }) }) : 'Tarih belirtilmemiş';
+const empty = (parent, message, tag = 'li') => parent.replaceChildren(el(tag, message, 'empty'));
+let data = {}, selectedDay = turkeyDay(), selection = read('duyuru', null), page = 1, busLimit = 6, busy = false, lastCheck = 0;
+let favorites = read('favoriler', []), visits = read('ziyaretler', {});
+if (!Array.isArray(favorites)) favorites = [];
+if (!visits || typeof visits !== 'object') visits = {};
+if (!selection || typeof selection !== 'object') selection = null;
+const sources = () => data.duyurular?.kaynaklar || [];
+const sourceName = id => sources().find(s => s.id === id)?.ad || id;
+const sourceStatus = id => data.durum?.kaynaklar?.[id];
+function freshText(timestamp) { return timestamp ? `Son başarılı kontrol: ${dateText(timestamp, true)}${Date.now() - Date.parse(timestamp) > 2 * HALF_HOUR ? ' · Güncelleme gecikmiş olabilir' : ''}` : 'Kaynak henüz doğrulanmadı'; }
 
-// Metni DOM'a yazarken HTML olarak yorumlanmasın diye textContent kullanılır.
-function li(ad, ek) {
-  const el = document.createElement('li');
-  el.textContent = ad;
-  if (ek) { const s = document.createElement('span'); s.textContent = ek; el.append(s); }
-  return el;
+function renderMeals() {
+  $('bugun').textContent = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).toLocaleUpperCase('tr');
+  $('gunAd').textContent = new Date(`${selectedDay}T12:00:00+03:00`).toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', weekday: 'short' });
+  const dishes = data.okul?.gunler?.[selectedDay] || [];
+  $('okul').replaceChildren(...dishes.map((dish, i) => {
+    const row = el('li'), name = el('div', undefined, 'dish-name');
+    name.append(el('span', dish.ad), el('span', `${dish.tur || 'Günün yemeği'}${dish.kcal ? ` · ${dish.kcal} kcal` : ''}`, 'dish-type'));
+    row.append(el('span', String(i + 1).padStart(2, '0'), 'dish-num'), name); return row;
+  }));
+  if (!dishes.length) empty($('okul'), 'Bu tarih için üniversite menüsü yayımlanmamış. Başka bir güne bakabilirsin.');
+  $('kalori').textContent = dishes.length && dishes.every(x => x.kcal > 0) ? `Toplam ${dishes.reduce((sum, x) => sum + x.kcal, 0)} kcal` : '';
+  $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}`;
+  const dorm = $('yurt').value;
+  // A menu belongs only to its named dorm, never silently to every dorm in Elazığ.
+  const dormData = data.kyk?.yurtlar?.[dorm];
+  const menu = dormData?.gunler?.[selectedDay] || (dorm === '023129806' ? data.kyk?.gunler?.[selectedDay] : null) || {};
+  for (const meal of ['kahvalti', 'aksam']) {
+    const rows = (menu[meal] || []).map(x => el('li', typeof x === 'string' ? x : x.ad));
+    $('' + meal).replaceChildren(...rows);
+    if (!rows.length) empty($(meal), dorm ? 'Bu yurt için doğrulanmış günlük menü henüz eklenmedi.' : 'Menüyü görmek için yukarıdan yurdunu seç.');
+  }
+  $('yurtDurum').replaceChildren(el('span', dormData?.guncelleme ? freshText(dormData.guncelleme) : 'Elazığ’daki KYK yurtları resmî GSB listesinden alınır. Yurt seçimi kaydedilir; menüler her yurt için ayrı doğrulanır. '));
+  const a = el('a', 'Yurt listesi ↗'); a.href = data.yurtlar?.kaynak || 'https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23'; a.target = '_blank'; a.rel = 'noopener'; $('yurtDurum').append(a);
 }
-function doldur(ul, satirlar, bosMesaj) {
-  ul.replaceChildren(...(satirlar.length ? satirlar : [Object.assign(document.createElement('li'), { className: 'bos', textContent: bosMesaj })]));
+function fillDepartments(value = '') {
+  const departments = sources().filter(s => s.fakulte === $('kaynak').value);
+  $('bolum').replaceChildren(new Option(departments.length ? 'Fakülte ve tüm bölümleri' : 'Fakülte / kaynak duyuruları', ''), ...departments.map(d => new Option(d.ad, d.id)));
+  $('bolum').disabled = !departments.length;
+  if (departments.some(x => x.id === value)) $('bolum').value = value;
 }
-
-// Sekmeler
-document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => {
-  document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', x === b));
-  for (const id of ['yemek', 'duyuru', 'otobus']) $(id).hidden = b.dataset.tab !== id;
-}));
-
-const [okul, kyk, duyuru, otobus] = await Promise.all(['data/okul.json', 'data/kyk.json', 'data/duyurular.json', 'data/otobus.json'].map(getJson));
-
-// Yemek
-let gun = new Date();
-function yemekGoster() {
-  const k = isoGun(gun);
-  $('gunAd').textContent = gun.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' });
-  const y = kyk.gunler?.[k] || {};
-  doldur($('kahvalti'), (y.kahvalti || []).map((x) => li(x)), 'Menü girilmedi');
-  doldur($('aksam'), (y.aksam || []).map((x) => li(x)), 'Menü girilmedi');
-  doldur($('okul'), (okul.gunler?.[k] || []).map((x) => li(x.ad, x.kcal ? `${x.kcal} kcal` : '')), 'Bu gün için menü yok');
+function fillSelections() {
+  const dorm = $('yurt').value || read('yurt', '');
+  $('yurt').replaceChildren(new Option('Yurdunu seç', ''), ...(data.yurtlar?.yurtlar || []).map(d => new Option(d.ad, d.id)));
+  if ([...$('yurt').options].some(x => x.value === dorm)) $('yurt').value = dorm;
+  const source = $('kaynak').value || selection?.kaynak || '';
+  const department = $('bolum').value || selection?.bolum || '';
+  $('kaynak').replaceChildren(new Option('Önce fakülteni seç', ''), ...sources().filter(s => s.tur !== 'bolum').map(s => new Option(s.ad, s.id)));
+  if (sources().some(s => s.id === source)) $('kaynak').value = source;
+  fillDepartments(department);
 }
-$('geri').onclick = () => { gun.setDate(gun.getDate() - 1); yemekGoster(); };
-$('ileri').onclick = () => { gun.setDate(gun.getDate() + 1); yemekGoster(); };
-yemekGoster();
-
-// Duyurular
-const adlar = Object.fromEntries((duyuru.kaynaklar || []).map((k) => [k.id, k.ad]));
-for (const k of duyuru.kaynaklar || []) $('kaynak').append(new Option(k.ad, k.id));
-function duyuruGoster() {
-  const sec = $('kaynak').value;
-  const items = (duyuru.items || []).filter((x) => !sec || x.kaynak === sec).slice(0, 100);
-  doldur($('duyurular'), items.map((x) => {
-    const el = document.createElement('li');
-    const a = Object.assign(document.createElement('a'), { href: x.url, target: '_blank', rel: 'noopener', textContent: x.baslik });
-    const s = document.createElement('small');
-    s.textContent = `${x.tarih ? new Date(x.tarih).toLocaleDateString('tr-TR') : ''} · ${adlar[x.kaynak] || x.kaynak}`;
-    el.append(a, s);
-    return el;
-  }), 'Duyuru yok');
+const labels = { sinav: 'Sınav', ders: 'Ders & program', etkinlik: 'Etkinlik', genel: 'Duyuru' };
+function renderAnnouncements() {
+  const ready = Boolean(selection?.kaynak);
+  $('duyuruBaslangic').hidden = ready; $('duyuruSonuc').hidden = !ready;
+  if (!ready) return;
+  const rows = filterAnnouncements(data.duyurular?.items || [], sources(), { ...selection, konu: $('konu').value });
+  const pages = Math.max(1, Math.ceil(rows.length / 6)); page = Math.min(page, pages);
+  $('sonucSayisi').textContent = `${rows.length} duyuru · ${sourceName(selection.bolum || selection.kaynak)}`;
+  const relevantSources = sources().filter(s => s.id === selection.kaynak || s.id === selection.bolum || (!selection.bolum && s.fakulte === selection.kaynak) || (selection.genelDahil && ['genel', 'sks'].includes(s.id)));
+  const failed = relevantSources.filter(s => sourceStatus(s.id)?.durum === 'hata');
+  const selectedStatus = sourceStatus(selection.bolum || selection.kaynak);
+  $('duyuruDurum').textContent = `${freshText(selectedStatus?.sonBasari || data.duyurular?.guncelleme)}${failed.length ? ` · ${failed.map(s => s.ad).join(', ')} kaynağına son kontrolde ulaşılamadı; kayıtlı duyurular korunuyor.` : ''}`;
+  $('duyurular').replaceChildren(...rows.slice((page - 1) * 6, page * 6).map(item => {
+    const card = el('article', undefined, 'announcement-card'), button = el('button', undefined, 'announcement-open'); button.type = 'button';
+    const top = el('div', undefined, 'announcement-top'); top.append(el('span', labels[category(item)], 'tag'), el('span', dateText(item.tarih)));
+    const bottom = el('div', undefined, 'announcement-bottom'); bottom.append(el('span', sourceName(item.kaynak)), el('span', 'Duyuruyu oku ↗'));
+    button.append(top, el('h3', item.baslik), el('p', item.ozet || 'Duyurunun ayrıntılarını ve varsa eklerini görüntüle.'), bottom);
+    button.onclick = () => openAnnouncement(item); card.append(button); return card;
+  }));
+  if (!rows.length) empty($('duyurular'), 'Seçimine uygun duyuru bulunamadı. Ders adını kısaltabilir veya konu filtresini değiştirebilirsin.', 'p');
+  $('oncekiSayfa').disabled = page <= 1; $('sonrakiSayfa').disabled = page >= pages; $('sayfaBilgi').textContent = `${page} / ${pages}`;
 }
-$('kaynak').onchange = duyuruGoster;
-duyuruGoster();
-
-// Otobüs
-const dk = (s) => { const [h, m] = s.slice(0, 5).split(':'); return +h * 60 + +m; };
-const kucuk = (s) => s.toLocaleLowerCase('tr');
-const hatlar = (otobus.hatlar || []).map((h) => ({ ...h, saatler: [...h.saatler].sort((a, b) => dk(a) - dk(b)) }));
-$('otobusKaynak').href = otobus.kaynak || '#';
-function otobusGoster() {
-  const q = kucuk($('ara').value.trim());
-  const now = new Date();
-  const simdi = now.getHours() * 60 + now.getMinutes();
-  const liste = hatlar.filter((h) => !q || kucuk(`${h.ad} ${h.gidis} ${h.donus}`).includes(q));
-  doldur($('hatlar'), liste.map((h) => {
-    const el = Object.assign(document.createElement('li'), { className: 'kart' });
-    const sonraki = h.saatler.find((s) => dk(s) >= simdi);
-    const baslik = Object.assign(document.createElement('h2'), { textContent: h.ad });
-    if (h.saatler.length) {
-      const s = document.createElement('small');
-      const fark = sonraki && dk(sonraki) - simdi;
-      s.textContent = sonraki ? `Sıradaki ${sonraki.slice(0, 5)} · ${fark >= 60 ? `${Math.floor(fark / 60)} sa ` : ''}${fark % 60} dk` : 'Bugün sefer kalmadı';
-      baslik.append(s);
-    }
-    const saatler = Object.assign(document.createElement('div'), { className: 'saatler' });
-    for (const s of h.saatler) {
-      const c = Object.assign(document.createElement('span'), { textContent: s });
-      if (dk(s) < simdi) c.className = 'gecti';
-      if (s === sonraki) c.className = 'siradaki';
-      saatler.append(c);
-    }
-    el.append(baslik, saatler);
-    if (h.not) el.append(Object.assign(document.createElement('p'), { className: 'bos', textContent: h.not }));
-    if (h.gidis || h.donus) {
-      const d = document.createElement('details');
-      d.append(Object.assign(document.createElement('summary'), { textContent: 'Güzergah' }));
-      if (h.gidis) d.append(Object.assign(document.createElement('p'), { textContent: `Gidiş: ${h.gidis}` }));
-      if (h.donus) d.append(Object.assign(document.createElement('p'), { textContent: `Dönüş: ${h.donus}` }));
-      el.append(d);
-    }
-    return el;
-  }), 'Eşleşen hat yok');
+function openAnnouncement(item) {
+  $('modalBaslik').textContent = item.baslik;
+  $('modalMeta').textContent = `${sourceName(item.kaynak)} · ${dateText(item.tarih)}`;
+  // A second allowlist protects the browser even if a data file is edited by hand.
+  const allowed = new Set('P BR DIV SPAN STRONG B EM I U S UL OL LI H2 H3 H4 TABLE THEAD TBODY TR TD TH BLOCKQUOTE A IMG HR'.split(' '));
+  const template = document.createElement('template'); template.innerHTML = item.icerik || '';
+  for (const node of template.content.querySelectorAll('*')) {
+    if (!allowed.has(node.tagName)) { node.remove(); continue; }
+    const href = node.getAttribute('href'), src = node.getAttribute('src'), alt = node.getAttribute('alt');
+    for (const attr of [...node.attributes]) node.removeAttribute(attr.name);
+    if (node.tagName === 'A' && /^https?:\/\//i.test(href || '')) { node.href = href; node.target = '_blank'; node.rel = 'noopener noreferrer'; }
+    if (node.tagName === 'IMG' && /^https?:\/\//i.test(src || '')) { node.src = src; node.alt = alt || 'Duyuru görseli'; node.loading = 'lazy'; }
+  }
+  $('modalIcerik').replaceChildren(template.content);
+  if (!item.icerik) $('modalIcerik').append(el('p', 'Bu duyurunun içeriği henüz alınamadı. Sonraki güncellemede tekrar denenecek.'));
+  $('modalDurum').textContent = `${item.icerikHata ? 'Son denemede içerik alınamadı. Kayıtlı içerik varsa korunmuştur. ' : ''}${item.icerikGuncelleme ? freshText(item.icerikGuncelleme) : ''}`;
+  $('modalKaynak').href = /^https?:\/\//i.test(item.url) ? item.url : '#';
+  $('duyuruModal').showModal(); $('duyuruModal').scrollTop = 0;
 }
-$('ara').oninput = otobusGoster;
-otobusGoster();
-
-if (duyuru.guncelleme) $('guncelleme').textContent = `Son güncelleme: ${new Date(duyuru.guncelleme).toLocaleString('tr-TR')}`;
+function renderBuses() {
+  const q = fold($('ara').value);
+  const filtered = sortRoutes(data.otobus?.hatlar || [], { favorites, visits, order: $('hatSiralama').value }).filter(h => (!q || fold(`${h.numara || ''} ${h.ad} ${h.gidis} ${h.donus}`).includes(q)) && (!$('favoriler').checked || favorites.includes(routeKey(h))));
+  $('hatSayisi').textContent = `${filtered.length} arşiv hattı · Kullanım sıralaması bu cihaza özeldir; şehir genelindeki yolcu yoğunluğunu göstermez.`;
+  $('hatlar').replaceChildren(...filtered.slice(0, busLimit).map(h => {
+    const key = routeKey(h), card = el('article', undefined, 'bus-card'), top = el('div', undefined, 'bus-card-top');
+    const number = el('span', h.numaraDogrulandi ? h.numara : '—', 'bus-number'); number.title = h.numaraDogrulandi ? 'Doğrulanmış hat numarası' : 'Hat numarası doğrulanmadı';
+    const title = el('div'); title.append(el('h3', h.ad), el('small', campusScore(h) ? 'Kampüs bağlantısı · Arşiv' : 'Elazığ · Arşiv'));
+    const favorite = el('button', favorites.includes(key) ? '★' : '☆', 'favorite'); favorite.setAttribute('aria-label', `${h.ad} favori`); favorite.setAttribute('aria-pressed', favorites.includes(key));
+    favorite.onclick = () => { favorites = favorites.includes(key) ? favorites.filter(x => x !== key) : [...favorites, key]; store('favoriler', favorites); renderBuses(); const replacement = [...$('hatlar').querySelectorAll('button.favorite')].find(b => b.getAttribute('aria-label') === `${h.ad} favori`); replacement?.focus(); };
+    top.append(number, title, favorite);
+    const detail = el('details'); detail.append(el('summary', 'Kayıtlı güzergâhı görüntüle'));
+    detail.append(el('p', 'Hat numarası ve güncel kalkış saatleri resmî Elazığ Kart ekranından kontrol edilmelidir.'));
+    if (h.gidis) detail.append(el('p', `Gidiş (arşiv): ${h.gidis}`));
+    if (h.donus) detail.append(el('p', `Dönüş (arşiv): ${h.donus}`));
+    if (!h.gidis && !h.donus) detail.append(el('p', 'Bu hat için kayıtlı güzergâh ayrıntısı bulunmuyor.'));
+    detail.append(el('p', `Arşiv kaynağındaki tarih: ${h.guncelleme || 'Belirtilmemiş'}`));
+    const link = el('a', 'Güncel saatleri Elazığ Kart’ta kontrol et ↗'); link.href = 'https://elazigkart.elazig.bel.tr/wheremybus'; link.target = '_blank'; link.rel = 'noopener'; detail.append(link);
+    let counted = false; detail.addEventListener('toggle', () => { if (detail.open && !counted) { counted = true; visits[key] = (visits[key] || 0) + 1; store('ziyaretler', visits); } });
+    card.append(top, detail); return card;
+  }));
+  if (!filtered.length) empty($('hatlar'), $('favoriler').checked ? 'Henüz eşleşen bir favorin yok. Yıldız simgesiyle hat ekleyebilirsin.' : 'Eşleşen hat bulunamadı.', 'p');
+  $('dahaFazlaHat').hidden = filtered.length <= busLimit;
+}
+async function refresh() {
+  if (busy) return; busy = true; $('yenile').disabled = true; $('guncelleme').textContent = 'Kayıtlı veriler kontrol ediliyor…';
+  const names = ['okul', 'kyk', 'duyurular', 'otobus', 'yurtlar', 'durum'];
+  const results = await Promise.allSettled(names.map(async name => {
+    const response = await fetch(`data/${name}.json`, { cache: 'no-cache', signal: AbortSignal.timeout(20000) });
+    if (!response.ok) throw new Error(name); const value = await response.json();
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error(name);
+    return value;
+  }));
+  const errors = [];
+  results.forEach((result, i) => { if (result.status === 'fulfilled') data[names[i]] = result.value; else errors.push(names[i]); });
+  fillSelections(); renderMeals(); renderAnnouncements(); renderBuses(); lastCheck = Date.now();
+  $('guncelleme').textContent = errors.length ? 'Bazı veriler alınamadı. Varsa son kayıtlar gösteriliyor; tekrar kontrol edebilirsin.' : `Son kaynak kontrolü: ${dateText(data.durum?.sonDeneme || data.duyurular?.guncelleme, true)} · Otomatik kontrol: 30 dk`;
+  busy = false; $('yenile').disabled = false;
+}
+$('geri').onclick = () => { selectedDay = shiftDay(selectedDay, -1); renderMeals(); };
+$('ileri').onclick = () => { selectedDay = shiftDay(selectedDay, 1); renderMeals(); };
+$('buguneDon').onclick = () => { selectedDay = turkeyDay(); renderMeals(); };
+$('yurt').onchange = () => { store('yurt', $('yurt').value); renderMeals(); };
+$('kaynak').onchange = () => { fillDepartments(); selection = null; store('duyuru', null); renderAnnouncements(); };
+$('duyuruForm').onsubmit = e => { e.preventDefault(); selection = { kaynak: $('kaynak').value, bolum: $('bolum').value, ders: $('ders').value.trim(), genelDahil: $('genelDahil').checked }; store('duyuru', selection); page = 1; renderAnnouncements(); };
+$('konu').onchange = () => { page = 1; renderAnnouncements(); };
+$('oncekiSayfa').onclick = () => { page--; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
+$('sonrakiSayfa').onclick = () => { page++; renderAnnouncements(); $('duyuruSonuc').scrollIntoView({ block: 'start' }); };
+for (const id of ['ara', 'hatSiralama', 'favoriler']) $(id).addEventListener(id === 'ara' ? 'input' : 'change', () => { busLimit = 6; renderBuses(); });
+$('dahaFazlaHat').onclick = () => { busLimit += 6; renderBuses(); };
+$('modalKapat').onclick = () => $('duyuruModal').close();
+$('duyuruModal').addEventListener('click', e => { if (e.target === $('duyuruModal')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } });
+$('yenile').onclick = refresh;
+if (selection) { $('ders').value = selection.ders || ''; $('genelDahil').checked = selection.genelDahil ?? true; }
+document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => { document.querySelectorAll('nav a').forEach(x => x.classList.toggle('active', x === a)); }));
+await refresh();
+setInterval(refresh, HALF_HOUR);
+document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - lastCheck >= HALF_HOUR) refresh(); });

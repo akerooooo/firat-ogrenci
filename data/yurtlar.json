@@ -1,0 +1,41 @@
+{
+ "guncelleme": "2026-11-05T22:49:42.328Z",
+ "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23",
+ "yurtlar": [
+  {
+   "id": "023129802",
+   "ad": "Elazığ-Fırat Erkek Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129803",
+   "ad": "Harput Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129804",
+   "ad": "İzzetpaşa Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129806",
+   "ad": "Ahmet Kabaklı Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129807",
+   "ad": "Ömer Bilginoğlu Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129808",
+   "ad": "Sare Ana Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  },
+  {
+   "id": "023129809",
+   "ad": "Fethi Sekin Öğrenci Yurdu",
+   "kaynak": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23"
+  }
+ ]
+}
