@@ -97,7 +97,7 @@ async function main() {
     if (!Object.keys(gunler).length) throw new Error('okul menüsü boş geldi');
     yaz('data/okul.json', { guncelleme: simdi, gunler });
     console.log('okul menüsü:', Object.keys(gunler).join(', '));
-  } catch (e) { hata++; console.error('HATA okul menüsü:', e.message); }
+  } catch (e) { hata++; console.error('HATA okul menüsü:', e.message, e.cause?.code || e.cause?.message || ''); }
 
   const kaynaklar = [
     { id: 'genel', ad: 'Genel', url: 'https://www.firat.edu.tr/tr/page/announcement', parse: parseAnaDuyuru },
@@ -114,7 +114,7 @@ async function main() {
       return items.map((x) => ({ ...x, kaynak: k.id }));
     } catch (e) {
       hata++;
-      console.error(`HATA ${k.id}:`, e.message);
+      console.error(`HATA ${k.id}:`, e.message, e.cause?.code || e.cause?.message || '');
       return eski.filter((x) => x.kaynak === k.id);
     }
   }));
