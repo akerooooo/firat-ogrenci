@@ -35,12 +35,17 @@ function renderMeals() {
   $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}${dishes[0]?.kaynak ? ` · Kaynak: ${dishes[0].kaynak} (resmî değil)` : ''}`;
   const menu = data.kyk?.sehir?.gunler?.[selectedDay] || {};
   for (const meal of ['kahvalti', 'aksam']) {
-    const rows = (menu[meal] || []).map(x => el('li', typeof x === 'string' ? x : x.ad));
+    const items = (menu[meal] || []).map(x => typeof x === 'string' ? { ad: x } : x);
+    const rows = items.map(x => { const row = el('li', x.ad); if (x.kcal) row.append(el('span', `${x.kcal} kcal`, 'dish-type')); return row; });
+    // Kaynağın toplamı gibi: her satırın ilk seçeneği.
+    if (items.length && items.every(x => parseInt(x.kcal) > 0)) rows.push(el('li', `Toplam ≈ ${items.reduce((sum, x) => sum + parseInt(x.kcal), 0)} kcal`, 'meal-total'));
     $(meal).replaceChildren(...rows);
     if (!rows.length) empty($(meal), 'Seçilen tarih ve öğün için kaynakta menü yayımlanmamış.');
   }
   $('yurtDurum').replaceChildren(el('span', 'Elazığ geneli menüdür; yurtlarda değişiklik olabilir. '));
   $('yurtDurum').append(el('span', ' · '+freshText(data.kyk?.sehir?.guncelleme)+(sourceStatus('kyk')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : '')));
+  const yedek = Object.entries(menu.kaynaklar || {}).map(([meal, ad]) => `${meal === 'kahvalti' ? 'Kahvaltı' : 'Akşam'}: ${ad}`);
+  if (yedek.length) $('yurtDurum').append(el('span', ` · Yedek kaynak (${yedek.join(', ')})`));
 
 }
 function renderBuses() {

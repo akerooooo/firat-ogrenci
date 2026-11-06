@@ -50,18 +50,51 @@ assert.ok(current.items.every(x => x.baslik && x.url && x.kaynak));
 // KYK gün sayfası: Next.js verisindeki seçmeli yemekler (kaçışlı JSON).
 const { parseDormDetail, fillDormDetails } = await import('./extra-sources.mjs');
 const flight = String.raw`x{\"id\":1,\"date\":\"2026-11-06\",\"mealType\":1,\"cityId\":23,\"first\":\"Mercimek Çorba / Ayran Aşı Çorba\",\"firstCalories\":\"140 / 150\",\"second\":\"Orman Kebap / Ispanak Yemeği / Şinitzel\",\"third\":\"Nohutlu Pirinç Pilavı\",\"fourth\":\"Cacık\",\"totalCalories\":870}y`;
-assert.deepEqual(parseDormDetail(flight, '2026-11-06', 'aksam'), ['Mercimek Çorba / Ayran Aşı Çorba', 'Orman Kebap / Ispanak Yemeği / Şinitzel', 'Nohutlu Pirinç Pilavı', 'Cacık']);
+assert.deepEqual(parseDormDetail(flight, '2026-11-06', 'aksam'), [
+  { ad: 'Mercimek Çorba / Ayran Aşı Çorba', kcal: '140 / 150' }, { ad: 'Orman Kebap / Ispanak Yemeği / Şinitzel', kcal: null },
+  { ad: 'Nohutlu Pirinç Pilavı', kcal: null }, { ad: 'Cacık', kcal: null }]);
+// kykyemekliste virgülle ayırır.
+assert.equal(parseDormDetail(String.raw`{\"date\":\"2026-11-06\",\"mealType\":0,\"first\":\"Yumurta\",\"firstCalories\":\"70,80\"}`, '2026-11-06', 'kahvalti')[0].kcal, '70 / 80');
 assert.equal(parseDormDetail(flight, '2026-11-06', 'kahvalti'), null);
 // Pencere içi ve özeti değişen gün çekilir; özeti aynı gün önceki tam listeyi korur; pencere dışı gün çekilmez.
 const fetched = [];
 const days = await fillDormDetails({
   now: '2026-11-06T09:00:00Z', pool,
-  prev: { '2026-11-07': { aksam: ['Şehriye Çorba / Yayla Çorba'], ozet: { aksam: 'Şehriye Çorba' } } },
+  prev: { '2026-11-07': { aksam: [{ ad: 'Şehriye Çorba / Yayla Çorba', kcal: '120' }], ozet: { aksam: 'Şehriye Çorba' } } },
   gunler: { '2026-11-06': { aksam: ['Mercimek Çorba'] }, '2026-11-07': { aksam: ['Şehriye Çorba'] }, '2026-11-20': { aksam: ['Tarhana Çorba'] } },
   fetchDetail: async (date, meal) => { fetched.push(`${date}/${meal}`); return ['Mercimek Çorba / Ayran Aşı Çorba']; },
 });
 assert.deepEqual(fetched, ['2026-11-06/aksam']);
 assert.deepEqual(days['2026-11-06'].aksam, ['Mercimek Çorba / Ayran Aşı Çorba']);
-assert.deepEqual(days['2026-11-07'].aksam, ['Şehriye Çorba / Yayla Çorba']);
+assert.deepEqual(days['2026-11-07'].aksam, [{ ad: 'Şehriye Çorba / Yayla Çorba', kcal: '120' }]);
 assert.deepEqual(days['2026-11-20'].aksam, ['Tarhana Çorba']);
-console.log('Özellik testleri başarılı: Türkiye saati, filtreler, güvenli okuyucu, bölüm/yurt ayrıştırma, hat sıralaması, KYK seçmeli yemekler.');
+// KYK yedekleri: aylık sayfa, KampüsCepte metni ve doldurma sırası.
+const { parseMonthPage, parseKampusCepteKyk, fillFromBackups } = await import('./extra-sources.mjs');
+const month = flight + String.raw`{\"id\":2,\"date\":\"2026-11-07\",\"mealType\":1,\"cityId\":23,\"first\":\"Şehriye Çorba\",\"second\":\"Tavuk Fajita\",\"third\":\"Fırın Makarna\",\"fourth\":\"Browni\"}`;
+assert.deepEqual(Object.keys(parseMonthPage(month, 'aksam')), ['2026-11-06', '2026-11-07']);
+assert.deepEqual(parseMonthPage(month, 'kahvalti'), {});
+const kcJs = `const uniEviMenuleri = { "2026-11-02": ["X"] };
+const kykAnaMenu = {
+  kahvaltiNotu: "Al götür",
+  "2026-11-12": { kahvalti: ["Haşlanmış yumurta", "Çay"],
+                  aksam: ["Mercimek çorbası / Yayla çorbası", "Tavuk \\"şiş\\""] },
+};
+const kykOzelAralik = { "ahmet-kabakli": ["2026-11-08", "2026-11-20"] };`;
+assert.deepEqual(parseKampusCepteKyk(kcJs), { '2026-11-12': { kahvalti: ['Haşlanmış yumurta', 'Çay'], aksam: ['Mercimek çorbası / Yayla çorbası', 'Tavuk "şiş"'] } });
+assert.throws(() => parseKampusCepteKyk('const a = 1;'));
+const filled = fillFromBackups(
+  { '2026-11-12': { kahvalti: ['Ana kaynak'], aksam: [] } },
+  [{ ad: 'B1', days: { '2026-11-13': { kahvalti: ['b1'] } } }, { ad: 'B2', days: { '2026-11-12': { kahvalti: ['b2'], aksam: ['b2 akşam'] }, '2026-11-13': { kahvalti: ['b2'], aksam: ['b2 a'] } } }]);
+assert.deepEqual(filled, {
+  '2026-11-12': { kahvalti: ['Ana kaynak'], aksam: ['b2 akşam'], kaynaklar: { aksam: 'B2' } },
+  '2026-11-13': { kahvalti: ['b1'], aksam: ['b2 a'], kaynaklar: { kahvalti: 'B1', aksam: 'B2' } },
+});
+// Kalorisiz ana liste kalorili yedekle değişir; kalorili ana liste korunur; kalorisiz yedek kalorisiz listeye dokunmaz.
+const upgraded = fillFromBackups(
+  { a: { aksam: ['Mercimek Çorba'] }, b: { aksam: [{ ad: 'Ana', kcal: '100' }] }, c: { aksam: ['Düz'] } },
+  [{ ad: 'KEL', days: { a: { aksam: [{ ad: 'Mercimek Çorba / Yayla', kcal: '140 / 118' }] }, b: { aksam: [{ ad: 'Yedek', kcal: '1' }] } } },
+   { ad: 'KC', days: { c: { aksam: ['Düz yedek'] } } }]);
+assert.deepEqual(upgraded.a, { aksam: [{ ad: 'Mercimek Çorba / Yayla', kcal: '140 / 118' }], kaynaklar: { aksam: 'KEL' } });
+assert.deepEqual(upgraded.b, { aksam: [{ ad: 'Ana', kcal: '100' }] });
+assert.deepEqual(upgraded.c, { aksam: ['Düz'] });
+console.log('Özellik testleri başarılı: Türkiye saati, filtreler, güvenli okuyucu, bölüm/yurt ayrıştırma, hat sıralaması, KYK seçmeli yemekler, yedek kaynaklar ve kaloriler.');

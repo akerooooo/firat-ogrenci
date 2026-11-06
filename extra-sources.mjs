@@ -32,7 +32,8 @@ export function parseDormDetail(html, date, meal) {
   if (i < 0) return null;
   try {
     const item = JSON.parse(html.slice(html.lastIndexOf('{', i), html.indexOf('}', i) + 1).replace(/\\"/g, '"'));
-    const list = ['first', 'second', 'third', 'fourth'].map(k => clean(item[k])).filter(Boolean);
+    // Kalori seçenek başına gelir: "140 / 150" (kykyurtmenu) ya da "140,150" (kykyemekliste).
+    const list = ['first', 'second', 'third', 'fourth'].map(k => ({ ad: clean(item[k]), kcal: clean(String(item[`${k}Calories`] ?? '')).split(/\s*[\/,]\s*/).filter(Boolean).join(' / ') || null })).filter(x => x.ad);
     return list.length ? list : null;
   } catch { return null; }
 }
@@ -48,7 +49,7 @@ export async function fillDormDetails({ gunler, prev = {}, now, fetchDetail, poo
       if (!meals[meal]?.length) continue;
       const ozet = meals[meal].join(' | '), old = prev[date];
       meals.ozet[meal] = ozet;
-      if (old?.ozet?.[meal] === ozet && old[meal]?.length) meals[meal] = old[meal];
+      if (old?.ozet?.[meal] === ozet && old[meal]?.some?.(x => x?.kcal)) meals[meal] = old[meal];
       else if (date >= start && date <= end) jobs.push({ date, meal, meals });
     }
   }
@@ -86,17 +87,64 @@ export function shouldUpdateTransit(lastAttempt, now) {
   const day = value => new Date(value).toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' });
   return !lastAttempt || !Number.isFinite(Date.parse(lastAttempt)) || day(lastAttempt) !== day(now);
 }
+// Yedek 1: kykyemekliste.com bir öğünün bütün ayını tek sayfada, aynı Next.js biçiminde verir.
+export const KEL_URL = meal => `https://kykyemekliste.com/elazig/${meal}`;
+export function parseMonthPage(html, meal) {
+  const days = {}, re = new RegExp(String.raw`\\"date\\":\\"(\d{4}-\d{2}-\d{2})\\",\\"mealType\\":${meal === 'kahvalti' ? 0 : 1},`, 'g');
+  for (const [, date] of html.matchAll(re)) days[date] ??= parseDormDetail(html, date, meal);
+  return Object.fromEntries(Object.entries(days).filter(([, v]) => v));
+}
+// Yedek 2: KampüsCepte veri.js içindeki elle girilen kykAnaMenu. JS nesnesi olduğu için çalıştırılmaz, metinden okunur.
+export const KC_KYK_URL = 'https://kampuscepte.com.tr/veri.js';
+export function parseKampusCepteKyk(js) {
+  const start = js.indexOf('kykAnaMenu'), end = js.indexOf('kykOzelAralik', start);
+  if (start < 0) throw new Error('kykAnaMenu bulunamadı');
+  const strings = s => [...s.matchAll(/"((?:[^"\\]|\\.)*)"/g)].map(m => clean(JSON.parse(`"${m[1]}"`))).filter(Boolean);
+  const days = {};
+  for (const m of js.slice(start, end < 0 ? undefined : end).matchAll(/"(\d{4}-\d{2}-\d{2})":\s*\{\s*kahvalti:\s*\[([^\]]*)\],\s*aksam:\s*\[([^\]]*)\]/g))
+    days[m[1]] = { kahvalti: strings(m[2]), aksam: strings(m[3]) };
+  return days;
+}
+const hasKcal = list => list?.some(x => x?.kcal);
+// Ana kaynakta boş ya da kalorisiz kalan öğünleri sırayla yedeklerden doldurur; kalorisiz liste yalnızca kalorili bir yedekle değişir.
+// Hangi öğünün nereden geldiği gün içinde `kaynaklar`a yazılır.
+export function fillFromBackups(gunler, backups) {
+  for (const { ad, days } of backups) for (const [date, meals] of Object.entries(days)) {
+    const day = gunler[date] ??= {};
+    for (const meal of ['kahvalti', 'aksam']) {
+      if (!meals[meal]?.length || (day[meal]?.length && (hasKcal(day[meal]) || !hasKcal(meals[meal])))) continue;
+      day[meal] = meals[meal];
+      (day.kaynaklar ??= {})[meal] = ad;
+    }
+  }
+  return gunler;
+}
+
 export async function updateExtras({ getHtml, read, save, report, pool, now, lastTransitAttempt }) {
   const dorm = read('data/kyk.json', { yurtlar: {} });
+  const url = dormArchiveUrl(new Date(now)), errors = [];
+  let gunler = {};
   try {
-    const url = dormArchiveUrl(new Date(now));
-    const gunler = parseDormMenu(await getHtml(url));
+    gunler = parseDormMenu(await getHtml(url));
     if (!Object.keys(gunler).length) throw new Error('Yurt menü arşivi boş geldi');
     await fillDormDetails({ gunler, prev: dorm.sehir?.gunler, now, pool,
       fetchDetail: async (date, meal) => parseDormDetail(await getHtml(dormDetailUrl(date, meal)), date, meal) });
+  } catch (e) { errors.push(`kykyurtmenu: ${e.message}`); }
+  const backups = [];
+  try {
+    const [k, a] = await Promise.all(['kahvalti', 'aksam'].map(async meal => parseMonthPage(await getHtml(KEL_URL(meal)), meal)));
+    const days = {};
+    for (const [date, list] of Object.entries(k)) (days[date] ??= {}).kahvalti = list;
+    for (const [date, list] of Object.entries(a)) (days[date] ??= {}).aksam = list;
+    backups.push({ ad: 'KYK Yemek Listesi', days });
+  } catch (e) { errors.push(`kykyemekliste: ${e.message}`); }
+  try { backups.push({ ad: 'KampüsCepte', days: parseKampusCepteKyk(await getHtml(KC_KYK_URL)) }); }
+  catch (e) { errors.push(`kampuscepte: ${e.message}`); }
+  fillFromBackups(gunler, backups);
+  if (Object.values(gunler).some(d => d.kahvalti?.length || d.aksam?.length)) {
     dorm.sehir = { ad: 'Elazığ', kaynak: url, kaynakAdi: 'KYK Yurt Menü', tur: 'sehir', guncelleme: now, gunler: { ...(dorm.sehir?.gunler || {}), ...gunler } };
-    save('data/kyk.json', dorm); report('kyk', true);
-  } catch (e) { report('kyk', false, e.message); }
+    save('data/kyk.json', dorm); report('kyk', true, errors.length ? `Bazı kaynaklar alınamadı: ${errors.join(' · ')}` : null);
+  } else report('kyk', false, errors.join(' · ') || 'Hiçbir kaynakta menü yok');
   const old = read('data/otobus.json', { hatlar: [] });
   if (!shouldUpdateTransit(lastTransitAttempt || old.guncelleme, now)) return;
   try {
