@@ -5,6 +5,7 @@ Varsayılan koyu turuncu tema; kalıcı açık/koyu tema seçimi, mobil düzen, 
 ## Kaynaklar
 
 - Üniversite menüsü: https://unievi.firat.edu.tr/tr
+- Üniversite menüsü yedeği: https://kampuscepte.com.tr/veri.js (`uniEviMenuleri`). Resmî site buluttan erişilemezse yalnızca eksik günler buradan eklenir. Resmî değildir, elle güncellenir, kalori bilgisi yoktur; kartta "Kaynak: KampüsCepte" yazar.
 
 - Yurt listesi: GSB Elazığ tesis listesi; 7 KYK yurdu.
 - Yurt menüleri: https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026 — ay bağlantısı otomatik hesaplanır. Elazığ geneli menü, yurt seçimi gerektirmeden açık etiketle gösterilir. Bu kaynak resmî GSB kaynağı değildir; öğün yayımlanmamışsa boş durum gösterilir.

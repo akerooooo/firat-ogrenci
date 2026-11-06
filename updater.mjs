@@ -97,6 +97,25 @@ export function parseDorms(html) {
   }).get();
 }
 
+export const KC_KAYNAK = 'https://kampuscepte.com.tr/veri.js';
+
+// KampüsCepte (GitHub Pages) Üniversite Evi menüsünü veri.js içinde `uniEviMenuleri = { "YYYY-MM-DD": [..] }` olarak tutuyor.
+// Fırat sunucuları bulut IP'lerini kestiği için GitHub Actions'ta yedek kaynak budur. Kalori/tür bilgisi yok.
+export function parseKampusCepte(js) {
+  const start = js.indexOf('{', js.indexOf('uniEviMenuleri'));
+  const end = js.indexOf('}', start);
+  if (js.indexOf('uniEviMenuleri') < 0 || start < 0 || end < 0) throw new Error('uniEviMenuleri bulunamadı');
+  // Dosya elle düzenleniyor: satır başı // yorumlarını ve sondaki virgülleri tolere et.
+  const raw = JSON.parse(js.slice(start, end + 1).replace(/^\s*\/\/.*$/gm, '').replace(/,(\s*[\]}])/g, '$1'));
+  const gunler = {};
+  for (const [gun, yemekler] of Object.entries(raw)) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(gun) || !Array.isArray(yemekler)) continue;
+    const list = yemekler.filter(x => typeof x === 'string' && clean(x)).map(x => ({ tur: '', ad: clean(x), kcal: null, kaynak: 'KampüsCepte' }));
+    if (list.length) gunler[gun] = list;
+  }
+  return gunler;
+}
+
 export async function update() {
   mkdirSync('data', { recursive: true });
   const now = new Date().toISOString();
@@ -113,7 +132,17 @@ export async function update() {
         const gunler = parseOkulMenu(await getHtml('https://unievi.firat.edu.tr/tr'));
         if (!Object.keys(gunler).length) throw new Error('Menü boş');
         save('data/okul.json', { guncelleme: now, kaynak: 'https://unievi.firat.edu.tr/tr', gunler }); report('okul', true);
-      } catch (e) { report('okul', false, e.message); }
+      } catch (e) {
+        try {
+          const yedek = parseKampusCepte(await getHtml(KC_KAYNAK));
+          if (!Object.keys(yedek).length) throw new Error('KampüsCepte menüsü boş');
+          // Resmî kaynaktan gelmiş günler (kalorili) korunur; yalnızca eksik günler yedekten eklenir.
+          const eski = oku('data/okul.json', {}).gunler || {};
+          save('data/okul.json', { guncelleme: now, kaynak: KC_KAYNAK, gunler: { ...yedek, ...eski } });
+          report('okul', true);
+          reports.okul.hata = `Resmî site erişilemedi (${e.message}); eksik günler KampüsCepte'den alındı.`;
+        } catch (e2) { report('okul', false, `${e.message} · Yedek: ${e2.message}`); }
+      }
     })(),
     (async () => {
       try {

@@ -31,3 +31,20 @@ const liste = tarihVer([
 assert.deepEqual(liste.map((x) => x.tarih), ['2025-11-13', '2026-11-05', '2026-10-20']);
 
 console.log('test ok');
+
+// KampüsCepte yedek kaynağı: elle düzenlenen veri.js, sondaki virgül ve yorum satırı olabilir.
+const { parseKampusCepte } = await import('./updater.mjs');
+const kc = parseKampusCepte(`const x = 1;
+const uniEviMenuleri = {
+  // hafta 45
+  "2026-11-02": ["Etli patates", " Tarhana çorbası ",],
+  "2026-11-03": [],
+  "yanlis": ["X"],
+};
+const uniEviKapali = { "2026-10-29": "Bayram" };`);
+assert.deepEqual(kc, { '2026-11-02': [
+  { tur: '', ad: 'Etli patates', kcal: null, kaynak: 'KampüsCepte' },
+  { tur: '', ad: 'Tarhana çorbası', kcal: null, kaynak: 'KampüsCepte' },
+] });
+assert.throws(() => parseKampusCepte('var a = 1;'));
+console.log('kampuscepte test ok');

@@ -32,7 +32,7 @@ function renderMeals() {
   }
   if (canli) canli.hidden = dishes.length > 0;
   $('kalori').textContent = dishes.length && dishes.every(x => x.kcal > 0) ? `Toplam ${dishes.reduce((sum, x) => sum + x.kcal, 0)} kcal` : '';
-  $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}`;
+  $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}${dishes[0]?.kaynak ? ` · Kaynak: ${dishes[0].kaynak} (resmî değil)` : ''}`;
   const menu = data.kyk?.sehir?.gunler?.[selectedDay] || {};
   for (const meal of ['kahvalti', 'aksam']) {
     const rows = (menu[meal] || []).map(x => el('li', typeof x === 'string' ? x : x.ad));
