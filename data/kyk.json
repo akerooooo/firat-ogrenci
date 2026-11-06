@@ -9,7 +9,7 @@
   "kaynak": "https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026",
   "kaynakAdi": "KYK Yurt Menü",
   "tur": "sehir",
-  "guncelleme": "2026-11-06T14:47:28.098Z",
+  "guncelleme": "2026-11-06T18:23:01.908Z",
   "gunler": {
    "2026-11-01": {
     "kahvalti": [
@@ -51,10 +51,6 @@
     "ozet": {
      "kahvalti": "Peynirli Omlet | Sosis Kızartma | Sade Poğaça | Labne Peynir",
      "aksam": "Mercimek Çorba | Tavuk Kavurma | Soslu Makarna | Haydari"
-    },
-    "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-02": {
@@ -97,10 +93,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Zeytinli | Beyaz Peynir",
      "aksam": "Tarhana Çorba | Etli Kuru Fasulye | Şehriyeli Bulgur Pilavı | Mevsim Salata"
-    },
-    "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-03": {
@@ -143,10 +135,6 @@
     "ozet": {
      "kahvalti": "Kaşarlı Omlet | Sade Poğaça | Dere Otlu Poğaça | Krem Peynir",
      "aksam": "Domates Çorba | Tavuk Döner | Sade Pirinç Pilavı | Makarna Salatası"
-    },
-    "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-04": {
@@ -189,10 +177,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Peynirli | Sosis Kızartma | Kaşar Peynir",
      "aksam": "Ezogelin Çorba | Hamburger Köfte + Patates | Makarna Salatası | Sütlaç"
-    },
-    "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-05": {
@@ -235,10 +219,6 @@
     "ozet": {
      "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Simit | Krem Peynir",
      "aksam": "Terbiyeli Sebze Çorba | Fırında Sebzeli Tavuk | Sebzeli Bulgur Pilavı | Mevsim Salata"
-    },
-    "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-06": {
@@ -545,7 +525,6 @@
      "kahvalti": "Menemen | Patates Salatası | Simit | Labne Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -578,7 +557,6 @@
      "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Ispanaklı Börek | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -611,7 +589,6 @@
      "kahvalti": "Sucuklu Omlet | Patates Kavurması | Dere Otlu Poğaça | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -640,7 +617,6 @@
      "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -673,7 +649,6 @@
      "kahvalti": "Peynirli Omlet | Sosis Kızartma | Simit | Krem Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -706,7 +681,6 @@
      "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -739,7 +713,6 @@
      "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -772,7 +745,6 @@
      "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -805,7 +777,6 @@
      "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -838,7 +809,6 @@
      "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -871,7 +841,6 @@
      "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -904,7 +873,6 @@
      "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -937,7 +905,6 @@
      "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -970,7 +937,6 @@
      "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -1004,7 +970,6 @@
      "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -1037,7 +1002,6 @@
      "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -1070,7 +1034,6 @@
      "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
@@ -1103,7 +1066,6 @@
      "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir"
     },
     "kaynaklar": {
-     "kahvalti": "KYK Yemek Listesi",
      "aksam": "KampüsCepte"
     }
    },
