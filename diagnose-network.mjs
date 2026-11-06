@@ -1,5 +1,6 @@
 import { lookup } from 'node:dns/promises';
-const urls = ['https://www.firat.edu.tr/tr/page/announcement', 'https://unievi.firat.edu.tr/tr', 'https://bilgisayarmf.firat.edu.tr/announcements-all'];
+import { dormArchiveUrl } from './extra-sources.mjs';
+const urls = ['https://unievi.firat.edu.tr/tr', dormArchiveUrl()];
 await Promise.all(urls.map(async url => {
   const host = new URL(url).hostname;
   try { console.log(host, 'DNS', await lookup(host, {all:true})); } catch (e) { console.log(host, 'DNS error', e.code); }
