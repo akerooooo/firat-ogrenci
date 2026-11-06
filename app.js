@@ -22,7 +22,15 @@ function renderMeals() {
     name.append(el('span', dish.ad), el('span', `${dish.tur || 'Günün yemeği'}${dish.kcal ? ` · ${dish.kcal} kcal` : ''}`, 'dish-type'));
     row.append(el('span', String(i + 1).padStart(2, '0'), 'dish-num'), name); return row;
   }));
-  if (!dishes.length) empty($('okul'), 'Bu tarih için üniversite menüsü yayımlanmamış. Başka bir güne bakabilirsin.');
+  if (!dishes.length) empty($('okul'), 'Kayıtlı menü yok. Aşağıda okulun sitesindeki güncel haftalık menü açılıyor.');
+  // Fırat sunucuları bulut IP'lerini kesiyor; kayıt yoksa ziyaretçinin kendi bağlantısıyla okul sayfası açılır.
+  let canli = $('okulCanli');
+  if (!dishes.length && !canli) {
+    canli = Object.assign(el('iframe'), { id: 'okulCanli', className: 'live-menu', src: 'https://unievi.firat.edu.tr/tr#fm', title: 'Üniversite Evi haftalık menü (canlı)', referrerPolicy: 'no-referrer' });
+    canli.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups');
+    $('okul').after(canli);
+  }
+  if (canli) canli.hidden = dishes.length > 0;
   $('kalori').textContent = dishes.length && dishes.every(x => x.kcal > 0) ? `Toplam ${dishes.reduce((sum, x) => sum + x.kcal, 0)} kcal` : '';
   $('okulDurum').textContent = `${freshText(data.okul?.guncelleme)}${sourceStatus('okul')?.durum === 'hata' ? ' · Son kontrol başarısız; kayıtlı menü gösteriliyor.' : ''}`;
   const menu = data.kyk?.sehir?.gunler?.[selectedDay] || {};
