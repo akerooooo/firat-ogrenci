@@ -9,7 +9,7 @@
   "kaynak": "https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026",
   "kaynakAdi": "KYK Yurt Menü",
   "tur": "sehir",
-  "guncelleme": "2026-11-06T11:26:21.296Z",
+  "guncelleme": "2026-11-06T14:15:11.140Z",
   "gunler": {
    "2026-11-01": {
     "kahvalti": [
@@ -23,7 +23,11 @@
      "Tavuk Kavurma",
      "Soslu Makarna",
      "Haydari"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Sade Poğaça | Labne Peynir",
+     "aksam": "Mercimek Çorba | Tavuk Kavurma | Soslu Makarna | Haydari"
+    }
    },
    "2026-11-02": {
     "kahvalti": [
@@ -37,7 +41,11 @@
      "Etli Kuru Fasulye",
      "Şehriyeli Bulgur Pilavı",
      "Mevsim Salata"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Zeytinli | Beyaz Peynir",
+     "aksam": "Tarhana Çorba | Etli Kuru Fasulye | Şehriyeli Bulgur Pilavı | Mevsim Salata"
+    }
    },
    "2026-11-03": {
     "kahvalti": [
@@ -51,7 +59,11 @@
      "Tavuk Döner",
      "Sade Pirinç Pilavı",
      "Makarna Salatası"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Kaşarlı Omlet | Sade Poğaça | Dere Otlu Poğaça | Krem Peynir",
+     "aksam": "Domates Çorba | Tavuk Döner | Sade Pirinç Pilavı | Makarna Salatası"
+    }
    },
    "2026-11-04": {
     "kahvalti": [
@@ -65,7 +77,11 @@
      "Hamburger Köfte + Patates",
      "Makarna Salatası",
      "Sütlaç"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Peynirli | Sosis Kızartma | Kaşar Peynir",
+     "aksam": "Ezogelin Çorba | Hamburger Köfte + Patates | Makarna Salatası | Sütlaç"
+    }
    },
    "2026-11-05": {
     "kahvalti": [
@@ -79,7 +95,11 @@
      "Fırında Sebzeli Tavuk",
      "Sebzeli Bulgur Pilavı",
      "Mevsim Salata"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Simit | Krem Peynir",
+     "aksam": "Terbiyeli Sebze Çorba | Fırında Sebzeli Tavuk | Sebzeli Bulgur Pilavı | Mevsim Salata"
+    }
    },
    "2026-11-06": {
     "kahvalti": [
@@ -89,11 +109,15 @@
      "Beyaz Peynir"
     ],
     "aksam": [
-     "Mercimek Çorba",
-     "Orman Kebap",
+     "Mercimek Çorba / Ayran Aşı Çorba",
+     "Orman Kebap / Ispanak Yemeği / Şinitzel",
      "Nohutlu Pirinç Pilavı",
      "Cacık"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Haşlanmış Patates | Karışık Pizza | Beyaz Peynir",
+     "aksam": "Mercimek Çorba | Orman Kebap | Nohutlu Pirinç Pilavı | Cacık"
+    }
    },
    "2026-11-07": {
     "kahvalti": [
@@ -103,11 +127,15 @@
      "Kaşar Peynir"
     ],
     "aksam": [
-     "Şehriye Çorba",
-     "Tavuk Fajita",
+     "Şehriye Çorba / Yayla Çorba",
+     "Tavuk Fajita / Yoğurtlu Mantı / Kilis Tava",
      "Fırın Makarna",
      "Browni"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Menemen | Patatesli Börek | Salçalı Sosis | Kaşar Peynir",
+     "aksam": "Şehriye Çorba | Tavuk Fajita | Fırın Makarna | Browni"
+    }
    },
    "2026-11-08": {
     "kahvalti": [
@@ -117,48 +145,63 @@
      "Labne Peynir"
     ],
     "aksam": [
-     "Tarhana Çorba",
-     "Çiftlik Köfte",
+     "Tarhana Çorba / Mısır Çorba",
+     "Çiftlik Köfte / Nugget / Taze Fasulye",
      "Şehriyeli Bulgur Pilavı",
      "Mevsim Salata"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Kek | Labne Peynir",
+     "aksam": "Tarhana Çorba | Çiftlik Köfte | Şehriyeli Bulgur Pilavı | Mevsim Salata"
+    }
    },
    "2026-11-09": {
     "kahvalti": [
      "Sade Omlet",
      "Patates Kızartması",
-     "Zeytinli",
+     "Zeytinli / Ispanaklı Börek",
      "Beyaz Peynir"
     ],
     "aksam": [
-     "Mercimek Çorba",
-     "Kavurma",
+     "Mercimek Çorba / Yayla Çorba",
+     "Kavurma / Bezelye Yemeği / Tavuk Çöp şiş",
      "Şehriyeli Pirinç Pilavı",
      "Baklava"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Sade Omlet | Patates Kızartması | Zeytinli | Beyaz Peynir",
+     "aksam": "Mercimek Çorba | Kavurma | Şehriyeli Pirinç Pilavı | Baklava"
+    }
    },
    "2026-11-10": {
     "kahvalti": [
      "Haşlanmış Yumurta",
      "Salçalı Sosis",
-     "Peynirli",
+     "Peynirli / Ispanaklı Börek",
      "Krem Peynir"
     ],
     "aksam": [
-     "Terbiyeli Sebze Çorba",
-     "Tavuk Tantuni",
+     "Terbiyeli Sebze Çorba / Şehriye Çorba",
+     "Tavuk Tantuni / Taze Fasülye / Karnıyarık",
      "Soslu Makarna",
      "Haydari"
-    ]
+    ],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Krem Peynir",
+     "aksam": "Terbiyeli Sebze Çorba | Tavuk Tantuni | Soslu Makarna | Haydari"
+    }
    },
    "2026-11-11": {
     "kahvalti": [
      "Peynirli Omlet",
      "Karışık Kızartma",
-     "Zeytinli",
+     "Zeytinli / Peynirli Açma",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Peynirli Omlet | Karışık Kızartma | Zeytinli | Kaşar Peynir"
+    }
    },
    "2026-11-12": {
     "kahvalti": [
@@ -167,7 +210,10 @@
      "Domates Salatalık",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Domates Salatalık | Beyaz Peynir"
+    }
    },
    "2026-11-13": {
     "kahvalti": [
@@ -176,7 +222,10 @@
      "Simit",
      "Labne Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Menemen | Patates Salatası | Simit | Labne Peynir"
+    }
    },
    "2026-11-14": {
     "kahvalti": [
@@ -185,7 +234,10 @@
      "Ispanaklı Börek",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Ispanaklı Börek | Beyaz Peynir"
+    }
    },
    "2026-11-15": {
     "kahvalti": [
@@ -194,7 +246,10 @@
      "Dere Otlu Poğaça",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Sucuklu Omlet | Patates Kavurması | Dere Otlu Poğaça | Beyaz Peynir"
+    }
    },
    "2026-11-16": {
     "kahvalti": [
@@ -202,7 +257,10 @@
      "Patates Kızartması",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Kaşar Peynir"
+    }
    },
    "2026-11-17": {
     "kahvalti": [
@@ -211,7 +269,10 @@
      "Simit",
      "Krem Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Simit | Krem Peynir"
+    }
    },
    "2026-11-18": {
     "kahvalti": [
@@ -220,7 +281,10 @@
      "Patates Kavurması",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir"
+    }
    },
    "2026-11-19": {
     "kahvalti": [
@@ -229,7 +293,10 @@
      "Kek",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir"
+    }
    },
    "2026-11-20": {
     "kahvalti": [
@@ -238,7 +305,10 @@
      "Simit",
      "Zeytinli"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli"
+    }
    },
    "2026-11-21": {
     "kahvalti": [
@@ -247,7 +317,10 @@
      "Peynirli Börek",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir"
+    }
    },
    "2026-11-22": {
     "kahvalti": [
@@ -256,7 +329,10 @@
      "Peynirli",
      "Krem Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir"
+    }
    },
    "2026-11-23": {
     "kahvalti": [
@@ -265,7 +341,10 @@
      "Dere Otlu Poğaça",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir"
+    }
    },
    "2026-11-24": {
     "kahvalti": [
@@ -274,7 +353,10 @@
      "Simit",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir"
+    }
    },
    "2026-11-25": {
     "kahvalti": [
@@ -283,7 +365,10 @@
      "Mozaik Kek",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir"
+    }
    },
    "2026-11-26": {
     "kahvalti": [
@@ -292,7 +377,10 @@
      "Zeytinli",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir"
+    }
    },
    "2026-11-27": {
     "kahvalti": [
@@ -301,7 +389,10 @@
      "Kek",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir"
+    }
    },
    "2026-11-28": {
     "kahvalti": [
@@ -310,7 +401,10 @@
      "Peynirli",
      "Labne Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir"
+    }
    },
    "2026-11-29": {
     "kahvalti": [
@@ -319,7 +413,10 @@
      "Peynirli Börek",
      "Beyaz Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir"
+    }
    },
    "2026-11-30": {
     "kahvalti": [
@@ -328,7 +425,10 @@
      "Sade Poğaça",
      "Kaşar Peynir"
     ],
-    "aksam": []
+    "aksam": [],
+    "ozet": {
+     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir"
+    }
    }
   }
  }

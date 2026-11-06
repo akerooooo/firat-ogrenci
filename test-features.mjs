@@ -47,4 +47,21 @@ assert.deepEqual(await pool([1,2,3],2,async x=>x*2),[2,4,6]);
 const current = JSON.parse(readFileSync('data/duyurular.json','utf8'));
 assert.ok(current.items.length > 0);
 assert.ok(current.items.every(x => x.baslik && x.url && x.kaynak));
-console.log('Özellik testleri başarılı: Türkiye saati, filtreler, güvenli okuyucu, bölüm/yurt ayrıştırma, hat sıralaması.');
+// KYK gün sayfası: Next.js verisindeki seçmeli yemekler (kaçışlı JSON).
+const { parseDormDetail, fillDormDetails } = await import('./extra-sources.mjs');
+const flight = String.raw`x{\"id\":1,\"date\":\"2026-11-06\",\"mealType\":1,\"cityId\":23,\"first\":\"Mercimek Çorba / Ayran Aşı Çorba\",\"firstCalories\":\"140 / 150\",\"second\":\"Orman Kebap / Ispanak Yemeği / Şinitzel\",\"third\":\"Nohutlu Pirinç Pilavı\",\"fourth\":\"Cacık\",\"totalCalories\":870}y`;
+assert.deepEqual(parseDormDetail(flight, '2026-11-06', 'aksam'), ['Mercimek Çorba / Ayran Aşı Çorba', 'Orman Kebap / Ispanak Yemeği / Şinitzel', 'Nohutlu Pirinç Pilavı', 'Cacık']);
+assert.equal(parseDormDetail(flight, '2026-11-06', 'kahvalti'), null);
+// Pencere içi ve özeti değişen gün çekilir; özeti aynı gün önceki tam listeyi korur; pencere dışı gün çekilmez.
+const fetched = [];
+const days = await fillDormDetails({
+  now: '2026-11-06T09:00:00Z', pool,
+  prev: { '2026-11-07': { aksam: ['Şehriye Çorba / Yayla Çorba'], ozet: { aksam: 'Şehriye Çorba' } } },
+  gunler: { '2026-11-06': { aksam: ['Mercimek Çorba'] }, '2026-11-07': { aksam: ['Şehriye Çorba'] }, '2026-11-20': { aksam: ['Tarhana Çorba'] } },
+  fetchDetail: async (date, meal) => { fetched.push(`${date}/${meal}`); return ['Mercimek Çorba / Ayran Aşı Çorba']; },
+});
+assert.deepEqual(fetched, ['2026-11-06/aksam']);
+assert.deepEqual(days['2026-11-06'].aksam, ['Mercimek Çorba / Ayran Aşı Çorba']);
+assert.deepEqual(days['2026-11-07'].aksam, ['Şehriye Çorba / Yayla Çorba']);
+assert.deepEqual(days['2026-11-20'].aksam, ['Tarhana Çorba']);
+console.log('Özellik testleri başarılı: Türkiye saati, filtreler, güvenli okuyucu, bölüm/yurt ayrıştırma, hat sıralaması, KYK seçmeli yemekler.');

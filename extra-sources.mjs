@@ -24,6 +24,40 @@ export function parseDormMenu(html) {
   });
   return days;
 }
+// Arşiv her yemek sırasının yalnızca ilk seçeneğini gösterir; gün sayfasındaki Next.js verisinde
+// "first":"Orman Kebap / Ispanak Yemeği / Şinitzel" gibi tam hâli vardır.
+export const dormDetailUrl = (date, meal) => `https://www.kykyurtmenu.com/elazig/${meal}?date=${date}`;
+export function parseDormDetail(html, date, meal) {
+  const i = html.indexOf(`\\"date\\":\\"${date}\\",\\"mealType\\":${meal === 'kahvalti' ? 0 : 1},`);
+  if (i < 0) return null;
+  try {
+    const item = JSON.parse(html.slice(html.lastIndexOf('{', i), html.indexOf('}', i) + 1).replace(/\\"/g, '"'));
+    const list = ['first', 'second', 'third', 'fourth'].map(k => clean(item[k])).filter(Boolean);
+    return list.length ? list : null;
+  } catch { return null; }
+}
+
+// Detay yalnızca bugünden itibaren 7 gün için ve arşivdeki özet değiştiyse çekilir; aksi hâlde önceki tam liste korunur.
+export async function fillDormDetails({ gunler, prev = {}, now, fetchDetail, pool }) {
+  const day = d => d.toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' });
+  const start = day(new Date(now)), end = day(new Date(Date.parse(now) + 6 * 864e5));
+  const jobs = [];
+  for (const [date, meals] of Object.entries(gunler)) {
+    meals.ozet = {};
+    for (const meal of ['kahvalti', 'aksam']) {
+      if (!meals[meal]?.length) continue;
+      const ozet = meals[meal].join(' | '), old = prev[date];
+      meals.ozet[meal] = ozet;
+      if (old?.ozet?.[meal] === ozet && old[meal]?.length) meals[meal] = old[meal];
+      else if (date >= start && date <= end) jobs.push({ date, meal, meals });
+    }
+  }
+  await pool(jobs, 3, async ({ date, meal, meals }) => {
+    try { const full = await fetchDetail(date, meal); if (full) meals[meal] = full; }
+    catch { meals.ozet[meal] = null; } // Sonraki çalışmada tekrar denensin.
+  });
+  return gunler;
+}
 export function parseRoutes(html) {
   const $ = cheerio.load(html), seen = new Set();
   return $('a[href^="/hat/"]').map((_, a) => {
@@ -58,6 +92,8 @@ export async function updateExtras({ getHtml, read, save, report, pool, now, las
     const url = dormArchiveUrl(new Date(now));
     const gunler = parseDormMenu(await getHtml(url));
     if (!Object.keys(gunler).length) throw new Error('Yurt menü arşivi boş geldi');
+    await fillDormDetails({ gunler, prev: dorm.sehir?.gunler, now, pool,
+      fetchDetail: async (date, meal) => parseDormDetail(await getHtml(dormDetailUrl(date, meal)), date, meal) });
     dorm.sehir = { ad: 'Elazığ', kaynak: url, kaynakAdi: 'KYK Yurt Menü', tur: 'sehir', guncelleme: now, gunler: { ...(dorm.sehir?.gunler || {}), ...gunler } };
     save('data/kyk.json', dorm); report('kyk', true);
   } catch (e) { report('kyk', false, e.message); }
