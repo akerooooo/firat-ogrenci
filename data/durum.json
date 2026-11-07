@@ -1,17 +1,17 @@
 {
- "sonDeneme": "2026-11-07T10:38:48.214Z",
+ "sonDeneme": "2026-11-07T16:49:02.427Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-07T10:38:48.214Z",
+   "sonDeneme": "2026-11-07T16:49:02.427Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-07T10:38:48.214Z"
+   "sonBasari": "2026-11-07T16:49:02.427Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-07T10:38:48.214Z",
+   "sonDeneme": "2026-11-07T16:49:02.427Z",
    "durum": "ok",
    "hata": "Resmî site erişilemedi (unievi.firat.edu.tr: UND_ERR_CONNECT_TIMEOUT · Connect Timeout Error (attempted address: unievi.firat.edu.tr:443, timeout: 10000ms)); eksik günler KampüsCepte'den alındı.",
-   "sonBasari": "2026-11-07T10:38:48.214Z"
+   "sonBasari": "2026-11-07T16:49:02.427Z"
   },
   "otobus": {
    "durum": "ok",
@@ -23,8 +23,8 @@
   "kyk": {
    "durum": "ok",
    "hata": null,
-   "sonDeneme": "2026-11-07T10:38:48.214Z",
-   "sonBasari": "2026-11-07T10:38:48.214Z"
+   "sonDeneme": "2026-11-07T16:49:02.427Z",
+   "sonBasari": "2026-11-07T16:49:02.427Z"
   }
  }
 }
