@@ -9,7 +9,7 @@
   "kaynak": "https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026",
   "kaynakAdi": "KYK Yurt Menü",
   "tur": "sehir",
-  "guncelleme": "2026-11-11T00:35:48.102Z",
+  "guncelleme": "2026-11-11T07:05:35.762Z",
   "gunler": {
    "2026-11-01": {
     "kahvalti": [
@@ -469,10 +469,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Peynirli Omlet | Karışık Kızartma | Zeytinli | Kaşar Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Peynirli Omlet | Karışık Kızartma | Zeytinli | Kaşar Peynir",
+     "aksam": "Tarhana Çorba | Etli Kuru Fasulye | Şehriyeli Bulgur Pilavı | Yoğurt"
     }
    },
    "2026-11-12": {
@@ -513,10 +511,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Domates Salatalık | Beyaz Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Domates Salatalık | Beyaz Peynir",
+     "aksam": "Mercimek Çorba | Fırında Tavuk Biftek | Gökkuşağı Pirinç Pilavı | Mevsim Salata"
     }
    },
    "2026-11-13": {
@@ -557,10 +553,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Menemen | Patates Salatası | Simit | Labne Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Menemen | Patates Salatası | Simit | Labne Peynir",
+     "aksam": "Ezogelin Çorba | Rosto Köfte | Soslu Makarna | Ayran"
     }
    },
    "2026-11-14": {
@@ -601,10 +595,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Ispanaklı Börek | Beyaz Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Ispanaklı Börek | Beyaz Peynir",
+     "aksam": "Domates Çorba | Çıtır Tavuk | Sebzeli Bulgur Pilavı | Sütlaç"
     }
    },
    "2026-11-15": {
@@ -645,10 +637,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Sucuklu Omlet | Patates Kavurması | Dere Otlu Poğaça | Beyaz Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Sucuklu Omlet | Patates Kavurması | Dere Otlu Poğaça | Beyaz Peynir",
+     "aksam": "Yayla Çorba | Kuşbaşılı Patlıcan Kebabı | Şehriyeli Pirinç Pilavı | Havuç Tarator"
     }
    },
    "2026-11-16": {
@@ -685,10 +675,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Kaşar Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Kaşar Peynir",
+     "aksam": "Tarhana Çorba | Soslu Fırında Tavuk | Sade Pirinç Pilavı | Mevsim Salata"
     }
    },
    "2026-11-17": {
@@ -729,10 +717,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Simit | Krem Peynir"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
+     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Simit | Krem Peynir",
+     "aksam": "Ezogelin Çorba | Fırında Dizme Köfte | Soslu Makarna | Haydari"
     }
    },
    "2026-11-18": {
@@ -773,7 +759,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir",
+     "aksam": "Mercimek Çorba | İstavrit | Şehriyeli Bulgur Pilavı | Helva"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -817,7 +804,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir"
+     "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir",
+     "aksam": "Ezogelin Çorba | Ekmek Arası Köfte | Şehriyeli Pirinç Pilavı | Ayran"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -861,7 +849,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli"
+     "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli",
+     "aksam": "Süzme Çorba | Etli Kuru Fasulye | Erişte Pilav | Baklava"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -905,7 +894,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir"
+     "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir",
+     "aksam": "Dövme Çorba | Karnıyarık | Sade Pirinç Pilavı | Cacık"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -949,7 +939,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir",
+     "aksam": "Sebze Çorba | Patlıcan Parmak Kebap | Sebzeli Bulgur Pilavı | Mevsim Salata"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -993,7 +984,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir"
+     "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir",
+     "aksam": "Ezogelin Çorba | Tavuk Döner | Sade Pirinç Pilavı | Islak Kek"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1037,7 +1029,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir",
+     "aksam": "Tarhana Çorba | Çiftlik Köfte | Makarna Salatası | Ayran"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1081,7 +1074,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir"
+     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir",
+     "aksam": "Mercimek Çorba | Tas Kebabı | Şehriyeli Bulgur Pilavı | Haydari"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1125,7 +1119,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir",
+     "aksam": "Terbiyeli Sebze Çorba | Fırın Tavuk Baget | Soslu Makarna | Mevsim Salata"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1169,7 +1164,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir"
+     "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir",
+     "aksam": "Tarhana Çorba | Etli Nohut | Şehriyeli Pirinç Pilavı | Mercimek Köfte"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1213,7 +1209,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir",
+     "aksam": "Dövme Çorba | Çiftlik Kebabı | Sebzeli Bulgur Pilavı | İrmik Helvası"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1257,7 +1254,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir"
+     "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir",
+     "aksam": "Mercimek Çorba | Somon | Şehriyeli Bulgur Pilavı | Helva"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
@@ -1301,7 +1299,8 @@
      }
     ],
     "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir"
+     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir",
+     "aksam": "Tarhana Çorba | Hamburger Köfte + Patates | Şehriyeli Pirinç Pilavı | Tulumba"
     },
     "kaynaklar": {
      "aksam": "KYK Yemek Listesi"
