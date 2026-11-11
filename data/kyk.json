@@ -9,7 +9,7 @@
   "kaynak": "https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026",
   "kaynakAdi": "KYK Yurt Menü",
   "tur": "sehir",
-  "guncelleme": "2026-11-11T07:05:35.762Z",
+  "guncelleme": "2026-11-11T15:07:23.386Z",
   "gunler": {
    "2026-11-01": {
     "kahvalti": [
@@ -761,9 +761,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir",
      "aksam": "Mercimek Çorba | İstavrit | Şehriyeli Bulgur Pilavı | Helva"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-19": {
@@ -806,9 +803,6 @@
     "ozet": {
      "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir",
      "aksam": "Ezogelin Çorba | Ekmek Arası Köfte | Şehriyeli Pirinç Pilavı | Ayran"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-20": {
@@ -851,9 +845,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli",
      "aksam": "Süzme Çorba | Etli Kuru Fasulye | Erişte Pilav | Baklava"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-21": {
@@ -896,9 +887,6 @@
     "ozet": {
      "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir",
      "aksam": "Dövme Çorba | Karnıyarık | Sade Pirinç Pilavı | Cacık"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-22": {
@@ -941,9 +929,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir",
      "aksam": "Sebze Çorba | Patlıcan Parmak Kebap | Sebzeli Bulgur Pilavı | Mevsim Salata"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-23": {
@@ -986,9 +971,6 @@
     "ozet": {
      "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir",
      "aksam": "Ezogelin Çorba | Tavuk Döner | Sade Pirinç Pilavı | Islak Kek"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-24": {
@@ -1031,9 +1013,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir",
      "aksam": "Tarhana Çorba | Çiftlik Köfte | Makarna Salatası | Ayran"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-25": {
@@ -1076,9 +1055,6 @@
     "ozet": {
      "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir",
      "aksam": "Mercimek Çorba | Tas Kebabı | Şehriyeli Bulgur Pilavı | Haydari"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-26": {
@@ -1121,9 +1097,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir",
      "aksam": "Terbiyeli Sebze Çorba | Fırın Tavuk Baget | Soslu Makarna | Mevsim Salata"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-27": {
@@ -1166,9 +1139,6 @@
     "ozet": {
      "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir",
      "aksam": "Tarhana Çorba | Etli Nohut | Şehriyeli Pirinç Pilavı | Mercimek Köfte"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-28": {
@@ -1211,9 +1181,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir",
      "aksam": "Dövme Çorba | Çiftlik Kebabı | Sebzeli Bulgur Pilavı | İrmik Helvası"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-29": {
@@ -1256,9 +1223,6 @@
     "ozet": {
      "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir",
      "aksam": "Mercimek Çorba | Somon | Şehriyeli Bulgur Pilavı | Helva"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-11-30": {
@@ -1301,9 +1265,6 @@
     "ozet": {
      "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir",
      "aksam": "Tarhana Çorba | Hamburger Köfte + Patates | Şehriyeli Pirinç Pilavı | Tulumba"
-    },
-    "kaynaklar": {
-     "aksam": "KYK Yemek Listesi"
     }
    },
    "2026-10-20": {

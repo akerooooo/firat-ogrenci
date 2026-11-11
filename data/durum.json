@@ -1,17 +1,17 @@
 {
- "sonDeneme": "2026-11-11T07:05:35.762Z",
+ "sonDeneme": "2026-11-11T15:07:23.386Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-11T07:05:35.762Z",
-   "durum": "hata",
-   "hata": "https://kygm.gsb.gov.tr/Ajax/gettesis.aspx?il=elazig&plaka_kodu=23 -> HTTP 500",
-   "sonBasari": "2026-11-11T00:35:48.102Z"
+   "sonDeneme": "2026-11-11T15:07:23.386Z",
+   "durum": "ok",
+   "hata": null,
+   "sonBasari": "2026-11-11T15:07:23.386Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-11T07:05:35.762Z",
+   "sonDeneme": "2026-11-11T15:07:23.386Z",
    "durum": "ok",
    "hata": "Resmî site erişilemedi (unievi.firat.edu.tr: UND_ERR_CONNECT_TIMEOUT · Connect Timeout Error (attempted address: unievi.firat.edu.tr:443, timeout: 10000ms)); eksik günler KampüsCepte'den alındı.",
-   "sonBasari": "2026-11-11T07:05:35.762Z"
+   "sonBasari": "2026-11-11T15:07:23.386Z"
   },
   "otobus": {
    "durum": "ok",
@@ -23,8 +23,8 @@
   "kyk": {
    "durum": "ok",
    "hata": null,
-   "sonDeneme": "2026-11-11T07:05:35.762Z",
-   "sonBasari": "2026-11-11T07:05:35.762Z"
+   "sonDeneme": "2026-11-11T15:07:23.386Z",
+   "sonBasari": "2026-11-11T15:07:23.386Z"
   }
  }
 }
