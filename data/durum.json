@@ -1,30 +1,30 @@
 {
- "sonDeneme": "2026-11-13T16:11:07.368Z",
+ "sonDeneme": "2026-11-13T22:07:41.515Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-13T16:11:07.368Z",
+   "sonDeneme": "2026-11-13T22:07:41.515Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-13T16:11:07.368Z"
+   "sonBasari": "2026-11-13T22:07:41.515Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-13T16:11:07.368Z",
+   "sonDeneme": "2026-11-13T22:07:41.515Z",
    "durum": "ok",
    "hata": "Resmî site erişilemedi (unievi.firat.edu.tr: UND_ERR_CONNECT_TIMEOUT · Connect Timeout Error (attempted address: unievi.firat.edu.tr:443, timeout: 10000ms)); eksik günler KampüsCepte'den alındı.",
-   "sonBasari": "2026-11-13T16:11:07.368Z"
+   "sonBasari": "2026-11-13T22:07:41.515Z"
   },
   "otobus": {
    "durum": "ok",
    "kaynak": "https://elazigkart.elazig.bel.tr/wheremybus",
    "hata": null,
-   "sonDeneme": "2026-11-13T01:00:08.232Z",
-   "sonBasari": "2026-11-13T01:00:08.232Z"
+   "sonDeneme": "2026-11-13T22:07:41.515Z",
+   "sonBasari": "2026-11-13T22:07:41.515Z"
   },
   "kyk": {
    "durum": "ok",
    "hata": null,
-   "sonDeneme": "2026-11-13T16:11:07.368Z",
-   "sonBasari": "2026-11-13T16:11:07.368Z"
+   "sonDeneme": "2026-11-13T22:07:41.515Z",
+   "sonBasari": "2026-11-13T22:07:41.515Z"
   }
  }
 }
