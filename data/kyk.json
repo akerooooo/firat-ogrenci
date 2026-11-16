@@ -9,7 +9,7 @@
   "kaynak": "https://www.kykyurtmenu.com/elazig/arsiv/kasim-2026",
   "kaynakAdi": "KYK Yurt Menü",
   "tur": "sehir",
-  "guncelleme": "2026-11-16T07:53:29.797Z",
+  "guncelleme": "2026-11-16T18:23:00.845Z",
   "gunler": {
    "2026-11-01": {
     "kahvalti": [
@@ -30,6 +30,10 @@
       "kcal": "38"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba / Şehriye Çorba",
@@ -47,11 +51,7 @@
       "ad": "Haydari",
       "kcal": "140"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Sade Poğaça | Labne Peynir",
-     "aksam": "Mercimek Çorba | Tavuk Kavurma | Soslu Makarna | Haydari"
-    }
+    ]
    },
    "2026-11-02": {
     "kahvalti": [
@@ -72,6 +72,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Düğün Çorba",
@@ -89,11 +93,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Zeytinli | Beyaz Peynir",
-     "aksam": "Tarhana Çorba | Etli Kuru Fasulye | Şehriyeli Bulgur Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-03": {
     "kahvalti": [
@@ -114,6 +114,10 @@
       "kcal": "48"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Domates Çorba / Yayla Çorba",
@@ -131,11 +135,7 @@
       "ad": "Makarna Salatası",
       "kcal": "140"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Kaşarlı Omlet | Sade Poğaça | Dere Otlu Poğaça | Krem Peynir",
-     "aksam": "Domates Çorba | Tavuk Döner | Sade Pirinç Pilavı | Makarna Salatası"
-    }
+    ]
    },
    "2026-11-04": {
     "kahvalti": [
@@ -156,6 +156,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Ezogelin Çorba / Tutmaç Çorba",
@@ -173,11 +177,7 @@
       "ad": "Sütlaç",
       "kcal": "200"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Peynirli | Sosis Kızartma | Kaşar Peynir",
-     "aksam": "Ezogelin Çorba | Hamburger Köfte + Patates | Makarna Salatası | Sütlaç"
-    }
+    ]
    },
    "2026-11-05": {
     "kahvalti": [
@@ -198,6 +198,10 @@
       "kcal": "48"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Terbiyeli Sebze Çorba / Domates Çorba",
@@ -215,11 +219,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Simit | Krem Peynir",
-     "aksam": "Terbiyeli Sebze Çorba | Fırında Sebzeli Tavuk | Sebzeli Bulgur Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-06": {
     "kahvalti": [
@@ -240,6 +240,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba / Ayran Aşı Çorba",
@@ -257,11 +261,7 @@
       "ad": "Cacık",
       "kcal": "120"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Haşlanmış Patates | Karışık Pizza | Beyaz Peynir",
-     "aksam": "Mercimek Çorba | Orman Kebap | Nohutlu Pirinç Pilavı | Cacık"
-    }
+    ]
    },
    "2026-11-07": {
     "kahvalti": [
@@ -282,6 +282,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Şehriye Çorba / Yayla Çorba",
@@ -299,11 +303,7 @@
       "ad": "Browni",
       "kcal": "280"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Menemen | Patatesli Börek | Salçalı Sosis | Kaşar Peynir",
-     "aksam": "Şehriye Çorba | Tavuk Fajita | Fırın Makarna | Browni"
-    }
+    ]
    },
    "2026-11-08": {
     "kahvalti": [
@@ -324,6 +324,10 @@
       "kcal": "38"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Mısır Çorba",
@@ -341,11 +345,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Kek | Labne Peynir",
-     "aksam": "Tarhana Çorba | Çiftlik Köfte | Şehriyeli Bulgur Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-09": {
     "kahvalti": [
@@ -366,6 +366,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba / Yayla Çorba",
@@ -383,11 +387,7 @@
       "ad": "Baklava",
       "kcal": "285"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sade Omlet | Patates Kızartması | Zeytinli | Beyaz Peynir",
-     "aksam": "Mercimek Çorba | Kavurma | Şehriyeli Pirinç Pilavı | Baklava"
-    }
+    ]
    },
    "2026-11-10": {
     "kahvalti": [
@@ -408,6 +408,10 @@
       "kcal": "48"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Terbiyeli Sebze Çorba / Şehriye Çorba",
@@ -425,11 +429,7 @@
       "ad": "Haydari",
       "kcal": "140"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Krem Peynir",
-     "aksam": "Terbiyeli Sebze Çorba | Tavuk Tantuni | Soslu Makarna | Haydari"
-    }
+    ]
    },
    "2026-11-11": {
     "kahvalti": [
@@ -450,6 +450,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Domates Çorba",
@@ -467,11 +471,7 @@
       "ad": "Yoğurt / Şekerpare",
       "kcal": "120 / 272"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Peynirli Omlet | Karışık Kızartma | Zeytinli | Kaşar Peynir",
-     "aksam": "Tarhana Çorba | Etli Kuru Fasulye | Şehriyeli Bulgur Pilavı | Yoğurt"
-    }
+    ]
    },
    "2026-11-12": {
     "kahvalti": [
@@ -492,6 +492,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba / Şehriye Çorba",
@@ -509,11 +513,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Domates Salatalık | Beyaz Peynir",
-     "aksam": "Mercimek Çorba | Fırında Tavuk Biftek | Gökkuşağı Pirinç Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-13": {
     "kahvalti": [
@@ -534,6 +534,10 @@
       "kcal": "38"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Ezogelin Çorba / Sebze Çorba",
@@ -551,11 +555,7 @@
       "ad": "Ayran / Meyve Suyu",
       "kcal": "74 / 100"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Menemen | Patates Salatası | Simit | Labne Peynir",
-     "aksam": "Ezogelin Çorba | Rosto Köfte | Soslu Makarna | Ayran"
-    }
+    ]
    },
    "2026-11-14": {
     "kahvalti": [
@@ -576,6 +576,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Domates Çorba / Süzme Çorba",
@@ -593,11 +597,7 @@
       "ad": "Sütlaç",
       "kcal": "200"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Ispanaklı Börek | Beyaz Peynir",
-     "aksam": "Domates Çorba | Çıtır Tavuk | Sebzeli Bulgur Pilavı | Sütlaç"
-    }
+    ]
    },
    "2026-11-15": {
     "kahvalti": [
@@ -618,6 +618,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Yayla Çorba / Şehriye Çorba",
@@ -635,11 +639,7 @@
       "ad": "Havuç Tarator",
       "kcal": "150"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sucuklu Omlet | Patates Kavurması | Dere Otlu Poğaça | Beyaz Peynir",
-     "aksam": "Yayla Çorba | Kuşbaşılı Patlıcan Kebabı | Şehriyeli Pirinç Pilavı | Havuç Tarator"
-    }
+    ]
    },
    "2026-11-16": {
     "kahvalti": [
@@ -656,6 +656,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Düğün Çorba",
@@ -673,11 +677,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kızartması | Kaşar Peynir",
-     "aksam": "Tarhana Çorba | Soslu Fırında Tavuk | Sade Pirinç Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-17": {
     "kahvalti": [
@@ -698,6 +698,10 @@
       "kcal": "48"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Ezogelin Çorba / Tutmaç Çorba",
@@ -715,11 +719,7 @@
       "ad": "Haydari",
       "kcal": "140"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Peynirli Omlet | Sosis Kızartma | Simit | Krem Peynir",
-     "aksam": "Ezogelin Çorba | Fırında Dizme Köfte | Soslu Makarna | Haydari"
-    }
+    ]
    },
    "2026-11-18": {
     "kahvalti": [
@@ -740,6 +740,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba",
@@ -757,11 +761,7 @@
       "ad": "Helva",
       "kcal": "152"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Karışık Pizza | Patates Kavurması | Kaşar Peynir",
-     "aksam": "Mercimek Çorba | İstavrit | Şehriyeli Bulgur Pilavı | Helva"
-    }
+    ]
    },
    "2026-11-19": {
     "kahvalti": [
@@ -782,6 +782,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Ezogelin Çorba / Mısır Çorba",
@@ -799,11 +803,7 @@
       "ad": "Ayran",
       "kcal": "74"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sade Omlet | Sosis Kızartma | Kek | Kaşar Peynir",
-     "aksam": "Ezogelin Çorba | Ekmek Arası Köfte | Şehriyeli Pirinç Pilavı | Ayran"
-    }
+    ]
    },
    "2026-11-20": {
     "kahvalti": [
@@ -824,6 +824,10 @@
       "kcal": "290 / 290"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Süzme Çorba / Yayla Çorba",
@@ -841,11 +845,7 @@
       "ad": "Baklava",
       "kcal": "285"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Karışık Kızartma | Simit | Zeytinli",
-     "aksam": "Süzme Çorba | Etli Kuru Fasulye | Erişte Pilav | Baklava"
-    }
+    ]
    },
    "2026-11-21": {
     "kahvalti": [
@@ -866,6 +866,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Dövme Çorba / Ayran Aşı Çorba",
@@ -883,11 +887,7 @@
       "ad": "Cacık",
       "kcal": "120"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Kaşarlı Omlet | Patates Salatası | Peynirli Börek | Beyaz Peynir",
-     "aksam": "Dövme Çorba | Karnıyarık | Sade Pirinç Pilavı | Cacık"
-    }
+    ]
    },
    "2026-11-22": {
     "kahvalti": [
@@ -908,6 +908,10 @@
       "kcal": "48"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Sebze Çorba / Mercimek Çorba",
@@ -925,11 +929,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Sosis Kızartma | Peynirli | Krem Peynir",
-     "aksam": "Sebze Çorba | Patlıcan Parmak Kebap | Sebzeli Bulgur Pilavı | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-23": {
     "kahvalti": [
@@ -950,6 +950,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Ezogelin Çorba / Tutmaç Çorba",
@@ -967,11 +971,7 @@
       "ad": "Islak Kek",
       "kcal": "250"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Peynirli Omlet | Patates Kızartması | Dere Otlu Poğaça | Beyaz Peynir",
-     "aksam": "Ezogelin Çorba | Tavuk Döner | Sade Pirinç Pilavı | Islak Kek"
-    }
+    ]
    },
    "2026-11-24": {
     "kahvalti": [
@@ -992,6 +992,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Domates Çorba",
@@ -1009,11 +1013,7 @@
       "ad": "Ayran / Meyve Suyu",
       "kcal": "74 / 100"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Simit | Kaşar Peynir",
-     "aksam": "Tarhana Çorba | Çiftlik Köfte | Makarna Salatası | Ayran"
-    }
+    ]
    },
    "2026-11-25": {
     "kahvalti": [
@@ -1034,6 +1034,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba / Ayran Aşı Çorba",
@@ -1051,11 +1055,7 @@
       "ad": "Haydari",
       "kcal": "140"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sucuklu Omlet | Karışık Kızartma | Mozaik Kek | Beyaz Peynir",
-     "aksam": "Mercimek Çorba | Tas Kebabı | Şehriyeli Bulgur Pilavı | Haydari"
-    }
+    ]
    },
    "2026-11-26": {
     "kahvalti": [
@@ -1076,6 +1076,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Terbiyeli Sebze Çorba / Şehriye Çorba",
@@ -1093,11 +1097,7 @@
       "ad": "Mevsim Salata",
       "kcal": "60"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Kavurması | Zeytinli | Kaşar Peynir",
-     "aksam": "Terbiyeli Sebze Çorba | Fırın Tavuk Baget | Soslu Makarna | Mevsim Salata"
-    }
+    ]
    },
    "2026-11-27": {
     "kahvalti": [
@@ -1118,6 +1118,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Yayla Çorba",
@@ -1135,11 +1139,7 @@
       "ad": "Mercimek Köfte / Puding",
       "kcal": "180 / 150"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Sade Omlet | Patates Kızartması | Kek | Beyaz Peynir",
-     "aksam": "Tarhana Çorba | Etli Nohut | Şehriyeli Pirinç Pilavı | Mercimek Köfte"
-    }
+    ]
    },
    "2026-11-28": {
     "kahvalti": [
@@ -1160,6 +1160,10 @@
       "kcal": "38"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Dövme Çorba / Domates Çorba",
@@ -1177,11 +1181,7 @@
       "ad": "İrmik Helvası",
       "kcal": "370"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Salçalı Sosis | Peynirli | Labne Peynir",
-     "aksam": "Dövme Çorba | Çiftlik Kebabı | Sebzeli Bulgur Pilavı | İrmik Helvası"
-    }
+    ]
    },
    "2026-11-29": {
     "kahvalti": [
@@ -1202,6 +1202,10 @@
       "kcal": "120"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Mercimek Çorba",
@@ -1219,11 +1223,7 @@
       "ad": "Helva",
       "kcal": "152"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Menemen | Patates Kavurması | Peynirli Börek | Beyaz Peynir",
-     "aksam": "Mercimek Çorba | Somon | Şehriyeli Bulgur Pilavı | Helva"
-    }
+    ]
    },
    "2026-11-30": {
     "kahvalti": [
@@ -1244,6 +1244,10 @@
       "kcal": "140"
      }
     ],
+    "kaynaklar": {
+     "kahvalti": "KYK Yemek Listesi",
+     "aksam": "KYK Yemek Listesi"
+    },
     "aksam": [
      {
       "ad": "Tarhana Çorba / Mısır Çorba",
@@ -1261,11 +1265,7 @@
       "ad": "Tulumba",
       "kcal": "300"
      }
-    ],
-    "ozet": {
-     "kahvalti": "Haşlanmış Yumurta | Patates Salatası | Sade Poğaça | Kaşar Peynir",
-     "aksam": "Tarhana Çorba | Hamburger Köfte + Patates | Şehriyeli Pirinç Pilavı | Tulumba"
-    }
+    ]
    },
    "2026-10-20": {
     "kahvalti": [
