@@ -1,30 +1,30 @@
 {
- "sonDeneme": "2026-11-16T18:23:00.845Z",
+ "sonDeneme": "2026-11-17T02:02:14.367Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-16T18:23:00.845Z",
+   "sonDeneme": "2026-11-17T02:02:14.367Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-16T18:23:00.845Z"
+   "sonBasari": "2026-11-17T02:02:14.367Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-16T18:23:00.845Z",
+   "sonDeneme": "2026-11-17T02:02:14.367Z",
    "durum": "ok",
    "hata": "Resmî site erişilemedi (unievi.firat.edu.tr: UND_ERR_CONNECT_TIMEOUT · Connect Timeout Error (attempted address: unievi.firat.edu.tr:443, timeout: 10000ms)); eksik günler KampüsCepte'den alındı.",
-   "sonBasari": "2026-11-16T18:23:00.845Z"
+   "sonBasari": "2026-11-17T02:02:14.367Z"
   },
   "otobus": {
    "durum": "ok",
    "kaynak": "https://elazigkart.elazig.bel.tr/wheremybus",
    "hata": null,
-   "sonDeneme": "2026-11-16T00:57:32.795Z",
-   "sonBasari": "2026-11-16T00:57:32.795Z"
+   "sonDeneme": "2026-11-17T02:02:14.367Z",
+   "sonBasari": "2026-11-17T02:02:14.367Z"
   },
   "kyk": {
    "durum": "ok",
-   "hata": "Bazı kaynaklar alınamadı: kykyurtmenu: www.kykyurtmenu.com: TimeoutError · The operation was aborted due to timeout",
-   "sonDeneme": "2026-11-16T18:23:00.845Z",
-   "sonBasari": "2026-11-16T18:23:00.845Z"
+   "hata": null,
+   "sonDeneme": "2026-11-17T02:02:14.367Z",
+   "sonBasari": "2026-11-17T02:02:14.367Z"
   }
  }
 }
