@@ -1,312 +1,12 @@
 {
- "guncelleme": "2026-11-25T03:00:05.701Z",
- "kaynak": "https://kampuscepte.com.tr/veri.js",
+ "guncelleme": "2026-11-25T12:39:59.408Z",
+ "kaynak": "https://unievi.firat.edu.tr/tr",
  "gunler": {
-  "2026-10-19": [
-   {
-    "tur": "",
-    "ad": "Etli taze fasulye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-20": [
-   {
-    "tur": "",
-    "ad": "Orman kebap",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yayla çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Meyve",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-21": [
-   {
-    "tur": "",
-    "ad": "Rosto köfte",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Makarna",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Domates çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tatlı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-22": [
-   {
-    "tur": "",
-    "ad": "Fırında tavuk",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-23": [
-   {
-    "tur": "",
-    "ad": "Etli kuru fasulye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mevsim salata",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tulumba tatlısı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-26": [
-   {
-    "tur": "",
-    "ad": "Etli nohut",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tulumba tatlısı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-27": [
-   {
-    "tur": "",
-    "ad": "Et kavurma",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Ayran",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-28": [
-   {
-    "tur": "",
-    "ad": "Tebiyeli köfte",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Makarna",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Domates çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Meyve",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-10-30": [
-   {
-    "tur": "",
-    "ad": "Etli bezelye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Meyve",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-02": [
+  "2026-11-23": [
    {
     "tur": "Ana Yemek",
-    "ad": "Etli Patates",
-    "kcal": 250
-   },
-   {
-    "tur": "Yardımcı Yemek",
-    "ad": "Sebzeli Şehriye Pilavı",
+    "ad": "Etli Kuru Fasulye",
     "kcal": 336
-   },
-   {
-    "tur": "Eşlikçi",
-    "ad": "Tarhana Çorba",
-    "kcal": 183
-   },
-   {
-    "tur": "Tamamlayıcı",
-    "ad": "Kadayıf",
-    "kcal": 246
-   }
-  ],
-  "2026-11-03": [
-   {
-    "tur": "Ana Yemek",
-    "ad": "Antep Tava",
-    "kcal": 400
-   },
-   {
-    "tur": "Yardımcı Yemek",
-    "ad": "Bulgur Pilavı",
-    "kcal": 15
-   },
-   {
-    "tur": "Eşlikçi",
-    "ad": "Domates Çorba",
-    "kcal": 20
-   },
-   {
-    "tur": "Tamamlayıcı",
-    "ad": "Tahin Helva",
-    "kcal": 5
-   }
-  ],
-  "2026-11-04": [
-   {
-    "tur": "Ana Yemek",
-    "ad": "Hamburger Köfte",
-    "kcal": 309
-   },
-   {
-    "tur": "Yardımcı Yemek",
-    "ad": "Peynirli Makarna",
-    "kcal": 354
-   },
-   {
-    "tur": "Eşlikçi",
-    "ad": "Ezogelin Çorba",
-    "kcal": 115
-   },
-   {
-    "tur": "Tamamlayıcı",
-    "ad": "Mevsim Salata",
-    "kcal": 123
-   }
-  ],
-  "2026-11-05": [
-   {
-    "tur": "Ana Yemek",
-    "ad": "Etli Nohut",
-    "kcal": 350
    },
    {
     "tur": "Yardımcı Yemek",
@@ -320,15 +20,37 @@
    },
    {
     "tur": "Tamamlayıcı",
-    "ad": "Tahin Helva",
-    "kcal": 212
+    "ad": "Muz",
+    "kcal": 60
    }
   ],
-  "2026-11-06": [
+  "2026-11-24": [
    {
     "tur": "Ana Yemek",
-    "ad": "Tas Kebabı",
-    "kcal": 348
+    "ad": "İzmir Köfte",
+    "kcal": 343
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Peynirli Makarna",
+    "kcal": 354
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Domates Çorba",
+    "kcal": 20
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "Tulumba",
+    "kcal": 430
+   }
+  ],
+  "2026-11-25": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Fırında Tavuk Pirzola",
+    "kcal": 385
    },
    {
     "tur": "Yardımcı Yemek",
@@ -337,403 +59,57 @@
    },
    {
     "tur": "Eşlikçi",
-    "ad": "Yayla Çorba",
-    "kcal": 115
+    "ad": "Mercimek Çorba",
+    "kcal": 183
    },
    {
     "tur": "Tamamlayıcı",
-    "ad": "Elma",
-    "kcal": 60
-   }
-  ],
-  "2026-11-09": [
-   {
-    "tur": "",
-    "ad": "Etli kuru fasulye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Turşu",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Muz",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-10": [
-   {
-    "tur": "",
-    "ad": "Misket köfte",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yayla çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tahin helva",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-11": [
-   {
-    "tur": "",
-    "ad": "Fırın tavuk pirzola",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Döğme çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
     "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-12": [
-   {
-    "tur": "",
-    "ad": "Patlıcan musakka",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Makarna",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Ezogelin çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Elma",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-13": [
-   {
-    "tur": "",
-    "ad": "Et kavurma",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Baklava",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-16": [
-   {
-    "tur": "",
-    "ad": "Antep tava",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Makarna",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-17": [
-   {
-    "tur": "",
-    "ad": "Kuru köfte",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tarhana çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Ayran",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-18": [
-   {
-    "tur": "",
-    "ad": "Fırında somon",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mevsim salata",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tahin helva",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-19": [
-   {
-    "tur": "",
-    "ad": "Biber dolması",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Ezogelin çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "İrmik tatlısı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-20": [
-   {
-    "tur": "",
-    "ad": "Kıymalı karnabahar",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Döğme çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mandalina",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-23": [
-   {
-    "tur": "",
-    "ad": "Etli kuru fasulye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Turşu",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Muz",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-24": [
-   {
-    "tur": "",
-    "ad": "İzmir köfte",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Peynirli makarna",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Domates çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Tulumba",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   }
-  ],
-  "2026-11-25": [
-   {
-    "tur": "",
-    "ad": "Tavuk kavurma",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Mercimek çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
-   },
-   {
-    "tur": "",
-    "ad": "Yoğurt",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "kcal": 64
    }
   ],
   "2026-11-26": [
    {
-    "tur": "",
-    "ad": "Etli taze fasulye",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Ana Yemek",
+    "ad": "Etli Taze Fasulye",
+    "kcal": 222
    },
    {
-    "tur": "",
-    "ad": "Pirinç pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Yardımcı Yemek",
+    "ad": "Pirinç Pilavı",
+    "kcal": 326
    },
    {
-    "tur": "",
-    "ad": "Harput çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Eşlikçi",
+    "ad": "Harput Çorba",
+    "kcal": 115
    },
    {
-    "tur": "",
+    "tur": "Tamamlayıcı",
     "ad": "Meyve",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "kcal": 60
    }
   ],
   "2026-11-27": [
    {
-    "tur": "",
-    "ad": "Orman kebabı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Ana Yemek",
+    "ad": "Orman Kebabı",
+    "kcal": 406
    },
    {
-    "tur": "",
-    "ad": "Bulgur pilavı",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Yardımcı Yemek",
+    "ad": "Bulgur Pilavı",
+    "kcal": 291
    },
    {
-    "tur": "",
-    "ad": "Ezogelin çorbası",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "tur": "Eşlikçi",
+    "ad": "Ezogelin Çorba",
+    "kcal": 115
    },
    {
-    "tur": "",
+    "tur": "Tamamlayıcı",
     "ad": "Ayran",
-    "kcal": null,
-    "kaynak": "KampüsCepte"
+    "kcal": 72
    }
   ]
  }
