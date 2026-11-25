@@ -1,30 +1,30 @@
 {
- "sonDeneme": "2026-11-25T12:39:59.408Z",
+ "sonDeneme": "2026-11-25T22:26:08.942Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-25T12:39:59.408Z",
+   "sonDeneme": "2026-11-25T22:26:08.942Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-25T12:39:59.408Z"
+   "sonBasari": "2026-11-25T22:26:08.942Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-25T12:39:59.408Z",
+   "sonDeneme": "2026-11-25T22:26:08.942Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-25T12:39:59.408Z"
+   "sonBasari": "2026-11-25T22:26:08.942Z"
   },
   "otobus": {
    "durum": "ok",
    "kaynak": "https://elazigkart.elazig.bel.tr/wheremybus",
    "hata": null,
-   "sonDeneme": "2026-11-25T03:00:05.701Z",
-   "sonBasari": "2026-11-25T03:00:05.701Z"
+   "sonDeneme": "2026-11-25T22:26:08.942Z",
+   "sonBasari": "2026-11-25T22:26:08.942Z"
   },
   "kyk": {
    "durum": "ok",
    "hata": null,
-   "sonDeneme": "2026-11-25T12:39:59.408Z",
-   "sonBasari": "2026-11-25T12:39:59.408Z"
+   "sonDeneme": "2026-11-25T22:26:08.942Z",
+   "sonBasari": "2026-11-25T22:26:08.942Z"
   }
  }
 }
