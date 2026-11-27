@@ -1,12 +1,34 @@
 {
- "guncelleme": "2026-11-27T15:31:53.037Z",
+ "guncelleme": "2026-11-27T23:41:58.273Z",
  "kaynak": "https://unievi.firat.edu.tr/tr",
  "gunler": {
-  "2026-11-23": [
+  "2026-11-30": [
    {
     "tur": "Ana Yemek",
-    "ad": "Etli Kuru Fasulye",
-    "kcal": 336
+    "ad": "Etli Bezelye",
+    "kcal": 298
+   },
+   {
+    "tur": "Yardımcı Yemek",
+    "ad": "Bulgur Pilavı",
+    "kcal": 291
+   },
+   {
+    "tur": "Eşlikçi",
+    "ad": "Toyga Çorba",
+    "kcal": 115
+   },
+   {
+    "tur": "Tamamlayıcı",
+    "ad": "İrmik Tatlısı",
+    "kcal": 528
+   }
+  ],
+  "2026-12-01": [
+   {
+    "tur": "Ana Yemek",
+    "ad": "Tavuk Haşlama",
+    "kcal": 259
    },
    {
     "tur": "Yardımcı Yemek",
@@ -15,25 +37,25 @@
    },
    {
     "tur": "Eşlikçi",
-    "ad": "Turşu",
-    "kcal": 22
+    "ad": "Mevsim Salata",
+    "kcal": 123
    },
    {
     "tur": "Tamamlayıcı",
-    "ad": "Muz",
+    "ad": "Meyve",
     "kcal": 60
    }
   ],
-  "2026-11-24": [
+  "2026-12-02": [
    {
     "tur": "Ana Yemek",
-    "ad": "İzmir Köfte",
-    "kcal": 343
+    "ad": "Kıymalı Karnabahar",
+    "kcal": 187
    },
    {
     "tur": "Yardımcı Yemek",
-    "ad": "Peynirli Makarna",
-    "kcal": 354
+    "ad": "Bulgur Pilavı",
+    "kcal": 291
    },
    {
     "tur": "Eşlikçi",
@@ -42,20 +64,20 @@
    },
    {
     "tur": "Tamamlayıcı",
-    "ad": "Tulumba",
-    "kcal": 430
+    "ad": "Yoğurt",
+    "kcal": 64
    }
   ],
-  "2026-11-25": [
+  "2026-12-03": [
    {
     "tur": "Ana Yemek",
-    "ad": "Fırında Tavuk Pirzola",
-    "kcal": 385
+    "ad": "Somon Kızartma",
+    "kcal": 460
    },
    {
     "tur": "Yardımcı Yemek",
-    "ad": "Bulgur Pilavı",
-    "kcal": 291
+    "ad": "Fasulye Pilaki",
+    "kcal": 275
    },
    {
     "tur": "Eşlikçi",
@@ -64,15 +86,15 @@
    },
    {
     "tur": "Tamamlayıcı",
-    "ad": "Yoğurt",
-    "kcal": 64
+    "ad": "Kadayıf",
+    "kcal": 246
    }
   ],
-  "2026-11-26": [
+  "2026-12-04": [
    {
     "tur": "Ana Yemek",
-    "ad": "Etli Taze Fasulye",
-    "kcal": 222
+    "ad": "Zeytinyağlı Barbunya",
+    "kcal": 267
    },
    {
     "tur": "Yardımcı Yemek",
@@ -81,35 +103,13 @@
    },
    {
     "tur": "Eşlikçi",
-    "ad": "Harput Çorba",
-    "kcal": 115
+    "ad": "Mevsim Salata",
+    "kcal": 123
    },
    {
     "tur": "Tamamlayıcı",
     "ad": "Meyve",
     "kcal": 60
-   }
-  ],
-  "2026-11-27": [
-   {
-    "tur": "Ana Yemek",
-    "ad": "Orman Kebabı",
-    "kcal": 406
-   },
-   {
-    "tur": "Yardımcı Yemek",
-    "ad": "Bulgur Pilavı",
-    "kcal": 291
-   },
-   {
-    "tur": "Eşlikçi",
-    "ad": "Ezogelin Çorba",
-    "kcal": 115
-   },
-   {
-    "tur": "Tamamlayıcı",
-    "ad": "Ayran",
-    "kcal": 72
    }
   ]
  }
