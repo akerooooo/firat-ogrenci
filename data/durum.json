@@ -1,17 +1,17 @@
 {
- "sonDeneme": "2026-11-26T23:14:52.474Z",
+ "sonDeneme": "2026-11-27T05:18:30.261Z",
  "kaynaklar": {
   "yurtlar": {
-   "sonDeneme": "2026-11-26T23:14:52.474Z",
+   "sonDeneme": "2026-11-27T05:18:30.261Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-26T23:14:52.474Z"
+   "sonBasari": "2026-11-27T05:18:30.261Z"
   },
   "okul": {
-   "sonDeneme": "2026-11-26T23:14:52.474Z",
+   "sonDeneme": "2026-11-27T05:18:30.261Z",
    "durum": "ok",
    "hata": null,
-   "sonBasari": "2026-11-26T23:14:52.474Z"
+   "sonBasari": "2026-11-27T05:18:30.261Z"
   },
   "otobus": {
    "durum": "ok",
@@ -23,8 +23,8 @@
   "kyk": {
    "durum": "ok",
    "hata": null,
-   "sonDeneme": "2026-11-26T23:14:52.474Z",
-   "sonBasari": "2026-11-26T23:14:52.474Z"
+   "sonDeneme": "2026-11-27T05:18:30.261Z",
+   "sonBasari": "2026-11-27T05:18:30.261Z"
   }
  }
 }
